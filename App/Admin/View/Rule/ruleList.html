@@ -1,0 +1,42 @@
+<extend name="Public/base"/>
+<block name="title">ECSHOP 管理中心 - 商品分类</block>
+<block name="header">
+    <span class="action-span"><a href="{:U('ruleAdd')}">添加分类</a></span>
+    <span class="action-span1"><a href="__GROUP__">ECSHOP 管理中心</a></span>
+    <span id="search_id" class="action-span1"> - 商品分类 </span>
+    <div style="clear:both"></div>
+</block>
+<block name="body">
+<form method="post" action="" name="listForm">
+    <div class="list-div" id="listDiv">
+        <table width="100%" cellspacing="1" cellpadding="2" id="list-table">
+            <tr>
+                <th>权限名称</th>
+                <th>模型名称</th>
+                <th>控制器名称</th>
+                <th>方法名称</th>
+                <th>是否显示</th>
+                <th>操作</th>
+            </tr>
+            <volist name="list" id="vo">
+            <tr align="center" class="0">
+                <td align="left" class="first-cell" >
+                
+                <img src="__PUBLIC_ADMIN__Images/menu_minus.gif" width="9" height="9" border="0" style="margin-left:0em" />
+                <span><a href="javascript:void(0)">{$vo.level|str_repeat='--',###}{$vo.rule_name}</a></span>
+                </td>
+                <td width="15%">{$vo.module_name}</td>
+                <td width="15%">{$vo.controller_name}</td>
+                <td width="15%">{$vo.action_name}</td>
+               <td width="15%"><img src="__PUBLIC_ADMIN__Images/<eq name='vo.is_show' value='1'>yes.gif <else /> no.gif </eq>" /></td>
+                
+                <td width="30%" align="center">
+                <a href="{:U('ruleEdit','id='.$vo['id'])}">编辑</a> |
+                <a href="{:U('delRule','id='.$vo['id'])}" title="移除" onclick="">移除</a>
+                </td>
+            </tr>
+            </volist>
+        </table>
+    </div>
+</form>
+</block>

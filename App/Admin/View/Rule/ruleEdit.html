@@ -1,0 +1,60 @@
+<extend name="Public:base" />
+<block name="title">ECSHOP 管理中心 - 分类添加 </block>
+<block name="header">
+    <span class="action-span"><a href="{:U('cateList')}">商品分类</a></span>
+    <span class="action-span1"><a href="#">ECSHOP 管理中心</a></span>
+    <span id="search_id" class="action-span1"> - 添加分类 </span>
+    <div style="clear:both"></div>
+</block>
+<block name="body">
+    <form action="" method="post" name="theForm" enctype="multipart/form-data">
+        <table width="100%" id="general-table">
+            <input type="hidden" name="id" value="{$listInfo.id}">
+            <tr>
+                <td class="label">权限名称:</td>
+                <td>
+                    <input type='text' name='rule_name' maxlength="20" value='{$listInfo.rule_name}' size='27' /> <font color="red">*</font>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">模型名称:</td>
+                <td>
+                    <input type='text' name='module_name' maxlength="20" value='{$listInfo.module_name}' size='27' /> <font color="red">*</font>
+                </td>
+            </tr><tr>
+                <td class="label">控制器名称:</td>
+                <td>
+                    <input type='text' name='controller_name' maxlength="20" value='{$listInfo.controller_name}' size='27' /> <font color="red">*</font>
+                </td>
+            </tr><tr>
+                <td class="label">方法名称:</td>
+                <td>
+                    <input type='text' name='action_name' maxlength="20" value='{$listInfo.action_name}' size='27' /> <font color="red">*</font>
+                </td>
+            </tr>
+             <tr>
+                <td class="label">上级分类:</td>
+                <td>
+                    <select name="parent_id">
+                        <option value="0">顶级分类</option>
+                        <volist name="list" id="vo">
+                            <option value="{$vo.id}" <eq name="listInfo.parent_id" value="$vo.id">selected='selected'</eq>> |{$vo.level|str_repeat='--',###}{$vo.rule_name}</option>
+                        </volist>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">是否显示:</td>
+                <td>
+                    <input type="radio" name="is_show" value="1" <eq name="listInfo.is_show" value="1"> checked='checked'</eq> /> 是
+                    <input type="radio" name="is_show" value="0"  <eq name="listInfo.is_show" value="0"> checked='checked'</eq> /> 否
+                </td>
+            </tr>
+            
+        </table>
+        <div class="button-div">
+            <input type="submit" value=" 确定 " />
+            <input type="reset" value=" 重置 " />
+        </div>
+    </form>
+</block>

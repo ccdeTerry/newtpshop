@@ -1,0 +1,35 @@
+<extend name="Public:base"/>
+<block name="title">ECSHOP 管理中心 - 分类添加 </block>
+<block name="header">
+    <span class="action-span"><a href="{:U('cateList')}">商品分类</a></span>
+    <span class="action-span1"><a href="#">ECSHOP 管理中心</a></span>
+    <span id="search_id" class="action-span1"> - 添加分类 </span>
+    <div style="clear:both"></div>
+</block>
+<block name="body">
+
+    <!-- 列表 -->
+<div class="list-div" id="listDiv">
+    
+	<table cellpadding="3" cellspacing="1">
+        <tr>
+            <th >级别名称</th>
+            <th >积分上限</th>
+            <th >积分下限</th>
+			<th width="60">操作</th>
+    </tr>
+        <volist name="data" id="v">
+			<tr class="tron">
+				<td>{$v['level_name']}</td>
+				<td>{$v['jifen_bottom']}</td>
+				<td>{$v['jifen_top']}</td>
+		        <td align="center">
+		        	<a href="{:U('edit','id='.$v['id'])}" title="编辑">编辑</a> |
+	                <a href="{:U('delete','id='.$v['id'])}" onclick="return confirm('确定要删除吗？');" title="移除">移除</a>
+		        </td>
+	        </tr>
+       </volist>
+        
+	</table>
+</div>
+</block>

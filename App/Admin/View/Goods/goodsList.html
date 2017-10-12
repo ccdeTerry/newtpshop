@@ -1,0 +1,88 @@
+<extend name="Public:base"/>
+<block name="title">ECSHOP 管理中心 - 添加商品 </block>
+<block name="header">
+    <span class="action-span"><a href="{:U('cateList')}">商品</a></span>
+    <span class="action-span1"><a href="#">ECSHOP 管理中心</a></span>
+    <span id="search_id" class="action-span1"> - 添加分类 </span>
+    <div style="clear:both"></div>
+</block>
+    
+<block name="body">
+<div class="form-div">
+    <form action="" name="searchForm">
+        <img src="__PUBLIC_ADMIN__Images/icon_search.gif" width="26" height="22" border="0" alt="search" />
+        <!-- 分类 -->
+        <select name="cate_id">
+            <option value="">所有分类</option>
+            <volist name="cate" id="vo">
+                
+                <option value="{$vo.id}" <eq name="Think.get.cate_id" value="$vo.id">selected="selected"</eq>>{$vo.level|str_repeat='--',###}{$vo.cname}</option>
+            </volist>
+        </select>
+
+        <!-- 推荐 -->
+        <select name="intro_type">
+            <option value="0">全部</option>
+            <option value="is_rec" <eq name="Think.get.intro_type" value="is_rec">selected ="selected"</eq>>推荐</option>
+            <option value="is_new" <eq name="Think.get.intro_type" value="is_new">selected ="selected"</eq>>新品</option>
+            <option value="is_hot" <eq name="Think.get.intro_type" value="is_hot">selected ="selected"</eq>>热销</option>
+        </select>
+        <!-- 上架 -->
+        <select name="is_sale">
+            <option value='0'>全部</option>
+            <option value="1" <eq name="Think.get.is_sale" value="1">selected ="selected"</eq>>上架</option>
+            <option value="2" <eq name="Think.get.is_sale" value="2">selected ="selected"</eq>>下架</option>
+        </select>
+        <!-- 关键字 -->
+        关键字 <input type="text" name="keyword" size="15" value="{$Think.get.keyword}" />
+        <input type="submit" value=" 搜索 " class="button" />
+    </form>
+</div>
+
+<!-- 商品列表 -->
+
+    <div class="list-div" id="listDiv">
+        <table cellpadding="3" cellspacing="1">
+            <tr>
+                <th>编号</th>
+                <th>商品名称</th>
+                <th>货号</th>
+                <th>价格</th>
+                <th>上架</th>
+                <th>推荐</th>
+                <th>新品</th>
+                <th>热销</th>
+                <th>操作</th>
+            </tr>
+        <volist name="listInfo.list" id="vo">
+            <tr>
+                <td align="center">{$vo.id}</td>
+                <td align="center" class="first-cell"><span>{$vo.goods_name}</span></td>
+                <td align="center"><span onclick="">{$vo.goods_sn}</span></td>
+                <td align="center"><span>{$vo.shop_price}</span></td>
+                <td align="center"><img src="__PUBLIC_ADMIN__Images/<eq name='vo.is_sale' value='1'>yes.gif <else />no.gif</eq>"/></td>
+                <td align="center"><img src="__PUBLIC_ADMIN__Images/<eq name='vo.is_rec' value='1'>yes.gif<else />no.gif</eq>"/></td>
+                <td align="center"><img src="__PUBLIC_ADMIN__Images/<eq name='vo.is_new' value='1'>yes.gif <else />no.gif</eq>"/></td>
+                <td align="center"><img src="__PUBLIC_ADMIN__Images/<eq name='vo.is_hot' value='1'>yes.gif <else />no.gif</eq>"/></td>
+               
+                <td align="center">
+                <a href="" target="_blank" title="查看"><img src="__PUBLIC_ADMIN__Images/icon_view.gif" width="16" height="16" border="0" /></a>
+                <a href="{:U('setNumber','goods_id='.$vo['id'])}" title="商品库存"><img src="__PUBLIC_ADMIN__Images/icon_edit.gif" width="16" height="16" border="0" />商品库存</a>
+                    <a href="{:U('goodsEdit','goods_id='.$vo['id'])}" title="编辑"><img src="__PUBLIC_ADMIN__Images/icon_edit.gif" width="16" height="16" border="0" />编辑</a>
+                <a href="{:U('goodsDels','goods_id='.$vo['id'])}" onclick="" title="回收站"><img src="__PUBLIC_ADMIN__Images/icon_trash.gif" width="16" height="16" border="0" />回收站</a></td>
+            </tr>
+</volist>
+        </table>
+
+        <!-- 分页开始 -->
+        <table id="page-table" cellspacing="0">
+            <tr>
+                <td width="80%">&nbsp;</td>
+                <td align="center" nowrap="true">
+                    {$listInfo.page}
+                </td>
+            </tr>
+        </table>
+    <!-- 分页结束 -->
+    </div>
+</block>

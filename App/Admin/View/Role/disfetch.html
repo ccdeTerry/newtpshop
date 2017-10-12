@@ -1,0 +1,40 @@
+<extend name="Public:base"/>
+<block name="title"> ECSHOP 管理中心 - 权限分配</block>
+<block name="header">
+    <span class="action-span"><a href="__GROUP__/Category/categoryAdd">添加分类</a></span>
+    <span class="action-span1"><a href="__GROUP__">ECSHOP 管理中心</a></span>
+    <span id="search_id" class="action-span1"> - 商品分类 </span>
+    <div style="clear:both"></div>
+</block>
+<block name="body">
+    <form action="" method="POST" enctype="multipart/form-data">
+        <table width="100%" cellspacing="1" cellpadding="2" id="list-table">
+            <thead>
+                <tr>
+                    <th width="60">操作</th>
+                    <th>权限名称</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <volist name="rule" id="vo">
+                <tr>
+                    <td>
+                        <input type="checkbox" class="top" name="rule[]" value="{$vo.id}"  <in name="vo.id" value="$hasRuleIds">checked='checked'</in>>
+                    </td>
+                    <td>{$vo.level|str_repeat='----',###}{$vo.rule_name}</td>
+                   
+                </tr>
+               </volist>
+
+                <tr>
+                    <td colspan="3">
+                        <input type="hidden" name="role_id" value="{$Think.get.role_id}" />
+                        <button type="submit" class="btn btn-default">表单提交</button>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </form>
+</block>

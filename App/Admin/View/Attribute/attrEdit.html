@@ -1,0 +1,72 @@
+<extend name="Public:base" />
+<block name="title">ECSHOP 管理中心 - 分类添加 </block>
+<block name="header">
+    <span class="action-span"><a href="{:U('cateList')}">商品分类</a></span>
+    <span class="action-span1"><a href="#">ECSHOP 管理中心</a></span>
+    <span id="search_id" class="action-span1"> - 添加分类 </span>
+    <div style="clear:both"></div>
+</block>
+<block name="body">
+    <form action="" method="post" name="theForm" enctype="multipart/form-data">
+        <table width="100%" id="general-table">
+            <input type="hidden" name="id" value="{$attrInfo.id}">
+            <tr>
+                <td class="label">属性名称:</td>
+                <td>
+                    <input type='text' name='attr_name' maxlength="20" value='{$attrInfo.attr_name}' size='27' /> <font color="red">*</font>
+                </td>
+            </tr>
+             <tr>
+                <td class="label">所属类型:</td>
+                <td>
+                    <select name="type_id">
+                        <option value="">--请选择--</option>
+                        <volist name="typeInfo" id="vo">
+                            <option value="{$vo.id}"  <eq name="attrInfo.type_id" value="$vo.id">selected='selected'</eq>>{$vo.type_name}</option>
+                        </volist>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">属性类型:</td>
+                <td>
+                    <input type="radio" value="1" name="attr_type" <eq name="attrInfo.attr_type" value="1"> checked='checkd'</eq>>唯一
+                    <input type="radio" value="2" name="attr_type"<eq name="attrInfo.attr_type" value="2"> checked='checkd'</eq>>单选
+                </td>
+            </tr>
+            <tr>
+                <td class="label">属性录入方式:</td>
+                <td>
+                    <input type="radio" name="attr_input_type" value="1"  <eq name="attrInfo.attr_input_type" value="1"> checked='checkd'</eq>/> 手动录入
+                    <input type="radio" name="attr_input_type" value="2"  <eq name="attrInfo.attr_input_type" value="2"> checked='checkd'</eq> /> 列表选择
+                </td>
+            </tr><tr>
+                <td class="label">默认值:</td>
+                <td>
+                    <textarea name="attr_value">{$attrInfo.attr_value}</textarea>
+                    <span>*属性名称之间必须以英文逗号隔开</span>
+                </td>
+            </tr>
+            
+        </table>
+        <div class="button-div">
+            <input type="submit" value=" 确定 " />
+            <input type="reset" value=" 重置 " />
+        </div>
+    </form>
+</block>
+<block name="js">
+<script type="text/javascript">
+    <eq name='attrInfo.attr_input_type' value='1'>
+    $("textarea[name='attr_value']").attr('disabled',true);
+    </eq>
+    $('input[name="attr_input_type"]').change(function () {
+        var value=$(this).val();
+        if(value==1){
+            $("textarea[name='attr_value']").attr('disabled',true).val('');
+        }else{
+            $("textarea[name='attr_value']").attr('disabled',false).val('');
+        }
+    })
+</script>
+</block>

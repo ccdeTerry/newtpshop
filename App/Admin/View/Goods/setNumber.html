@@ -1,0 +1,61 @@
+<extend name="Public:base"/>
+<block name="title">ECSHOP 管理中心 - 分类添加 </block>
+<block name="header">
+    <span class="action-span"><a href="#">商品分类</a></span>
+    <span class="action-span1"><a href="#">ECSHOP 管理中心</a></span>
+    <span id="search_id" class="action-span1"> - 添加分类 </span>
+    <div style="clear:both"></div>
+</block>
+<block name="body">
+    <div class="list-div" id="listDiv">
+    <form method="post" action="" name="listForm">
+    <div class="list-div" id="listDiv">
+        <table width="100%" cellspacing="1" cellpadding="2" id="list-table">
+            <tr>
+                <volist name="attr" id="vo">
+                <th>{$vo.0.attr_name}</th>
+                </volist>
+                <th>数量</th>
+                <th>操作</th>
+            </tr>
+              <volist name="goodsNumberInfo" id="v2" key="keys">
+            <tr align="center" class="0">
+               <volist name="attr" id="vo">
+                <td align="left" class="first-cell" >
+                    <select name="attr[{$vo.0.attr_id}][]">
+                        <volist name="vo" id="v">
+                            {$v.attr_values}
+                        <option value="{$v.id}" <in name="v.id" value="$v2.goods_attr_ids">selected="selected"</in>>{$v.attr_values}</option>
+                        </volist>
+                    </select>
+                </td>
+                </volist>
+                <td><input type="text" name="goods_number[]" value="{$v2.goods_number}" /></td>
+                <td><input type="button" value="<eq name='keys' value='1'>+<else />-</eq>"/></td>
+            </tr>
+            <input type="hidden" name="goods_id" value="{$Think.get.goods_id}" />
+              </volist>
+        </table>
+        <div style="width: 100px;margin: 0 auto"><input type="submit" value="保存"/></div>
+    </div>
+</form>
+</div>
+</block>
+
+<block name="js">
+<script type="text/javascript">
+    $(":button").click(function(){
+        //取出当前行
+        var curr_tr = $(this).parent().parent();
+        if($(this).val()=='+'){
+            //完成自我复制
+            var new_tr = curr_tr.clone(true);
+            new_tr.find(":button").val('-');
+            curr_tr.after(new_tr);
+        }else{
+            //完成当前行删除
+            curr_tr.remove();
+        }
+    });
+</script>
+</block>

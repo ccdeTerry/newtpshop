@@ -1,0 +1,45 @@
+<extend name="Public:base"/>
+<block name="title">ECSHOP 管理中心 - 分类添加 </block>
+<block name="header">
+    <span class="action-span"><a href="{:U('cateList')}">商品分类</a></span>
+    <span class="action-span1"><a href="#">ECSHOP 管理中心</a></span>
+    <span id="search_id" class="action-span1"> - 添加分类 </span>
+    <div style="clear:both"></div>
+</block>
+<block name="body">
+    <form action="" method="post" name="theForm" enctype="multipart/form-data">
+        <table width="100%" id="general-table">
+            <tr>
+                <td class="label">用户名:</td>
+                <td>
+                    <input type='text' name='username' maxlength="20" value='' size='27' /> <font color="red">*</font>
+                </td>
+            </tr> <tr>
+                <td class="label">密码:</td>
+                <td>
+                    <input type='password' name='password' maxlength="20" value='' size='27' /> <font color="red">*</font>
+                </td>
+            </tr> <tr>
+                <td class="label">确认密码:</td>
+                <td>
+                    <input type='password' name='passwd' maxlength="20" value='' size='27' /> <font color="red">*</font>
+                </td>
+            </tr> <tr>
+                <td class="label">所属角色:</td>
+                <td>
+                    <select name="role_id" >
+                        <option value="">--请选择-- </option>
+                        <volist name="role" id="vo">
+                            <option value="{$vo.id}">{$vo.role_name}</option>
+                        </volist>
+                    </select>
+                </td>
+            </tr>
+          
+        </table>
+        <div class="button-div">
+            <input type="submit" value=" 确定 " />
+            <input type="reset" value=" 重置 " />
+        </div>
+    </form>
+</block>

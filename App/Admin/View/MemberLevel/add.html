@@ -1,0 +1,47 @@
+<extend name="Public:base"/>
+<block name="title">ECSHOP 管理中心 - 分类添加 </block>
+<block name="header">
+    <span class="action-span"><a href="{:U('cateList')}">商品分类</a></span>
+    <span class="action-span1"><a href="#">ECSHOP 管理中心</a></span>
+    <span id="search_id" class="action-span1"> - 添加分类 </span>
+    <div style="clear:both"></div>
+</block>
+<block name="body">
+    <div class="main-div">
+    <form name="main_form" method="POST" action="" enctype="multipart/form-data">
+        <table cellspacing="1" cellpadding="3" width="100%">
+            <span style="color: red;">* 折扣率:100=10折 98=9.8折 90=9折，用时除100'</span>
+            <tr>
+                <td class="label">级别名称：</td>
+                <td>
+                    <input  type="text" name="level_name" value="" />
+                </td>
+            </tr>
+            <tr>
+                <td class="label">积分下限：</td>
+                <td>
+                    <input  type="text" name="jifen_bottom" value="" />
+                </td>
+            </tr>
+            <tr>
+                <td class="label">积分上限：</td>
+                <td>
+                    <input  type="text" name="jifen_top" value="" />
+                </td>
+            </tr>
+            <tr>
+                <td class="label">默认折扣率：</td>
+                <td>
+                    <input  type="text" name="level_rate" value="" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="99" align="center">
+                    <input type="submit" class="button" value=" 确定 " />
+                    <input type="reset" class="button" value=" 重置 " />
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</block>
