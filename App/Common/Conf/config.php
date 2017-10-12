@@ -10,7 +10,6 @@ return array(
     ],
     /* 数据库设置 */
     'DB_TYPE'               =>  'mysql',     // 数据库类型
-//    'DB_HOST'               =>  '101.200.160.169', // 服务器地址
     'DB_HOST'               =>  '127.0.0.1', // 服务器地址
     'DB_NAME'               =>  'newshop',          // 数据库名
     'DB_USER'               =>  'study',      // 用户名
