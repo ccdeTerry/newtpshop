@@ -102,4 +102,44 @@ class OrderController extends CommonController{
         postAlipay($data['id'],$order_name,$data['total_price']);
 
     }
+
+    /**
+     * @getBackage 查看快递
+     * @author : Terry
+     * @return
+     */
+    public function express(){
+        $orderId=I('get.order_id');
+        $order = M('Order')->where(['id'=>$orderId])->find();
+        if (!$order || $order['order_status']!=2){
+            $this->error('参数错误');
+        }
+
+        //取出快递类型
+//        preg_match_all('/[\x{4e00}-\x{9fa5}a-zA-Z]/u' , $order['com'], $result);
+        //        var_dump($result);
+        //        array([0]=>汉字,[1]=>运单号)
+        //
+        /* array(0 =>
+                    array(
+                    0 => string '圆' (length=3)
+                    1 => string '通' (length=3)
+        ))*/
+
+//        $packageType =implode('', $result[0]);
+        //引入汉字转拼音类
+        import("ORG.Util.Pinyin");
+        $pinyin = new \PinYin();
+        $packageTypePinyin =  $pinyin->getAllPY($order['com']); //汉字转为拼音
+        //   将左侧的汉字删除
+//dump($packageTypePinyin);
+        $uri='http://www.kuaidi100.com/query?type='.$packageTypePinyin.'&postid='.ltrim($order['no']);
+        //url==>http://www.kuaidi100.com/query?type=yuantong&postid=885521950005566378
+//        dump(json_decode(request($uri)));
+            $this->assign('data',json_decode(request($uri),true)['data']);//curl
+        $this->display();
+
+
+
+    }
 }

@@ -19,7 +19,12 @@ class CommonController extends Controller{
     public function __construct()
     {
         parent::__construct();
-
+        //检测用户IP是否允许访问
+        if (checkLoginIp() ===false){
+            $this->error('哈哈哈,你无权访问!',U('Login/login'));
+            
+        }
+//        myU();
 //        session(null);
         $admin =session('admin');
 

@@ -1,0 +1,2 @@
+<?php die('forbidden'); ?>
+{"appid":"101357881","appkey":"e7e70cd392177c2e44552aacb0940deb","callback":"http://newshop.com/user/callback","scope":"get_user_info","errorReport":true,"storageType":"file","host":"localhost","user":"root","password":"root","database":"test"}

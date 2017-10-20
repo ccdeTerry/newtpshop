@@ -60,7 +60,7 @@ var CodeMirror = (function() {
         // Delayed object wrap timeouts, making sure only one is active. blinker holds an interval.
         var poll = new Delayed(), highlight = new Delayed(), blinker;
 
-        // mode holds a mode API object. doc is the tree of Line objects,
+        // mode holds a mode Api object. doc is the tree of Line objects,
         // work an array of lines that should be parsed, and history the
         // undo history (instance of History constructor).
         var mode, doc = new BranchChunk([new LeafChunk([new Line("")])]), work, focused;

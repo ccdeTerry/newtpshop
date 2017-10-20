@@ -1,0 +1,41 @@
+<extend name="Public:base" />
+<block name="header" >
+    <span class="action-span"><a href="">添加新商品</a></span>
+    <span class="action-span1"><a href="">ECSHOP 管理中心</a></span>
+    <span id="search_id" class="action-span1"> - 商品列表 </span>
+    <div style="clear:both"></div>
+</block>
+
+<block name="body">
+
+<!-- 商品列表 -->
+
+<div class="list-div" id="listDiv">
+    <table cellpadding="3" cellspacing="1">
+        <tr>
+            <th>订单号</th>
+            <th>订单金额</th>
+            <th>订单状态</th>
+            <th>收货人</th>
+            <th>收货地址</th>
+            <th>操作</th>
+        </tr>
+        
+            <volist name="data['list']" id="vo">
+            <tr>
+            <td align="center">{$vo.id}</td>
+            <td align="center">{$vo.totao_price}</td>
+            <td align="center"><eq name="vo.pay_status" value="1">已支付<else/> 未支付</eq></td>
+            <td align="center">{$vo.name}</td>
+            <td align="center">{$vo.address}</td>
+            <td align="center"><eq name="vo.pay_status" value="1"><a href="{:U('Order/send','order_id='.$vo['id'])}">发货<a></eq></td>
+          
+        </tr>
+            </volist>
+        <tr>
+           {$data.page}
+        </tr>
+    </table>
+    
+</div>
+</block>

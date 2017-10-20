@@ -972,7 +972,7 @@ class FirePHP {
     }
 
     /**
-     * Insight API wrapper
+     * Insight Api wrapper
      * 
      * @see Insight_Helper::to()
      */
@@ -987,7 +987,7 @@ class FirePHP {
     }
 
     /**
-     * Insight API wrapper
+     * Insight Api wrapper
      * 
      * @see Insight_Helper::plugin()
      */

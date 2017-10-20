@@ -22,9 +22,9 @@
         </div>
         <div class="topnav_right fr">
             <ul>
-                <?php if(empty($_SESSION['user_id'])): ?><li>您好，欢迎来到京西！[<a href="<?php echo U('user/login',['reUri'=>CONTROLLER_NAME.'-'.ACTION_NAME]);?>">登录</a>] [<a href="<?php echo U('user/register');?>">免费注册</a>] </li>
+                <?php if(empty($_SESSION['user_id'])): ?><li>您好，欢迎来到京西！[<a href="<?php echo U('user/login',['reUri'=>CONTROLLER_NAME.'-'.ACTION_NAME]);?>">登录</a>] [<a href="<?php echo U('user/regist');?>">免费注册</a>] </li>
                     <?php else: ?>
-                    <li>您好  <span style="color:red"> <?php echo ($_SESSION['user']['level_name']); ?> | <?php echo ($_SESSION['user']['username']); ?></span>，欢迎来到京西！[<a href="<?php echo U('user/logout');?>">退出</a>] [<a href="register.html">免费注册</a>] </li><?php endif; ?>
+                    <li>您好  <span style="color:red"> <?php echo ($_SESSION['user']['level_name']); ?> | <?php echo ($_SESSION['user']['username']); ?></span>，欢迎来到京西！[<a href="<?php echo U('user/logout');?>">退出</a>] [<a href="<?php echo U('user/regist');?>">免费注册</a>] </li><?php endif; ?>
                 <li class="line">|</li>
                 <li>我的订单</li>
                 <li class="line">|</li>

@@ -96,7 +96,7 @@
 							<td>￥{$vo.total_price}</td>
 							<td>{$vo.addtime|date='Y-m-d H:i:s',###}</td>
                             <td><eq name="vo.pay_status" value="1">已支付<else/>未支付</eq></td>
-							<td><eq name="vo.pay_status" value="1">已支付<else/><a href="{:U('order/goOnPay','order_id='.$vo['id'])}">继续支付</a></eq> | <a href="">删除</a></td>
+							<td><eq name="vo.pay_status" value="1">已支付<else/><a href="{:U('order/goOnPay','order_id='.$vo['id'])}">继续支付</a></eq> | <eq name="vo.order_status" value="2"><a href="{:U('order/express','order_id='.$vo['id'])}">查看快递 |</a></eq> <a href="">删除</a></td>
 						</tr>
                     </volist>
                       {$data.page}

@@ -2916,7 +2916,7 @@ vjs.Player.prototype.createEl = function(){
 
 // /* Media Technology (tech)
 // ================================================================================ */
-// Load/Create an instance of playback technlogy including element and API methods
+// Load/Create an instance of playback technlogy including element and Api methods
 // And append playback element in player div.
 vjs.Player.prototype.loadTech = function(techName, source){
 
@@ -2933,7 +2933,7 @@ vjs.Player.prototype.loadTech = function(techName, source){
 
   this.techName = techName;
 
-  // Turn off API access because we're loading a new tech that might load asynchronously
+  // Turn off Api access because we're loading a new tech that might load asynchronously
   this.isReady_ = false;
 
   var techReady = function(){
@@ -2981,7 +2981,7 @@ vjs.Player.prototype.unloadTech = function(){
 
 // There's many issues around changing the size of a Flash (or other plugin) object.
 // First is a plugin reload issue in Firefox that has been around for 11 years: https://bugzilla.mozilla.org/show_bug.cgi?id=90268
-// Then with the new fullscreen API, Mozilla and webkit browsers will reload the flash object after going to fullscreen.
+// Then with the new fullscreen Api, Mozilla and webkit browsers will reload the flash object after going to fullscreen.
 // To get around this, we're unloading the tech, caching source and currentTime values, and reloading the tech once the plugin is resized.
 // reloadTech: function(betweenFn){
 //   vjs.log('unloadingTech')
@@ -3202,7 +3202,7 @@ vjs.Player.prototype.onError = function(e) {
   vjs.log('Video Error', e);
 };
 
-// /* Player API
+// /* Player Api
 // ================================================================================ */
 
 /**
@@ -4012,7 +4012,7 @@ vjs.Player.prototype.listenForUserActivity = function(){
 // currentSrcList: the array of sources including other formats and bitrates
 // playList: array of source lists in order of playback
 
-// RequestFullscreen API
+// RequestFullscreen Api
 (function(){
   var prefix, requestFS, div;
 
@@ -5046,7 +5046,7 @@ vjs.MediaTechController.prototype.features = {
 vjs.media = {};
 
 /**
- * List of default API methods for any MediaTechController
+ * List of default Api methods for any MediaTechController
  * @type {String}
  */
 vjs.media.ApiMethods = 'play,pause,paused,currentTime,setCurrentTime,duration,buffered,volume,setVolume,muted,setMuted,width,height,supportsFullScreen,enterFullScreen,src,load,currentSrc,preload,setPreload,autoplay,setAutoplay,loop,setLoop,error,networkState,readyState,seeking,initialTime,startOffsetTime,played,seekable,ended,videoTracks,audioTracks,videoWidth,videoHeight,textTracks,defaultPlaybackRate,playbackRate,mediaGroup,controller,controls,defaultMuted'.split(',');
@@ -5054,7 +5054,7 @@ vjs.media.ApiMethods = 'play,pause,paused,currentTime,setCurrentTime,duration,bu
 
 function createMethod(methodName){
   return function(){
-    throw new Error('The "'+methodName+'" method is not available on the playback technology\'s API');
+    throw new Error('The "'+methodName+'" method is not available on the playback technology\'s Api');
   };
 }
 
@@ -5063,11 +5063,11 @@ for (var i = vjs.media.ApiMethods.length - 1; i >= 0; i--) {
   vjs.MediaTechController.prototype[vjs.media.ApiMethods[i]] = createMethod(methodName);
 }
 /**
- * @fileoverview HTML5 Media Controller - Wrapper for HTML5 Media API
+ * @fileoverview HTML5 Media Controller - Wrapper for HTML5 Media Api
  */
 
 /**
- * HTML5 Media Controller - Wrapper for HTML5 Media API
+ * HTML5 Media Controller - Wrapper for HTML5 Media Api
  * @param {vjs.Player|Object} player
  * @param {Object=} options
  * @param {Function=} ready
@@ -5110,7 +5110,7 @@ vjs.Html5 = vjs.MediaTechController.extend({
     // Chrome and Safari both have issues with autoplay.
     // In Safari (5.1.1), when we move the video element into the container div, autoplay doesn't work.
     // In Chrome (15), if you have autoplay + a poster + no controls, the video gets hidden (but audio plays)
-    // This fixes both issues. Need to wait for API, so it updates displays correctly
+    // This fixes both issues. Need to wait for Api, so it updates displays correctly
     player.ready(function(){
       if (this.tag && this.options_['autoplay'] && this.paused()) {
         delete this.tag['poster']; // Chrome Fix. Fixed in Chrome v16.
@@ -5356,13 +5356,13 @@ if (vjs.IS_OLD_ANDROID) {
   };
 }
 /**
- * @fileoverview VideoJS-SWF - Custom Flash Player with HTML5-ish API
+ * @fileoverview VideoJS-SWF - Custom Flash Player with HTML5-ish Api
  * https://github.com/zencoder/video-js-swf
  * Not using setupTriggers. Using global onEvent func to distribute events
  */
 
 /**
- * Flash Media Controller - Wrapper for fallback SWF API
+ * Flash Media Controller - Wrapper for fallback SWF Api
  *
  * @param {vjs.Player} player
  * @param {Object=} options
@@ -5547,7 +5547,7 @@ vjs.Flash = vjs.MediaTechController.extend({
           // Update reference to playback technology element
           tech.el_ = el;
 
-          // Make sure swf is actually ready. Sometimes the API isn't actually yet.
+          // Make sure swf is actually ready. Sometimes the Api isn't actually yet.
           vjs.Flash.checkReady(tech);
         });
 
@@ -5729,11 +5729,11 @@ vjs.Flash['onReady'] = function(currSwf){
   vjs.Flash.checkReady(tech);
 };
 
-// The SWF isn't alwasy ready when it says it is. Sometimes the API functions still need to be added to the object.
+// The SWF isn't alwasy ready when it says it is. Sometimes the Api functions still need to be added to the object.
 // If it's not ready, we set a timeout to check again shortly.
 vjs.Flash.checkReady = function(tech){
 
-  // Check if API property exists
+  // Check if Api property exists
   if (tech.el().vjs_getProperty) {
 
     // If so, tell tech it's ready

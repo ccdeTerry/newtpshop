@@ -66,13 +66,17 @@
 						<li>
 							<label for="">确认密码：</label>
 							<input type="password" class="txt" name="password" />
-							<p> <span>请再次输入密码</p>
+							<p> <span>请再次输入密码</span></p>
+						</li>
+						<li>
+							<label for="">手机号：</label>
+							<input type="text" class="txt" name="tel_number" id="tel_number"/>
+							<p> <span>请输入手机号</span></p>
 						</li>
 						<li class="checkcode">
-							<label for="">验证码：</label>
-							<input type="text"  name="checkcode" />
-							<img src="{:U('code')}" alt=""  onclick="this.src='__CONTROLLER__/code/'+Math.random()"/>
-							<span>看不清？<a href="">换一张</a></span>
+							<label for="">短信验证码：</label>
+							<input type="text"  name="telcode" />
+							<input type="button"  value="发送验证码" id="send_check_code" style="height: 30px"/>
 						</li>
 						<li>
 							<label for="">&nbsp;</label>
@@ -127,7 +131,7 @@
 	<!-- 底部版权 end -->
 
 <script type="text/javascript">
-//	$(function () {
+$(function () {
     $('form').submit(function () {
         $(this).ajaxSubmit({
             url:"{:U('regist')}",
@@ -148,7 +152,82 @@
         })
         return false;
     })
-//    })
+    //手机验证码
+    // 绑定点击事件
+    $("#send_check_code").click(function () {
+        //获取手机号码
+        var tel =  $('#tel_number').val();
+        //正则验证手机号码
+        if((/^1[34578]\d{9}$/.test(tel)))
+        {   //ajax发起请求,发送手机验证码
+            $.ajax({
+                url:"{:U('sendCheckCode')}",
+                data:'phone='+tel,
+                type:'post',
+                dataType:'json',
+                success:function(msg){
+                    if(msg.code == 200){
+                        layer.msg(msg.info, {icon:6});
+                        getTime();
+                    }else if(msg.code == 202){
+                        layer.msg(msg.info, {icon:5});
+                    }
+                }
+            })
+        }else{
+            layer.alert('请填写正确手机号', {
+                skin: 'layui-layer-molv' //样式类名
+                ,closeBtn: 0
+            })
+        }
+    })
+    //注册
+/*    $("#register_btn").click(function () {
+        //获取手机号码
+        var tel =  $('#tel_number').val();
+        var tpl_checkCode =  $('#tel_checkCode').val();
+//          console.log(tel);
+        //正则验证手机号码
+        $.ajax({
+            url:"{:U('tel_register')}",
+            data:'user_tel='+tel+'&codeNum='+tpl_checkCode,
+            type:'post',
+            dataType:'json',
+            success:function(msg){
+                if(msg.code == 200){
+                    layer.msg(msg.info, {icon:6});
+                    backUrl =msg.backUrl;
+                    setTimeout( "window.location.href=backUrl",3000);
+                }else if(msg.code == 202){
+                    layer.msg(msg.info, {icon:5});
+                }
+            }
+        })
+
+    })*/
+
+})
+var itime = 59;//定义一个变量，倒计时初始化，从59秒开始
+function getTime(){
+    if(itime>=0){
+        if(itime==0){
+            //倒计时变成0时，
+            //要清除计时器
+            clearTimeout(act);
+            //设置按钮为初始状态
+            $("#send_check_code").val('重新发送');
+            $("#send_check_code").prop("disabled",false);
+            itime=59;
+        }else{
+            //延迟一秒中执行该函数。
+            var act =  setTimeout('getTime()',1000);
+            //把倒计时的秒显示到按钮中
+            $("#send_check_code").val('还剩'+itime+'秒');
+            itime=itime-1;
+            $("#send_check_code").prop("disabled",true);
+        }
+    }
+}
 </script>
 
 </body>

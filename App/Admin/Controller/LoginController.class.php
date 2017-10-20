@@ -19,6 +19,11 @@ class LoginController extends Controller{
      */
     public  function  login(){
         if (IS_GET){
+//            session(null);
+            if (checkLoginIp() ===false){
+                exit('哈哈哈,你无权访问!');
+
+            }
             $this->display();
         }else{
             $admin = D('Admin');

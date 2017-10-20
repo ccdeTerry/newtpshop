@@ -5646,3 +5646,2628 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000550s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000587s ]
 
+[ 2017-10-12T21:13:28+08:00 ] 127.0.0.1 /Admin/goods/goodsadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+SQL: SHOW COLUMNS FROM `jx_type` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `jx_type`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jx_member_level` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `jx_member_level` ORDER BY id  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+NOTIC: [8] Undefined index: level D:\web\new_tpshop\App\Runtime\Cache\Admin\fe98645aa5fadc0c22035a7a5141d794.php 第 132 行.
+NOTIC: [8] Undefined index: level D:\web\new_tpshop\App\Runtime\Cache\Admin\fe98645aa5fadc0c22035a7a5141d794.php 第 132 行.
+NOTIC: [8] Undefined index: level D:\web\new_tpshop\App\Runtime\Cache\Admin\fe98645aa5fadc0c22035a7a5141d794.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010676s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010709s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000399s ]
+
+[ 2017-10-12T21:13:32+08:00 ] 127.0.0.1 /Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000164s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002157s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002442s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028081s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028264s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001219s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001319s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001269s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001344s ]
+
+[ 2017-10-12T21:13:33+08:00 ] 127.0.0.1 /Admin/Index/top.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000895s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001140s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001191s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006522s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006570s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000481s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000522s ]
+
+[ 2017-10-12T21:13:33+08:00 ] 127.0.0.1 /Admin/Index/menu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000692s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008573s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008655s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000445s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000488s ]
+
+[ 2017-10-12T21:13:33+08:00 ] 127.0.0.1 /Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000884s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000230s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010535s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010595s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001155s ]
+
+[ 2017-10-12T21:13:34+08:00 ] 127.0.0.1 /admin/goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001367s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0256s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000242s ]
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 35 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 36 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 37 行.
+NOTIC: [8] Undefined index: is_sale D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 42 行.
+NOTIC: [8] Undefined index: is_sale D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 43 行.
+NOTIC: [8] Undefined index: keyword D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021953s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022031s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000782s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005175s ]
+
+[ 2017-10-12T21:13:51+08:00 ] 127.0.0.1 /Admin/Goods/goodsList/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000962s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001429s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0254s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 5,5   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000239s ]
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 35 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 36 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 37 行.
+NOTIC: [8] Undefined index: is_sale D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 42 行.
+NOTIC: [8] Undefined index: is_sale D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 43 行.
+NOTIC: [8] Undefined index: keyword D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021662s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021738s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000711s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000801s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001452s ]
+
+[ 2017-10-12T21:13:58+08:00 ] 192.168.33.22 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001460s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016043s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016155s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000814s ]
+
+[ 2017-10-12T21:13:59+08:00 ] 192.168.33.22 /Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000957s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001389s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016839s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016942s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000790s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001282s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001376s ]
+
+[ 2017-10-12T21:14:00+08:00 ] 192.168.33.22 /Admin/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000833s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001142s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001836s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-10-12T21:14:00+08:00 ] 127.0.0.1 /Admin/Goods/goodsList/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000980s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001305s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0294s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 10,5   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000264s ]
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 35 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 36 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 37 行.
+NOTIC: [8] Undefined index: is_sale D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 42 行.
+NOTIC: [8] Undefined index: is_sale D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 43 行.
+NOTIC: [8] Undefined index: keyword D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022249s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022338s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000851s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001249s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001329s ]
+
+[ 2017-10-12T21:14:05+08:00 ] 192.168.33.22 /Admin/Login/verify.html?date=1507814059470
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001293s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001679s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001820s ]
+
+[ 2017-10-12T21:14:06+08:00 ] 192.168.33.22 /Admin/Login/verify.html?date=1507814060697
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000942s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001149s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001403s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001517s ]
+
+[ 2017-10-12T21:14:07+08:00 ] 127.0.0.1 /Admin/Goods/goodsList/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001299s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0298s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 5,5   [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000263s ]
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 35 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 36 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 37 行.
+NOTIC: [8] Undefined index: is_sale D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 42 行.
+NOTIC: [8] Undefined index: is_sale D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 43 行.
+NOTIC: [8] Undefined index: keyword D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024271s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024360s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000838s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001303s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001396s ]
+
+[ 2017-10-12T21:14:09+08:00 ] 192.168.33.22 /Admin/Login/verify.html?date=1507814062761
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000836s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001304s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001409s ]
+
+[ 2017-10-12T21:14:10+08:00 ] 127.0.0.1 /Admin/Goods/goodsList/p/2.html?cate_id=&intro_type=0&is_sale=0&keyword=%E5%B0%8F%E8%BE%A3%E6%A4%92+
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001778s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001954s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0321s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 5,5   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010933s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010986s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000530s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000567s ]
+
+[ 2017-10-12T21:14:12+08:00 ] 192.168.33.22 /Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000973s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001339s ]
+SQL: SHOW COLUMNS FROM `jx_admin` [ RunTime:0.0232s ]
+SQL: SELECT * FROM `jx_admin` WHERE `username` = 'zhangxiaorui' LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008445s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008507s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000835s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000921s ]
+
+[ 2017-10-12T21:14:14+08:00 ] 127.0.0.1 /Admin/Goods/goodsList/p/2.html?cate_id=&intro_type=0&is_sale=0&keyword=%E5%B0%8F%E8%BE%A3%E6%A4%92+
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 5,5   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006427s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006458s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000202s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000357s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000380s ]
+
+[ 2017-10-12T21:14:14+08:00 ] 192.168.33.22 /Admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006038s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006087s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000389s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000421s ]
+
+[ 2017-10-12T21:14:14+08:00 ] 192.168.33.22 /Admin/Index/top.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000779s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005277s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005319s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000534s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000575s ]
+
+[ 2017-10-12T21:14:14+08:00 ] 192.168.33.22 /Admin/Index/menu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005703s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005734s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000434s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000473s ]
+
+[ 2017-10-12T21:14:14+08:00 ] 192.168.33.22 /Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004164s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000192s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000343s ]
+
+[ 2017-10-12T21:14:15+08:00 ] 127.0.0.1 /Admin/Goods/goodsList/p/2.html?cate_id=&intro_type=0&is_sale=0&keyword=%E5%B0%8F%E8%BE%A3%E6%A4%92+
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000993s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001302s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0203s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 5,5   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009589s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009635s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000623s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000675s ]
+
+[ 2017-10-12T21:14:15+08:00 ] 192.168.33.22 /admin/goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000940s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001871s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002028s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0307s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 35 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 36 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 37 行.
+NOTIC: [8] Undefined index: is_sale D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 42 行.
+NOTIC: [8] Undefined index: is_sale D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 43 行.
+NOTIC: [8] Undefined index: keyword D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017931s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017991s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000653s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000697s ]
+
+[ 2017-10-12T21:14:17+08:00 ] 127.0.0.1 /admin/goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0109s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 35 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 36 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 37 行.
+NOTIC: [8] Undefined index: is_sale D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 42 行.
+NOTIC: [8] Undefined index: is_sale D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 43 行.
+NOTIC: [8] Undefined index: keyword D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009657s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009692s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000497s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000531s ]
+
+[ 2017-10-12T21:14:19+08:00 ] 192.168.33.22 /Admin/Goods/goodsList/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001879s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0331s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 5,5   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000271s ]
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 35 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 36 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 37 行.
+NOTIC: [8] Undefined index: is_sale D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 42 行.
+NOTIC: [8] Undefined index: is_sale D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 43 行.
+NOTIC: [8] Undefined index: keyword D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021268s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021360s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000655s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000961s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001030s ]
+
+[ 2017-10-12T21:14:23+08:00 ] 127.0.0.1 /admin/goods/goodsList.html?cate_id=&intro_type=0&is_sale=0&keyword=%E5%B0%8F%E8%BE%A3%E6%A4%92+
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002625s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0300s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000216s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000338s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023412s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023530s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000784s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001395s ]
+
+[ 2017-10-12T21:14:25+08:00 ] 127.0.0.1 /admin/goods/goodsList.html?cate_id=&intro_type=0&is_sale=0&keyword=%E5%B0%8F%E8%BE%A3%E6%A4%92+
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001936s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0167s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008904s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008942s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000488s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000531s ]
+
+[ 2017-10-12T21:14:26+08:00 ] 192.168.33.22 /Admin/Goods/goodsList/p/2.html?cate_id=&intro_type=0&is_sale=0&keyword=%E5%86%AC%E6%A2%85
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001026s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001173s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001268s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0265s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 5,5   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000258s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019380s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019466s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000749s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001133s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001212s ]
+
+[ 2017-10-12T21:14:27+08:00 ] 192.168.33.22 /Admin/Goods/goodsList/p/2.html?cate_id=&intro_type=0&is_sale=0&keyword=%E5%86%AC%E6%A2%85
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001334s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0311s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 5,5   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019495s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019570s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000808s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000880s ]
+
+[ 2017-10-12T21:14:28+08:00 ] 192.168.33.22 /Admin/Goods/goodsList/p/2.html?cate_id=&intro_type=0&is_sale=0&keyword=%E5%86%AC%E6%A2%85
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000433s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0091s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 5,5   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007453s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007489s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000529s ]
+
+[ 2017-10-12T21:14:28+08:00 ] 192.168.33.22 /Admin/Goods/goodsList/p/2.html?cate_id=&intro_type=0&is_sale=0&keyword=%E5%86%AC%E6%A2%85
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000480s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 5,5   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006476s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006505s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000393s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000419s ]
+
+[ 2017-10-12T21:14:29+08:00 ] 192.168.33.22 /Admin/Goods/goodsList/p/2.html?cate_id=&intro_type=0&is_sale=0&keyword=%E5%86%AC%E6%A2%85
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001439s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0296s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 5,5   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022083s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022174s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000790s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000846s ]
+
+[ 2017-10-12T21:14:29+08:00 ] 192.168.33.22 /Admin/Goods/goodsList/p/2.html?cate_id=&intro_type=0&is_sale=0&keyword=%E5%86%AC%E6%A2%85
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001366s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0198s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 5,5   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013126s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013186s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000831s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000896s ]
+
+[ 2017-10-12T21:14:30+08:00 ] 192.168.33.22 /Admin/Goods/goodsList/p/2.html?cate_id=&intro_type=0&is_sale=0&keyword=%E5%86%AC%E6%A2%85
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001511s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0239s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 5,5   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000234s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020128s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020259s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001025s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001592s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001707s ]
+
+[ 2017-10-12T21:14:30+08:00 ] 192.168.33.22 /Admin/Goods/goodsList/p/2.html?cate_id=&intro_type=0&is_sale=0&keyword=%E5%86%AC%E6%A2%85
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000971s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001187s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001283s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0271s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 5,5   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013364s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013425s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000788s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000843s ]
+
+[ 2017-10-12T21:14:31+08:00 ] 192.168.33.22 /Admin/Goods/goodsList/p/2.html?cate_id=&intro_type=0&is_sale=0&keyword=%E5%86%AC%E6%A2%85
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000962s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001218s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001327s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0197s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 5,5   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009797s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009847s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000467s ]
+
+[ 2017-10-12T21:14:33+08:00 ] 192.168.33.22 /Admin/Goods/goodsList/p/2.html?cate_id=&intro_type=0&is_sale=0&keyword=%E5%86%AC%E6%A2%85
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000779s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0166s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 5,5   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013847s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013906s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000908s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000968s ]
+
+[ 2017-10-12T21:14:33+08:00 ] 127.0.0.1 /admin/goods/goodsList.html?cate_id=&intro_type=0&is_sale=0&keyword=%E5%B0%8F%E8%BE%A3%E6%A4%92+
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000987s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002378s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0281s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000241s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021530s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021621s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001141s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001225s ]
+
+[ 2017-10-12T21:14:35+08:00 ] 127.0.0.1 /admin/goods/goodsList.html?cate_id=&intro_type=0&is_sale=0&keyword=%E5%B0%8F%E8%BE%A3%E6%A4%92+
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000964s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001176s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001275s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0386s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000181s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000278s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024350s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024468s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001245s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001482s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001558s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001672s ]
+
+[ 2017-10-12T21:14:36+08:00 ] 127.0.0.1 /Admin/Goods/goodsList/intro_type/0/is_sale/0/keyword/%E5%B0%8F%E8%BE%A3%E6%A4%92+/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000443s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 5,5   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007761s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007792s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000509s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000543s ]
+
+[ 2017-10-12T21:14:39+08:00 ] 127.0.0.1 /Admin/Goods/goodsList/intro_type/0/is_sale/0/keyword/%E5%B0%8F%E8%BE%A3%E6%A4%92%2B/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001200s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001301s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0195s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 10,5   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016196s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016283s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000824s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000896s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000924s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000984s ]
+
+[ 2017-10-12T21:14:42+08:00 ] 192.168.33.22 /Admin/Goods/goodsList/p/2.html?cate_id=&intro_type=0&is_sale=0&keyword=%E9%AD%85%E6%97%8F
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001597s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0273s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 5,5   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000246s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019528s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000789s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000854s ]
+
+[ 2017-10-12T21:14:42+08:00 ] 192.168.33.22 /Admin/Goods/goodsList/p/2.html?cate_id=&intro_type=0&is_sale=0&keyword=%E9%AD%85%E6%97%8F
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001159s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001419s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0296s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 5,5   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000260s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027184s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027325s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000957s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001054s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001408s ]
+
+[ 2017-10-12T21:14:44+08:00 ] 192.168.33.22 /Admin/Goods/goodsList/p/1/intro_type/0/is_sale/0/keyword/%E9%AD%85%E6%97%8F.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000958s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001319s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007498s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007527s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000438s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000469s ]
+
+[ 2017-10-12T21:14:45+08:00 ] 192.168.33.22 /Admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000946s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001168s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001264s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014771s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000764s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000840s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001264s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001347s ]
+
+[ 2017-10-12T21:14:45+08:00 ] 192.168.33.22 /Admin/Index/top.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000949s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001154s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000191s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013691s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000943s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001036s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001359s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001457s ]
+
+[ 2017-10-12T21:14:45+08:00 ] 192.168.33.22 /Admin/Index/menu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000792s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000786s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008810s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008853s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000498s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000536s ]
+
+[ 2017-10-12T21:14:45+08:00 ] 192.168.33.22 /Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004054s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004086s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000345s ]
+
+[ 2017-10-12T21:14:46+08:00 ] 192.168.33.22 /admin/goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000336s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 35 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 36 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 37 行.
+NOTIC: [8] Undefined index: is_sale D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 42 行.
+NOTIC: [8] Undefined index: is_sale D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 43 行.
+NOTIC: [8] Undefined index: keyword D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006370s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006393s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000211s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000366s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000391s ]
+
+[ 2017-10-12T21:14:47+08:00 ] 127.0.0.1 /Admin/Goods/goodsList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001361s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0207s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 35 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 36 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 37 行.
+NOTIC: [8] Undefined index: is_sale D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 42 行.
+NOTIC: [8] Undefined index: is_sale D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 43 行.
+NOTIC: [8] Undefined index: keyword D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015637s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015693s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000946s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-10-12T21:14:49+08:00 ] 192.168.33.22 /admin/goods/goodsList.html?cate_id=&intro_type=0&is_sale=0&keyword=%E9%AD%85%E6%97%8F
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000974s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001169s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0241s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000225s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000346s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028682s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028790s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000773s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001177s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001272s ]
+
+[ 2017-10-12T21:14:50+08:00 ] 192.168.33.22 /admin/goods/goodsList.html?cate_id=&intro_type=0&is_sale=0&keyword=%E9%AD%85%E6%97%8F
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000963s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001339s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0172s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008478s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008514s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000451s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000481s ]
+
+[ 2017-10-12T21:14:51+08:00 ] 192.168.33.22 /admin/goods/goodsList.html?cate_id=&intro_type=0&is_sale=0&keyword=%E9%AD%85%E6%97%8F
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001554s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0341s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013975s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014034s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000831s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000910s ]
+
+[ 2017-10-12T21:14:51+08:00 ] 127.0.0.1 /Admin/Goods/goodsList?cate_id=&intro_type=0&is_sale=0&keyword=%E5%B0%8F%E8%BE%A3%E6%A4%92+
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000601s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0101s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006309s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006341s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000199s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000412s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000438s ]
+
+[ 2017-10-12T21:14:51+08:00 ] 192.168.33.22 /admin/goods/goodsList.html?cate_id=&intro_type=0&is_sale=0&keyword=%E9%AD%85%E6%97%8F
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008133s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008174s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000515s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000553s ]
+
+[ 2017-10-12T21:14:52+08:00 ] 192.168.33.22 /admin/goods/goodsList.html?cate_id=&intro_type=0&is_sale=0&keyword=%E9%AD%85%E6%97%8F
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007080s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007113s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000513s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000556s ]
+
+[ 2017-10-12T21:14:55+08:00 ] 192.168.33.22 /admin/goods/goodsList.html?cate_id=3&intro_type=0&is_sale=0&keyword=%E9%AD%85%E6%97%8F
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001366s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0247s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jx_goods_cate` [ RunTime:0.0254s ]
+SQL: SELECT * FROM `jx_goods_cate` WHERE ( cate_id IN (7,8,9,12,3) ) GROUP BY goods_id  [ RunTime:0.0033s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 AND (cate_id IN (7,8,9,12,3) OR id IN (54)) ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 AND (cate_id IN (7,8,9,12,3) OR id IN (54)) ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000241s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022218s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022306s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000773s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001225s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001306s ]
+
+[ 2017-10-12T21:14:57+08:00 ] 192.168.33.22 /admin/goods/goodsList.html?cate_id=3&intro_type=0&is_sale=0&keyword=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001008s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001180s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001278s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0231s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jx_goods_cate` [ RunTime:0.0239s ]
+SQL: SELECT * FROM `jx_goods_cate` WHERE ( cate_id IN (7,8,9,12,3) ) GROUP BY goods_id  [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 AND (cate_id IN (7,8,9,12,3) OR id IN (54)) ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 AND (cate_id IN (7,8,9,12,3) OR id IN (54)) ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018447s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018523s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000760s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000808s ]
+
+[ 2017-10-12T21:14:58+08:00 ] 192.168.33.22 /admin/goods/goodsList.html?cate_id=3&intro_type=0&is_sale=0&keyword=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001181s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001278s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0248s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `jx_goods_cate` [ RunTime:0.0237s ]
+SQL: SELECT * FROM `jx_goods_cate` WHERE ( cate_id IN (7,8,9,12,3) ) GROUP BY goods_id  [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 AND (cate_id IN (7,8,9,12,3) OR id IN (54)) ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 AND (cate_id IN (7,8,9,12,3) OR id IN (54)) ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016270s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016340s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000674s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000715s ]
+
+[ 2017-10-12T21:16:44+08:00 ] 192.168.33.22 /admin/category/cateList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001544s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0253s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014090s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014162s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000861s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001068s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001145s ]
+
+[ 2017-10-12T21:16:46+08:00 ] 192.168.33.22 /admin/goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001009s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001351s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0285s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000270s ]
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 35 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 36 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 37 行.
+NOTIC: [8] Undefined index: is_sale D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 42 行.
+NOTIC: [8] Undefined index: is_sale D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 43 行.
+NOTIC: [8] Undefined index: keyword D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031272s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031385s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000882s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001358s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001475s ]
+
+[ 2017-10-12T21:18:09+08:00 ] 192.168.33.22 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000682s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007766s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007821s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000627s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000668s ]
+
+[ 2017-10-12T21:18:09+08:00 ] 192.168.33.22 /Admin/Index/top.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000635s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007633s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007686s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000624s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000665s ]
+
+[ 2017-10-12T21:18:09+08:00 ] 192.168.33.22 /Admin/Index/menu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000751s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011583s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011638s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000663s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000721s ]
+
+[ 2017-10-12T21:18:09+08:00 ] 192.168.33.22 /Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000645s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007689s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007749s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000638s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000681s ]
+
+[ 2017-10-12T21:18:28+08:00 ] 192.168.33.22 /admin/attribute/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000880s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000859s ]
+ERR: 非法操作:add
+
+[ 2017-10-12T21:18:50+08:00 ] 192.168.33.22 /admin/rule/ruleList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001399s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001828s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001969s ]
+SQL: SHOW COLUMNS FROM `jx_rule` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `jx_rule`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016383s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016463s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000830s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001026s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001090s ]
+
+[ 2017-10-12T21:22:57+08:00 ] 127.0.0.1 /Admin/Goods/goodsList?cate_id=&intro_type=0&is_sale=0&keyword=%E5%B0%8F%E8%BE%A3%E6%A4%92+
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001902s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002073s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0302s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000192s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000319s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033485s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033560s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000846s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001396s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001494s ]
+
+[ 2017-10-12T21:23:07+08:00 ] 127.0.0.1 /Admin/Goods/goodsList?cate_id=&intro_type=0&is_sale=0&keyword=%E5%B0%8F%E8%BE%A3%E6%A4%92+
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000973s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001386s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0254s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000233s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020052s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020142s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000779s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000848s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001193s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001291s ]
+
+[ 2017-10-12T21:23:09+08:00 ] 127.0.0.1 /Admin/Goods/goodsList?cate_id=&intro_type=0&is_sale=0&keyword=%E5%B0%8F%E8%BE%A3%E6%A4%92+
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000941s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001610s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0254s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023408s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023534s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000819s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000890s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001177s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001260s ]
+
+[ 2017-10-12T21:23:10+08:00 ] 127.0.0.1 /Admin/Goods/goodsList?cate_id=&intro_type=0&is_sale=0&keyword=%E5%B0%8F%E8%BE%A3%E6%A4%92+
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001166s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001632s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0330s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000267s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022467s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022557s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000711s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000781s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001759s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001895s ]
+
+[ 2017-10-12T21:23:11+08:00 ] 127.0.0.1 /Admin/Goods/goodsList?cate_id=&intro_type=0&is_sale=0&keyword=%E5%B0%8F%E8%BE%A3%E6%A4%92+
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000968s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001211s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001310s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0255s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017692s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017762s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000816s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000886s ]
+
+[ 2017-10-12T21:23:12+08:00 ] 127.0.0.1 /Admin/Goods/goodsList?cate_id=&intro_type=0&is_sale=0&keyword=%E5%B0%8F%E8%BE%A3%E6%A4%92+
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001187s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001289s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0287s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000279s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023579s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023697s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000837s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000928s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001214s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001297s ]
+
+[ 2017-10-12T21:23:12+08:00 ] 127.0.0.1 /Admin/Goods/goodsList?cate_id=&intro_type=0&is_sale=0&keyword=%E5%B0%8F%E8%BE%A3%E6%A4%92+
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011731s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011779s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000665s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000718s ]
+
+[ 2017-10-12T21:23:35+08:00 ] 127.0.0.1 /Admin/Goods/goodsList?cate_id=&intro_type=0&is_sale=0&keyword=%E5%B0%8F%E8%BE%A3%E6%A4%92+
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001672s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000247s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021642s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021731s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000674s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000743s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001234s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001317s ]
+
+[ 2017-10-12T21:23:41+08:00 ] 127.0.0.1 /Admin/Goods/goodsList?cate_id=&intro_type=0&is_sale=0&keyword=%E5%B0%8F%E8%BE%A3%E6%A4%92+
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000877s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001136s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001251s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0234s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000193s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013646s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013713s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000793s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000849s ]
+
+[ 2017-10-12T21:23:46+08:00 ] 127.0.0.1 /Admin/Goods/goodsList?cate_id=&intro_type=0&is_sale=0&keyword=%E5%B0%8F%E8%BE%A3%E6%A4%92+
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000966s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001190s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001286s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0283s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023279s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023403s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001230s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001391s ]
+
+[ 2017-10-12T21:23:52+08:00 ] 127.0.0.1 /Admin/Goods/goodsList/intro_type/0/is_sale/0/keyword/%E5%B0%8F%E8%BE%A3%E6%A4%92+/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000970s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001364s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0267s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 5,5   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021829s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021941s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000866s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000963s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001699s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001812s ]
+
+[ 2017-10-12T21:23:54+08:00 ] 127.0.0.1 /Admin/Goods/goodsList/intro_type/0/is_sale/0/keyword/%E5%B0%8F%E8%BE%A3%E6%A4%92+/p/2.html?cate_id=&intro_type=0&is_sale=0&keyword=%E5%B0%8F%E8%BE%A3%E6%A4%92%2B
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001160s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001252s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0254s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 5,5   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000241s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021936s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022028s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000851s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001192s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001274s ]
+
+[ 2017-10-12T21:23:57+08:00 ] 127.0.0.1 /Admin/Goods/goodsList/intro_type/0/is_sale/0/keyword/%E5%B0%8F%E8%BE%A3%E6%A4%92+/p/2.html?cate_id=&intro_type=0&is_sale=0&keyword=%E5%B0%8F%E8%BE%A3%E6%A4%92%2B
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000938s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001018s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 5,5   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008926s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008963s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000512s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000547s ]
+
+[ 2017-10-12T21:24:43+08:00 ] 127.0.0.1 /Admin/Goods/goodsList/intro_type/0/is_sale/0/keyword/%E5%B0%8F%E8%BE%A3%E6%A4%92+/p/2.html?cate_id=&intro_type=0&is_sale=0&keyword=%E5%B0%8F%E8%BE%A3%E6%A4%92%2B
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000877s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001142s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0304s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 5,5   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000254s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031489s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031582s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001022s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001103s ]
+
+[ 2017-10-12T21:24:49+08:00 ] 127.0.0.1 /Admin/Goods/goodsList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002154s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002342s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0266s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000176s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000337s ]
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 35 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 36 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 37 行.
+NOTIC: [8] Undefined index: is_sale D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 42 行.
+NOTIC: [8] Undefined index: is_sale D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 43 行.
+NOTIC: [8] Undefined index: keyword D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022334s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022431s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000794s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000872s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001266s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001350s ]
+
+[ 2017-10-12T21:24:58+08:00 ] 127.0.0.1 /Admin/Goods/goodsList?cate_id=&intro_type=0&is_sale=0&keyword=%E5%B0%8F%E8%BE%A3%E6%A4%92
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002110s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002248s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0284s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023982s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024074s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001115s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001702s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001818s ]
+
+[ 2017-10-12T21:26:09+08:00 ] 127.0.0.1 /Admin/Goods/goodsList?cate_id=&intro_type=0&is_sale=0&keyword=%E5%B0%8F%E8%BE%A3%E6%A4%92
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001459s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001319s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0387s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000229s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021599s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021720s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000722s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001123s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001201s ]
+
+[ 2017-10-12T21:26:11+08:00 ] 127.0.0.1 /Admin/Goods/goodsList?cate_id=&intro_type=0&is_sale=0&keyword=%E5%B0%8F%E8%BE%A3%E6%A4%92
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001415s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0520s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000222s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017647s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017704s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000667s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000712s ]
+
+[ 2017-10-12T21:26:14+08:00 ] 127.0.0.1 /Admin/Goods/goodsList?cate_id=&intro_type=is_rec&is_sale=0&keyword=%E5%B0%8F%E8%BE%A3%E6%A4%92
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001147s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001320s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0299s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020818s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020904s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000720s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001158s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001239s ]
+
+[ 2017-10-12T21:26:38+08:00 ] 127.0.0.1 /Admin/Goods/goodsList?cate_id=&intro_type=is_rec&is_sale=0&keyword=%E5%B0%8F%E8%BE%A3%E6%A4%92
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000838s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001129s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0345s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000298s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024530s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024639s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000909s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001301s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001449s ]
+
+[ 2017-10-12T21:26:39+08:00 ] 127.0.0.1 /Admin/Goods/goodsList?cate_id=&intro_type=is_rec&is_sale=0&keyword=%E5%B0%8F%E8%BE%A3%E6%A4%92
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001977s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0318s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000196s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000323s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022070s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022156s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000756s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001149s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001236s ]
+
+[ 2017-10-12T21:26:46+08:00 ] 127.0.0.1 /Admin/Goods/goodsList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002177s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002338s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0197s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 35 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 36 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 37 行.
+NOTIC: [8] Undefined index: is_sale D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 42 行.
+NOTIC: [8] Undefined index: is_sale D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 43 行.
+NOTIC: [8] Undefined index: keyword D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010053s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010092s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000404s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000431s ]
+
+[ 2017-10-12T21:26:50+08:00 ] 127.0.0.1 /Admin/Goods/goodsList?cate_id=&intro_type=0&is_sale=0&keyword=%E5%B0%8F%E8%BE%A3%E6%A4%92+
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001646s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001218s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001317s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0325s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019581s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000880s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000955s ]
+
+[ 2017-10-12T21:27:26+08:00 ] 127.0.0.1 /Admin/Goods/goodsList?cate_id=&intro_type=0&is_sale=0&keyword=%E5%B0%8F%E8%BE%A3%E6%A4%92+
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001531s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0236s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000223s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020099s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000842s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000905s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001275s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001349s ]
+
+[ 2017-10-12T21:27:28+08:00 ] 127.0.0.1 /Admin/Goods/goodsList?cate_id=&intro_type=0&is_sale=0&keyword=%E5%B0%8F%E8%BE%A3%E6%A4%92+
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001301s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0256s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000293s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022024s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022121s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000840s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001189s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001284s ]
+
+[ 2017-10-12T21:27:30+08:00 ] 127.0.0.1 /Admin/Goods/goodsList?cate_id=&intro_type=0&is_sale=0&keyword=%E5%B0%8F%E8%BE%A3%E6%A4%92+
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000950s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001179s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001277s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0252s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000159s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020763s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020854s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001152s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001234s ]
+
+[ 2017-10-12T21:27:30+08:00 ] 127.0.0.1 /Admin/Goods/goodsList?cate_id=&intro_type=0&is_sale=0&keyword=%E5%B0%8F%E8%BE%A3%E6%A4%92+
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000989s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001465s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0275s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000161s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000412s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019715s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019818s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000746s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001164s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001247s ]
+
+[ 2017-10-12T21:27:31+08:00 ] 127.0.0.1 /Admin/Goods/goodsList?cate_id=&intro_type=0&is_sale=0&keyword=%E5%B0%8F%E8%BE%A3%E6%A4%92+
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000328s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0093s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006047s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006076s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000356s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000380s ]
+
+[ 2017-10-12T21:28:17+08:00 ] 127.0.0.1 /Admin/Goods/goodsList?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000985s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001357s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0296s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000236s ]
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 35 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 36 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 37 行.
+NOTIC: [8] Undefined index: is_sale D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 42 行.
+NOTIC: [8] Undefined index: is_sale D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 43 行.
+NOTIC: [8] Undefined index: keyword D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021589s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021688s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000792s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001254s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001348s ]
+
+[ 2017-10-12T21:28:20+08:00 ] 127.0.0.1 /Admin/Goods/goodsList?cate_id=&intro_type=0&is_sale=0&keyword=%E5%B0%8F%E8%BE%A3%E6%A4%92+
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000468s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0004s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'goods_name like '%小辣椒 %' ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1AND goods_name like '%小辣椒 %' ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'goods_name like '%小辣椒 %' ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1AND goods_name like '%小辣椒 %' ) LIMIT 1  
+
+[ 2017-10-12T21:28:35+08:00 ] 127.0.0.1 /Admin/Goods/goodsList?cate_id=&intro_type=0&is_sale=0&keyword=%E5%B0%8F%E8%BE%A3%E6%A4%92+
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000894s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001018s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0214s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 AND goods_name like '%小辣椒 %' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 AND goods_name like '%小辣椒 %' ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000236s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023043s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023124s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000816s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001201s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001293s ]
+
+[ 2017-10-12T21:28:51+08:00 ] 127.0.0.1 /Admin/Goods/goodsList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001961s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0317s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 35 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 36 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 37 行.
+NOTIC: [8] Undefined index: is_sale D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 42 行.
+NOTIC: [8] Undefined index: is_sale D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 43 行.
+NOTIC: [8] Undefined index: keyword D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021684s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021760s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000747s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001809s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002035s ]
+
+[ 2017-10-12T21:28:56+08:00 ] 127.0.0.1 /Admin/Goods/goodsList/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000881s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001223s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0234s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 10,5   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 35 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 36 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 37 行.
+NOTIC: [8] Undefined index: is_sale D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 42 行.
+NOTIC: [8] Undefined index: is_sale D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 43 行.
+NOTIC: [8] Undefined index: keyword D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009972s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010019s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000698s ]
+
+[ 2017-10-12T21:28:59+08:00 ] 127.0.0.1 /Admin/Goods/goodsList/p/3.html?cate_id=&intro_type=0&is_sale=0&keyword=%E5%B0%8F%E8%BE%A3%E6%A4%92+
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001707s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 AND goods_name like '%小辣椒 %' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 AND goods_name like '%小辣椒 %' ) ORDER BY id desc LIMIT 10,5   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000192s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000323s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026128s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026216s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000762s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001236s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001339s ]
+
+[ 2017-10-12T21:29:05+08:00 ] 127.0.0.1 /Admin/Goods/goodsList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003138s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003616s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0261s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000193s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000325s ]
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 35 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 36 行.
+NOTIC: [8] Undefined index: intro_type D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 37 行.
+NOTIC: [8] Undefined index: is_sale D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 42 行.
+NOTIC: [8] Undefined index: is_sale D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 43 行.
+NOTIC: [8] Undefined index: keyword D:\web\new_tpshop\App\Runtime\Cache\Admin\8fff98f1c85a99ba893b50f23831a1d9.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024872s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024980s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001701s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001807s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001526s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001652s ]
+
+[ 2017-10-12T21:29:08+08:00 ] 127.0.0.1 /Admin/Goods/goodsList?cate_id=&intro_type=0&is_sale=0&keyword=%E5%B0%8F%E8%BE%A3%E6%A4%92+
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001780s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0271s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 AND goods_name like '%小辣椒 %' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 AND goods_name like '%小辣椒 %' ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000256s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025194s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025296s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000886s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000965s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001146s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001222s ]
+

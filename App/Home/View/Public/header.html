@@ -8,9 +8,9 @@
 			<div class="topnav_right fr">
 				<ul>
 					<empty name="Think.session.user_id">
-					<li>您好，欢迎来到京西！[<a href="{:U('user/login',['reUri'=>str_replace('/','-',__INFO__)])}">登录</a>] [<a href="{:U('user/register')}">免费注册</a>] </li>
+					<li>您好，欢迎来到京西！[<a href="{:U('user/login',['reUri'=>str_replace('/','-',__INFO__)])}">登录</a>] [<a href="{:U('user/regist')}">免费注册</a>] </li>
                         <else />
-                        <li>您好 <span style="color:red"> {$Think.session.user.level_name} | {$Think.session.user.username}</span>，欢迎来到京西！[<a href="{:U('user/logout')}">退出</a>] [<a href="register.html">免费注册</a>] </li>
+                        <li>您好 <span style="color:red"> {$Think.session.user.level_name} | {$Think.session.user.username}</span>，欢迎来到京西！[<a href="{:U('user/logout')}">退出</a>] [<a href="{:U('user/regist')}">免费注册</a>] </li>
                     </empty>
                     <li class="line">|</li>
 					<li><a href="{:U('Member/myOrder')}">我的订单</a></li>

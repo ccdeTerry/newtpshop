@@ -172,15 +172,17 @@ protected $_validate=[
             }
             //关键词搜索
             //后期可用sphinx代替
-            $keyWord=I('get.keywork');
+            $keyWord=I('get.keyword');
             if ($keyWord){
-                $where .="AND goods_name like '%$keyWord%'";
+                $where .=" AND goods_name like '%$keyWord%'";
             }
+//            dump($where);
             $count    =  $this->where($where)->count();
             $page = new  \Think\Page($count,$offset);
             $show =$page->show();
             $p = intval(I('get.p'));
             $data = $this->where($where)->page($p,$offset)->order('id desc')->select();
+//            echo $this->getLastSql();
             return ['page'=>$show,'list'=>$data];
         }
 

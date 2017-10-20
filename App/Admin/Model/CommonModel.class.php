@@ -30,11 +30,12 @@ class CommonModel extends Model{
      * @return
      */
     protected  function CommonListData($p){
+
         $offset =C('OFFSET');
         $count =$this->count();
         $page = new \Think\Page($count,$offset);
         $show= $page->show();
-        $list = $this->page($p,$offset)->select();
+        $list = $this->page($p,$offset)->order('id desc')->select();
         return ['page'=>$show,'list'=>$list];
     }
 

@@ -4,4 +4,8 @@ RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.*)$ index.php [L,E=PATH_INFO:$1]
+
+#RewriteCond %{HTTP_REFERER} !newshop.com [NC]
+#RewriteRule .(jpg|gif|png|jpeg) /Public/resources/image/excuseme.jpg [R,NC,L]
+#RewriteRule ^(.*)$ http://image.simcole.cn/image/$1 [L]
 </IfModule>

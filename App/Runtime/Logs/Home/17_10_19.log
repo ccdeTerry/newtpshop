@@ -1,0 +1,51 @@
+[ 2017-10-19T14:29:15+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001155s ]
+ERR: SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+
+[ 2017-10-19T14:29:36+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+ERR: SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+
+[ 2017-10-19T14:29:39+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000698s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0935s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.9668s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_hot` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0905s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_new` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0865s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_rec` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0884s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 AND cx_price>0 AND start <1508394578 AND end > 1508394578 ) LIMIT 5   [ RunTime:0.3918s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0972s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.3763s ]
+SQL: SHOW COLUMNS FROM `jx_goods` [ RunTime:0.0932s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (8,9,12,7) ) LIMIT 8   [ RunTime:0.0918s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0915s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (13,10) ) LIMIT 8   [ RunTime:0.1719s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.3789s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (11) ) LIMIT 8   [ RunTime:0.0906s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001210s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001288s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028517s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028668s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002691s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002804s ]
+

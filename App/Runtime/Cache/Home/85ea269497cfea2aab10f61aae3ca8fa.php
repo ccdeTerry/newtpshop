@@ -25,9 +25,9 @@
 			</div>
 			<div class="topnav_right fr">
 				<ul>
-					<?php if(empty($_SESSION['user_id'])): ?><li>您好，欢迎来到京西！[<a href="<?php echo U('user/login',['reUri'=>str_replace('/','-',__INFO__)]);?>">登录</a>] [<a href="<?php echo U('user/register');?>">免费注册</a>] </li>
+					<?php if(empty($_SESSION['user_id'])): ?><li>您好，欢迎来到京西！[<a href="<?php echo U('user/login',['reUri'=>str_replace('/','-',__INFO__)]);?>">登录</a>] [<a href="<?php echo U('user/regist');?>">免费注册</a>] </li>
                         <?php else: ?>
-                        <li>您好 <span style="color:red"> <?php echo ($_SESSION['user']['level_name']); ?> | <?php echo ($_SESSION['user']['username']); ?></span>，欢迎来到京西！[<a href="<?php echo U('user/logout');?>">退出</a>] [<a href="register.html">免费注册</a>] </li><?php endif; ?>
+                        <li>您好 <span style="color:red"> <?php echo ($_SESSION['user']['level_name']); ?> | <?php echo ($_SESSION['user']['username']); ?></span>，欢迎来到京西！[<a href="<?php echo U('user/logout');?>">退出</a>] [<a href="<?php echo U('user/regist');?>">免费注册</a>] </li><?php endif; ?>
                     <li class="line">|</li>
 					<li><a href="<?php echo U('Member/myOrder');?>">我的订单</a></li>
 					<li class="line">|</li>
@@ -253,7 +253,7 @@
 							<td>￥<?php echo ($vo["total_price"]); ?></td>
 							<td><?php echo (date('Y-m-d H:i:s',$vo["addtime"])); ?></td>
                             <td><?php if(($vo["pay_status"]) == "1"): ?>已支付<?php else: ?>未支付<?php endif; ?></td>
-							<td><?php if(($vo["pay_status"]) == "1"): ?>已支付<?php else: ?><a href="<?php echo U('order/goOnPay','order_id='.$vo['id']);?>">继续支付</a><?php endif; ?> | <a href="">删除</a></td>
+							<td><?php if(($vo["pay_status"]) == "1"): ?>已支付<?php else: ?><a href="<?php echo U('order/goOnPay','order_id='.$vo['id']);?>">继续支付</a><?php endif; ?> | <?php if(($vo["order_status"]) == "2"): ?><a href="<?php echo U('order/express','order_id='.$vo['id']);?>">查看快递 |</a><?php endif; ?> <a href="">删除</a></td>
 						</tr><?php endforeach; endif; else: echo "" ;endif; ?>
                       <?php echo ($data["page"]); ?>
 					</tbody>

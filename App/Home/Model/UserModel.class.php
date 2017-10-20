@@ -79,4 +79,34 @@ class UserModel extends Model{
         $userId = session('user_id');
         $this->where(['id'=>$userId])->setInc('jifen',floor($jifen));
     }
+
+    /**
+     * qqLogin qq登录
+     * * @param $userInfo qq用户信息
+     * author :Terry
+     * return :
+     */
+    public function qqLogin($userInfo,$open_id){
+
+          $data =   $this->where(['open_id'=>$open_id])->find();
+          if (!$data){
+                $salt = rand(100000,999999);
+                $db_password =md5(md5('123456').$salt);
+                $data =[
+                    'username'=>'qquser_'.$userInfo['nickname'],
+                    'password'=>$db_password,
+                    'salt'=>$salt,
+                    'open_id'=>$open_id,
+                    'status'=>1
+                ];
+                $data['id']=$this->add($data);
+
+          }
+        session('user',$data);
+        session('user_id',$data['id']);
+        if (cookie('cart')){
+            D('Cart')->cookieGoodsToDb();
+        }
+        return true;
+    }
 }

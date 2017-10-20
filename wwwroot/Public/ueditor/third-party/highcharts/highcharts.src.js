@@ -13725,7 +13725,7 @@ Series.prototype = {
 				
 			point.negative = point.y < (threshold || 0);
 
-			// some API data
+			// some Api data
 			point.category = categories && categories[point.x] !== UNDEFINED ?
 				categories[point.x] : point.x;
 
@@ -14062,9 +14062,9 @@ Series.prototype = {
 	},
 
 	/**
-	 * Convert state properties from API naming conventions to SVG attributes
+	 * Convert state properties from Api naming conventions to SVG attributes
 	 *
-	 * @param {Object} options API options object
+	 * @param {Object} options Api options object
 	 * @param {Object} base1 SVG attribute object to inherit from
 	 * @param {Object} base2 Second level SVG attribute object to inherit from
 	 */

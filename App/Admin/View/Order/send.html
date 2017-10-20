@@ -1,0 +1,72 @@
+<extend name="Public:base"/>
+<block name="title">ECSHOP 管理中心 - 分类添加 </block>
+<block name="header">
+    <span class="action-span"><a href="#">商品分类</a></span>
+    <span class="action-span1"><a href="#">ECSHOP 管理中心</a></span>
+    <span id="search_id" class="action-span1"> - 添加分类 </span>
+    <div style="clear:both"></div>
+</block>
+<block name="body">
+<style type="text/css">
+.main-div table {background: #BBDDE5;}
+</style>
+    <form action="" method="post" name="theForm" enctype="multipart/form-data">
+       <div class="list-div">
+            <table width="100%" cellpadding="3" cellspacing="1">
+            <tbody>
+                <tr>
+                    <th colspan="4">订单信息</th>
+                </tr>
+                <tr>
+                    <td align="right" width="18%">订单号:</td>
+                    <td align="left" width="34%">{$detail.id}</td>
+                    <td align="right" width="15%">订单金额:</td>
+                    <td align="left">{$detail.total_price}</td>
+                </tr>
+                <tr>
+                    <td align="right" width="18%">下单时间:</td>
+                    <td align="left" width="34%">{$detail.addtime|date='Y-m-d H:i:s',###}</td>
+                    <td align="right" width="15%">订单状态:</td>
+                    <td align="left"><eq name="detail.pay_status" value="1">已付款<else/>未付款</eq>|<eq name="dateil.order_status" value="2">已发货<else/>未发货</eq></td>
+                </tr>
+                <tr>
+                    <td align="right" width="18%">收货人:</td>
+                    <td align="left" width="34%">{$detail.name}</td>
+                    <td align="right" width="15%">收货地址:</td>
+                    <td align="left">{$detail.address}</td>
+                </tr>
+                <tr>
+                    <td align="right" width="18%">联系电话:</td>
+                    <td align="left" width="34%">{$detail.tel}</td>
+                    <td align="right" width="15%">下单人:</td>
+                    <td align="left">{$detail.username}</td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+        <div class="list-div">
+            <table width="100%" cellpadding="3" cellspacing="1">
+                <tr>
+                    <th colspan="4">发货信息</th>
+                </tr>
+                <tr>
+                    <td class="label">快递代号:</td>
+                    <td>
+                        <input type='text' name='com' value=''  /> 
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">快递单号:</td>
+                    <td>
+                        <input type='text' name='no'  value=''  /> 
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <input type="hidden" name="id" value="{$detail.id}">
+        <div class="button-div">
+            <input type="submit" value=" 确定 " />
+            <input type="reset" value=" 重置 " />
+        </div>
+    </form>
+</block>

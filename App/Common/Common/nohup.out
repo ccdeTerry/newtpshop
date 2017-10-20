@@ -1,0 +1,12 @@
+PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/lib/php/20151012/php_curl.dll' - /usr/lib/php/20151012/php_curl.dll: cannot open shared object file: No such file or directory in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/lib/php/20151012/php_gd2.dll' - /usr/lib/php/20151012/php_gd2.dll: cannot open shared object file: No such file or directory in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/lib/php/20151012/php_mbstring.dll' - /usr/lib/php/20151012/php_mbstring.dll: cannot open shared object file: No such file or directory in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/lib/php/20151012/php_mysqli.dll' - /usr/lib/php/20151012/php_mysqli.dll: cannot open shared object file: No such file or directory in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/lib/php/20151012/php_openssl.dll' - /usr/lib/php/20151012/php_openssl.dll: cannot open shared object file: No such file or directory in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/lib/php/20151012/php_pdo_mysql.dll' - /usr/lib/php/20151012/php_pdo_mysql.dll: cannot open shared object file: No such file or directory in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/lib/php/20151012/php_sockets.dll' - /usr/lib/php/20151012/php_sockets.dll: cannot open shared object file: No such file or directory in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/lib/php/20151012/php_xmlrpc.dll' - /usr/lib/php/20151012/php_xmlrpc.dll: cannot open shared object file: No such file or directory in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/lib/php/20151012/php_xsl.dll' - /usr/lib/php/20151012/php_xsl.dll: cannot open shared object file: No such file or directory in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/lib/php/20151012/swoole.dll' - /usr/lib/php/20151012/swoole.dll: cannot open shared object file: No such file or directory in Unknown on line 0
+[2017-10-17 07:42:13 @13424.0]	WARNING	swSocket_bind: bind(192.168.101.101:0) failed. Error: Address already in use [98]
+PHP Fatal error:  Swoole\Server::__construct(): listen server port failed. in /usr/share/nginx/www/newtpshop/tpshop/App/Common/Common/swoole.php on line 12

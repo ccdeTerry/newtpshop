@@ -93,6 +93,7 @@ class OrderModel extends Model{
         $show =$page->show();
         $p = intval(I('get.p'));
         $data = $this->order('id desc')->where(['user_id'=>$user_id])->page($p,$offset)->select();
+//        dump($data);
         return ['page'=>$show,'list'=>$data];
     }
 }
