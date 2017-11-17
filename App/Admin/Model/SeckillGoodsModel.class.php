@@ -350,7 +350,4 @@ class SeckillGoodsModel extends CommonModel{
     public function  delTodaySeckill(){
         $this->redisObj->del($this->seckill_key_px.'*');
     }
-
-
-
 }
