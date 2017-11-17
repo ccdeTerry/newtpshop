@@ -1,0 +1,2736 @@
+[ 2017-11-01T09:24:46+08:00 ] 192.168.101.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000811s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0404s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0306s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_hot` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0292s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_new` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0346s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_rec` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0331s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 AND cx_price>0 AND start <1509499486 AND end > 1509499486 ) LIMIT 5   [ RunTime:0.0310s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0310s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0298s ]
+SQL: SHOW COLUMNS FROM `jx_goods` [ RunTime:0.0386s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (8,9,12,7) ) LIMIT 8   [ RunTime:0.0277s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0333s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (13,10) ) LIMIT 8   [ RunTime:0.0324s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0269s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (11) ) LIMIT 8   [ RunTime:0.0372s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031678s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031713s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002337s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002367s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003375s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003405s ]
+
+[ 2017-11-01T09:25:46+08:00 ] 192.168.101.1 /Category/index/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000634s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001050s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0352s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0443s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0638s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( is_sale=1 and  cate_id in (10,13,11,5) ) LIMIT 1   [ RunTime:0.0307s ]
+SQL: SELECT max(shop_price) as max_price,min(shop_price) as min_price,count(id) as goods_count,group_concat(id) goods_ids FROM `jx_goods` WHERE ( is_sale=1 and  cate_id in (10,13,11,5) ) LIMIT 1   [ RunTime:0.0318s ]
+NOTIC: [8] Use of undefined constant goodInfo - assumed 'goodInfo' /usr/share/nginx/www/newtpshop/tpshop/App/Admin/Model/GoodsModel.class.php 第 393 行.
+NOTIC: [2] Illegal string offset 'min_price' /usr/share/nginx/www/newtpshop/tpshop/App/Admin/Model/GoodsModel.class.php 第 393 行.
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and  cate_id in (10,13,11,5) ) ORDER BY sale_number desc LIMIT 0,6   [ RunTime:0.0343s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+NOTIC: [8] Undefined index: price /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Home/2b9b1b94dd752db398cbb48671392224.php 第 391 行.
+NOTIC: [8] Undefined index: price /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Home/2b9b1b94dd752db398cbb48671392224.php 第 391 行.
+NOTIC: [8] Undefined index: price /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Home/2b9b1b94dd752db398cbb48671392224.php 第 391 行.
+NOTIC: [8] Undefined index: price /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Home/2b9b1b94dd752db398cbb48671392224.php 第 391 行.
+NOTIC: [8] Undefined index: sort /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Home/2b9b1b94dd752db398cbb48671392224.php 第 426 行.
+NOTIC: [8] Use of undefined constant sale_number - assumed 'sale_number' /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Home/2b9b1b94dd752db398cbb48671392224.php 第 426 行.
+NOTIC: [8] Undefined index: sort /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Home/2b9b1b94dd752db398cbb48671392224.php 第 426 行.
+NOTIC: [8] Undefined index: sort /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Home/2b9b1b94dd752db398cbb48671392224.php 第 427 行.
+NOTIC: [8] Undefined index: sort /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Home/2b9b1b94dd752db398cbb48671392224.php 第 428 行.
+NOTIC: [8] Undefined index: sort /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Home/2b9b1b94dd752db398cbb48671392224.php 第 429 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020265s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020291s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001231s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001261s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002328s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002363s ]
+
+[ 2017-11-01T09:25:46+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_597415fa7dc78.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+
+[ 2017-11-01T09:25:46+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_5974163c73d2a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-11-01T09:25:46+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_5974166b57889.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+
+[ 2017-11-01T09:25:46+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_5974169944be9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+
+[ 2017-11-01T09:25:47+08:00 ] 192.168.101.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001310s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0318s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0293s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_hot` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0326s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_new` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0346s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_rec` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0332s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 AND cx_price>0 AND start <1509499547 AND end > 1509499547 ) LIMIT 5   [ RunTime:0.0356s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0283s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0299s ]
+SQL: SHOW COLUMNS FROM `jx_goods` [ RunTime:0.0292s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (8,9,12,7) ) LIMIT 8   [ RunTime:0.0314s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0300s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (13,10) ) LIMIT 8   [ RunTime:0.0393s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0291s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (11) ) LIMIT 8   [ RunTime:0.0369s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016989s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017032s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000328s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000346s ]
+
+[ 2017-11-01T09:25:53+08:00 ] 192.168.101.1 /Goods/index/goods_id/54.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000816s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0282s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0303s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `id` = 54 LIMIT 1   [ RunTime:0.0342s ]
+SQL: SHOW COLUMNS FROM `jx_goods_img` [ RunTime:0.0315s ]
+SQL: SELECT * FROM `jx_goods_img` WHERE `goods_id` = 54  [ RunTime:0.0300s ]
+SQL: SHOW COLUMNS FROM `jx_goods_attr` [ RunTime:0.0282s ]
+SQL: SELECT a.*,b.attr_name,b.attr_type FROM jx_goods_attr a left join jx_attribute b on a.attr_id=b.id  WHERE a.goods_id = 54  [ RunTime:0.0292s ]
+NOTIC: [2] Declaration of Home\Model\CommentModel::_before_insert(&$data) should be compatible with Think\Model::_before_insert(&$data, $options) /usr/share/nginx/www/newtpshop/tpshop/App/Home/Model/CommentModel.class.php 第 0 行.
+NOTIC: [2] Declaration of Home\Model\CommentModel::_after_insert($data) should be compatible with Think\Model::_after_insert($data, $options) /usr/share/nginx/www/newtpshop/tpshop/App/Home/Model/CommentModel.class.php 第 0 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_comment` WHERE `goods_id` = 54 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT c.*,u.username FROM jx_comment c left join jx_user as u on u.id=c.user_id  WHERE `goods_id` = 54 ORDER BY addtime desc LIMIT 0,6   [ RunTime:0.0291s ]
+SQL: SHOW COLUMNS FROM `jx_impression` [ RunTime:0.0305s ]
+SQL: SELECT * FROM `jx_impression` WHERE `goods_id` = 54 ORDER BY count desc LIMIT 8   [ RunTime:0.0291s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000180s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+NOTIC: [8] Undefined index: plcount /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Home/87af2d4b492c651ae1e9a3042e753ad6.php 第 361 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021965s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001064s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000767s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000789s ]
+
+[ 2017-11-01T09:25:54+08:00 ] 192.168.101.1 /Uploads/2017-07-23/597415faa11d1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+
+[ 2017-11-01T09:25:54+08:00 ] 192.168.101.1 /Uploads/2017-07-23/597415fa9f50b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+
+[ 2017-11-01T09:25:54+08:00 ] 192.168.101.1 /Uploads/2017-07-23/597415faa039a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+
+[ 2017-11-01T09:26:40+08:00 ] 192.168.101.1 /Goods/index/goods_id/54.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000957s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001362s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `id` = 54 LIMIT 1   [ RunTime:0.0003s ]
+ERR: Class 'Redis' not found
+
+[ 2017-11-01T15:15:01+08:00 ] 192.168.101.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001681s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002876s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_hot` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_new` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_rec` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+ERR: 1054:Unknown column 'cx_price' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `jx_goods` WHERE ( is_sale=1 AND cx_price>0 AND start <1509520501 AND end > 1509520501 ) LIMIT 5  
+ERR: 1054:Unknown column 'cx_price' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `jx_goods` WHERE ( is_sale=1 AND cx_price>0 AND start <1509520501 AND end > 1509520501 ) LIMIT 5  
+
+[ 2017-11-01T15:15:02+08:00 ] 192.168.101.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-11-01T15:18:20+08:00 ] 192.168.101.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000847s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001293s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_hot` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_new` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_rec` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 AND cx_price>0 AND start <1509520700 AND end > 1509520700 ) LIMIT 5   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_goods` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (8,9,12,7) ) LIMIT 8   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (13,10) ) LIMIT 8   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (11) ) LIMIT 8   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031114s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031150s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002623s ]
+
+[ 2017-11-01T15:18:20+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+
+[ 2017-11-01T15:18:20+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc5631bd88.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+
+[ 2017-11-01T15:18:20+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_5974163c73d2a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+
+[ 2017-11-01T15:18:20+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_5974169944be9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+
+[ 2017-11-01T15:18:20+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_597415fa7dc78.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+
+[ 2017-11-01T15:18:20+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_5974166b57889.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+
+[ 2017-11-01T15:18:26+08:00 ] 192.168.101.1 /Goods/index/goods_id/64.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000978s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001635s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `id` = 64 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jx_goods_img` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `jx_goods_img` WHERE `goods_id` = 64  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jx_goods_attr` [ RunTime:0.0008s ]
+SQL: SELECT a.*,b.attr_name,b.attr_type FROM jx_goods_attr a left join jx_attribute b on a.attr_id=b.id  WHERE a.goods_id = 64  [ RunTime:0.0004s ]
+NOTIC: [2] Declaration of Home\Model\CommentModel::_before_insert(&$data) should be compatible with Think\Model::_before_insert(&$data, $options) /usr/share/nginx/www/newtpshop/tpshop/App/Home/Model/CommentModel.class.php 第 0 行.
+NOTIC: [2] Declaration of Home\Model\CommentModel::_after_insert($data) should be compatible with Think\Model::_after_insert($data, $options) /usr/share/nginx/www/newtpshop/tpshop/App/Home/Model/CommentModel.class.php 第 0 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_comment` WHERE `goods_id` = 64 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT c.*,u.username FROM jx_comment c left join jx_user as u on u.id=c.user_id  WHERE `goods_id` = 64 ORDER BY addtime desc LIMIT 0,6   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `jx_impression` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jx_impression` WHERE `goods_id` = 64 ORDER BY count desc LIMIT 8   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+NOTIC: [2] file_put_contents(../App/Runtime/Cache/Home/87af2d4b492c651ae1e9a3042e753ad6.php): failed to open stream: Permission denied /usr/share/nginx/www/newtpshop/tpshop/ThinkPHP/Library/Think/Storage/Driver/File.class.php 第 47 行.
+ERR: _STORAGE_WRITE_ERROR_:../App/Runtime/Cache/Home/87af2d4b492c651ae1e9a3042e753ad6.php
+
+[ 2017-11-01T15:18:55+08:00 ] 192.168.101.1 /Goods/index/goods_id/64.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000928s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000953s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `id` = 64 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_goods_img` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jx_goods_img` WHERE `goods_id` = 64  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_goods_attr` [ RunTime:0.0004s ]
+SQL: SELECT a.*,b.attr_name,b.attr_type FROM jx_goods_attr a left join jx_attribute b on a.attr_id=b.id  WHERE a.goods_id = 64  [ RunTime:0.0001s ]
+NOTIC: [2] Declaration of Home\Model\CommentModel::_before_insert(&$data) should be compatible with Think\Model::_before_insert(&$data, $options) /usr/share/nginx/www/newtpshop/tpshop/App/Home/Model/CommentModel.class.php 第 0 行.
+NOTIC: [2] Declaration of Home\Model\CommentModel::_after_insert($data) should be compatible with Think\Model::_after_insert($data, $options) /usr/share/nginx/www/newtpshop/tpshop/App/Home/Model/CommentModel.class.php 第 0 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_comment` WHERE `goods_id` = 64 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT c.*,u.username FROM jx_comment c left join jx_user as u on u.id=c.user_id  WHERE `goods_id` = 64 ORDER BY addtime desc LIMIT 0,6   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_impression` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jx_impression` WHERE `goods_id` = 64 ORDER BY count desc LIMIT 8   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+NOTIC: [8] Undefined offset: 0 /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Home/87af2d4b492c651ae1e9a3042e753ad6.php 第 328 行.
+NOTIC: [8] Undefined offset: 0 /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Home/87af2d4b492c651ae1e9a3042e753ad6.php 第 329 行.
+NOTIC: [8] Undefined index: plcount /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Home/87af2d4b492c651ae1e9a3042e753ad6.php 第 357 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019379s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019409s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001076s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001110s ]
+
+[ 2017-11-01T15:18:55+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+
+[ 2017-11-01T15:18:55+08:00 ] 192.168.101.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_hot` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_new` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_rec` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 AND cx_price>0 AND start <1509520735 AND end > 1509520735 ) LIMIT 5   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_goods` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (8,9,12,7) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (13,10) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (11) ) LIMIT 8   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000887s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000942s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045925s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045977s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001454s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001487s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001197s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001231s ]
+
+[ 2017-11-01T15:22:19+08:00 ] 192.168.101.1 /Goods/index/goods_id/65.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000617s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000816s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `id` = 65 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-11-01T15:22:19+08:00 ] 192.168.101.1 /Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000037s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_hot` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_new` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_rec` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 AND cx_price>0 AND start <1509520939 AND end > 1509520939 ) LIMIT 5   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_goods` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (8,9,12,7) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (13,10) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (11) ) LIMIT 8   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023775s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001036s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001051s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000826s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000849s ]
+
+[ 2017-11-01T15:22:19+08:00 ] 192.168.101.1 /Index/Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+
+[ 2017-11-01T15:22:19+08:00 ] 192.168.101.1 /Index/Uploads/2017-10-10/thumb_59dcc5631bd88.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+
+[ 2017-11-01T15:22:19+08:00 ] 192.168.101.1 /Index/Uploads/2017-10-08/thumb_59da01fe9a7e8.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+
+[ 2017-11-01T15:22:19+08:00 ] 192.168.101.1 /Index/Uploads/2017-07-23/thumb_5974169944be9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+
+[ 2017-11-01T15:22:19+08:00 ] 192.168.101.1 /Index/Uploads/2017-07-23/thumb_5974163c73d2a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+
+[ 2017-11-01T15:22:19+08:00 ] 192.168.101.1 /Index/Uploads/2017-07-23/thumb_597415fa7dc78.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006423s ]
+
+[ 2017-11-01T15:22:19+08:00 ] 192.168.101.1 /Index/Uploads/2017-07-23/thumb_5974166b57889.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+
+[ 2017-11-01T15:22:19+08:00 ] 192.168.101.1 /Index/Uploads/2017-07-23/thumb_5974169944be9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+
+[ 2017-11-01T15:22:19+08:00 ] 192.168.101.1 /Index/Uploads/2017-10-08/thumb_59da01fe9a7e8.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+
+[ 2017-11-01T15:22:19+08:00 ] 192.168.101.1 /Index/Uploads/2017-10-10/thumb_59dcc5631bd88.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+
+[ 2017-11-01T15:22:19+08:00 ] 192.168.101.1 /Index/Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+
+[ 2017-11-01T15:22:25+08:00 ] 192.168.101.1 /Goods/index/goods_id/63.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000882s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001406s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `id` = 63 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jx_goods_img` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jx_goods_img` WHERE `goods_id` = 63  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jx_goods_attr` [ RunTime:0.0004s ]
+SQL: SELECT a.*,b.attr_name,b.attr_type FROM jx_goods_attr a left join jx_attribute b on a.attr_id=b.id  WHERE a.goods_id = 63  [ RunTime:0.0002s ]
+NOTIC: [2] Declaration of Home\Model\CommentModel::_before_insert(&$data) should be compatible with Think\Model::_before_insert(&$data, $options) /usr/share/nginx/www/newtpshop/tpshop/App/Home/Model/CommentModel.class.php 第 0 行.
+NOTIC: [2] Declaration of Home\Model\CommentModel::_after_insert($data) should be compatible with Think\Model::_after_insert($data, $options) /usr/share/nginx/www/newtpshop/tpshop/App/Home/Model/CommentModel.class.php 第 0 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_comment` WHERE `goods_id` = 63 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT c.*,u.username FROM jx_comment c left join jx_user as u on u.id=c.user_id  WHERE `goods_id` = 63 ORDER BY addtime desc LIMIT 0,6   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jx_impression` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jx_impression` WHERE `goods_id` = 63 ORDER BY count desc LIMIT 8   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+NOTIC: [8] Undefined index: plcount /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Home/87af2d4b492c651ae1e9a3042e753ad6.php 第 357 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035058s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035088s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001633s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001652s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001015s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001065s ]
+
+[ 2017-11-01T15:22:25+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+
+[ 2017-11-01T15:22:25+08:00 ] 192.168.101.1 /Uploads/2017-10-10/59dcc5632f252.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+
+[ 2017-11-01T15:22:25+08:00 ] 192.168.101.1 /Uploads/2017-10-10/59dcc56330735.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+
+[ 2017-11-01T15:22:25+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc5631bd88.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+
+[ 2017-11-01T15:22:25+08:00 ] 192.168.101.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.002036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005139s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003384s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_hot` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_new` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_rec` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 AND cx_price>0 AND start <1509520945 AND end > 1509520945 ) LIMIT 5   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_goods` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (8,9,12,7) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (13,10) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (11) ) LIMIT 8   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000239s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058363s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058420s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001705s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001746s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001815s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001856s ]
+
+[ 2017-11-01T15:22:41+08:00 ] 192.168.101.1 /Goods/index/goods_id/64.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000628s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001144s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001177s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `id` = 64 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jx_goods_img` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_goods_img` WHERE `goods_id` = 64  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_goods_attr` [ RunTime:0.0003s ]
+SQL: SELECT a.*,b.attr_name,b.attr_type FROM jx_goods_attr a left join jx_attribute b on a.attr_id=b.id  WHERE a.goods_id = 64  [ RunTime:0.0001s ]
+NOTIC: [2] Declaration of Home\Model\CommentModel::_before_insert(&$data) should be compatible with Think\Model::_before_insert(&$data, $options) /usr/share/nginx/www/newtpshop/tpshop/App/Home/Model/CommentModel.class.php 第 0 行.
+NOTIC: [2] Declaration of Home\Model\CommentModel::_after_insert($data) should be compatible with Think\Model::_after_insert($data, $options) /usr/share/nginx/www/newtpshop/tpshop/App/Home/Model/CommentModel.class.php 第 0 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_comment` WHERE `goods_id` = 64 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT c.*,u.username FROM jx_comment c left join jx_user as u on u.id=c.user_id  WHERE `goods_id` = 64 ORDER BY addtime desc LIMIT 0,6   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_impression` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_impression` WHERE `goods_id` = 64 ORDER BY count desc LIMIT 8   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+NOTIC: [8] Undefined offset: 0 /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Home/87af2d4b492c651ae1e9a3042e753ad6.php 第 328 行.
+NOTIC: [8] Undefined offset: 0 /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Home/87af2d4b492c651ae1e9a3042e753ad6.php 第 329 行.
+NOTIC: [8] Undefined index: plcount /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Home/87af2d4b492c651ae1e9a3042e753ad6.php 第 357 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018521s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018551s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000705s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000799s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000834s ]
+
+[ 2017-11-01T15:22:41+08:00 ] 192.168.101.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000584s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_hot` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_new` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_rec` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 AND cx_price>0 AND start <1509520961 AND end > 1509520961 ) LIMIT 5   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_goods` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (8,9,12,7) ) LIMIT 8   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (13,10) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (11) ) LIMIT 8   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029511s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029561s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001163s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001207s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001017s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001057s ]
+
+[ 2017-11-01T15:22:41+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+
+[ 2017-11-01T15:22:41+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc5631bd88.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000039s ]
+
+[ 2017-11-01T15:22:42+08:00 ] 192.168.101.1 /Public/resources/Home/images/zoomloader.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+
+[ 2017-11-01T15:22:49+08:00 ] 192.168.101.1 /Goods/index/goods_id/63.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000631s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `id` = 63 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jx_goods_img` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_goods_img` WHERE `goods_id` = 63  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_goods_attr` [ RunTime:0.0004s ]
+SQL: SELECT a.*,b.attr_name,b.attr_type FROM jx_goods_attr a left join jx_attribute b on a.attr_id=b.id  WHERE a.goods_id = 63  [ RunTime:0.0001s ]
+NOTIC: [2] Declaration of Home\Model\CommentModel::_before_insert(&$data) should be compatible with Think\Model::_before_insert(&$data, $options) /usr/share/nginx/www/newtpshop/tpshop/App/Home/Model/CommentModel.class.php 第 0 行.
+NOTIC: [2] Declaration of Home\Model\CommentModel::_after_insert($data) should be compatible with Think\Model::_after_insert($data, $options) /usr/share/nginx/www/newtpshop/tpshop/App/Home/Model/CommentModel.class.php 第 0 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_comment` WHERE `goods_id` = 63 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT c.*,u.username FROM jx_comment c left join jx_user as u on u.id=c.user_id  WHERE `goods_id` = 63 ORDER BY addtime desc LIMIT 0,6   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_impression` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_impression` WHERE `goods_id` = 63 ORDER BY count desc LIMIT 8   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+NOTIC: [8] Undefined index: plcount /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Home/87af2d4b492c651ae1e9a3042e753ad6.php 第 357 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016489s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016525s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000905s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000939s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000935s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001010s ]
+
+[ 2017-11-01T15:22:49+08:00 ] 192.168.101.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000640s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_hot` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_new` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_rec` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 AND cx_price>0 AND start <1509520969 AND end > 1509520969 ) LIMIT 5   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_goods` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (8,9,12,7) ) LIMIT 8   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (13,10) ) LIMIT 8   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (11) ) LIMIT 8   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021847s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021903s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000618s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000808s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000872s ]
+
+[ 2017-11-01T15:22:49+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-11-01T15:22:49+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc5631bd88.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-11-01T15:22:49+08:00 ] 192.168.101.1 /Uploads/2017-10-10/59dcc56330735.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+
+[ 2017-11-01T15:22:49+08:00 ] 192.168.101.1 /Uploads/2017-10-10/59dcc5632f252.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+
+[ 2017-11-01T15:30:25+08:00 ] 192.168.101.1 /Goods/index/goods_id/62.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000794s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000819s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `id` = 62 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jx_goods_img` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_goods_img` WHERE `goods_id` = 62  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jx_goods_attr` [ RunTime:0.0003s ]
+SQL: SELECT a.*,b.attr_name,b.attr_type FROM jx_goods_attr a left join jx_attribute b on a.attr_id=b.id  WHERE a.goods_id = 62  [ RunTime:0.0002s ]
+NOTIC: [2] Declaration of Home\Model\CommentModel::_before_insert(&$data) should be compatible with Think\Model::_before_insert(&$data, $options) /usr/share/nginx/www/newtpshop/tpshop/App/Home/Model/CommentModel.class.php 第 0 行.
+NOTIC: [2] Declaration of Home\Model\CommentModel::_after_insert($data) should be compatible with Think\Model::_after_insert($data, $options) /usr/share/nginx/www/newtpshop/tpshop/App/Home/Model/CommentModel.class.php 第 0 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_comment` WHERE `goods_id` = 62 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT c.*,u.username FROM jx_comment c left join jx_user as u on u.id=c.user_id  WHERE `goods_id` = 62 ORDER BY addtime desc LIMIT 0,6   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jx_impression` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_impression` WHERE `goods_id` = 62 ORDER BY count desc LIMIT 8   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+NOTIC: [8] Undefined index: plcount /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Home/87af2d4b492c651ae1e9a3042e753ad6.php 第 357 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039999s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040033s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001309s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001336s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001167s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001203s ]
+
+[ 2017-11-01T15:30:25+08:00 ] 192.168.101.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_hot` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_new` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_rec` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 AND cx_price>0 AND start <1509521425 AND end > 1509521425 ) LIMIT 5   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_goods` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (8,9,12,7) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (13,10) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (11) ) LIMIT 8   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038342s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038471s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001469s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001510s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001721s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001765s ]
+
+[ 2017-11-01T15:30:25+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+
+[ 2017-11-01T15:30:25+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc5631bd88.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+
+[ 2017-11-01T15:30:25+08:00 ] 192.168.101.1 /Public/resources/Home/images/zoomloader.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+
+[ 2017-11-01T15:30:34+08:00 ] 192.168.101.1 /Goods/index/goods_id/62.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `id` = 62 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jx_goods_img` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jx_goods_img` WHERE `goods_id` = 62  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_goods_attr` [ RunTime:0.0003s ]
+SQL: SELECT a.*,b.attr_name,b.attr_type FROM jx_goods_attr a left join jx_attribute b on a.attr_id=b.id  WHERE a.goods_id = 62  [ RunTime:0.0001s ]
+NOTIC: [2] Declaration of Home\Model\CommentModel::_before_insert(&$data) should be compatible with Think\Model::_before_insert(&$data, $options) /usr/share/nginx/www/newtpshop/tpshop/App/Home/Model/CommentModel.class.php 第 0 行.
+NOTIC: [2] Declaration of Home\Model\CommentModel::_after_insert($data) should be compatible with Think\Model::_after_insert($data, $options) /usr/share/nginx/www/newtpshop/tpshop/App/Home/Model/CommentModel.class.php 第 0 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_comment` WHERE `goods_id` = 62 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT c.*,u.username FROM jx_comment c left join jx_user as u on u.id=c.user_id  WHERE `goods_id` = 62 ORDER BY addtime desc LIMIT 0,6   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jx_impression` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jx_impression` WHERE `goods_id` = 62 ORDER BY count desc LIMIT 8   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+NOTIC: [8] Undefined index: plcount /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Home/87af2d4b492c651ae1e9a3042e753ad6.php 第 357 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018478s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018510s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000754s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000797s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000843s ]
+
+[ 2017-11-01T15:30:34+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+
+[ 2017-11-01T15:30:34+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc5631bd88.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+
+[ 2017-11-01T15:30:34+08:00 ] 192.168.101.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000940s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_hot` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_new` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_rec` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 AND cx_price>0 AND start <1509521434 AND end > 1509521434 ) LIMIT 5   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_goods` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (8,9,12,7) ) LIMIT 8   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (13,10) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (11) ) LIMIT 8   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000477s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000538s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.100667s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.100730s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001740s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001829s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001339s ]
+
+[ 2017-11-01T15:30:35+08:00 ] 192.168.101.1 /Public/resources/Home/images/zoomloader.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+
+[ 2017-11-01T15:30:45+08:00 ] 192.168.101.1 /Goods/index/goods_id/61.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `id` = 61 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jx_goods_img` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jx_goods_img` WHERE `goods_id` = 61  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jx_goods_attr` [ RunTime:0.0005s ]
+SQL: SELECT a.*,b.attr_name,b.attr_type FROM jx_goods_attr a left join jx_attribute b on a.attr_id=b.id  WHERE a.goods_id = 61  [ RunTime:0.0003s ]
+NOTIC: [2] Declaration of Home\Model\CommentModel::_before_insert(&$data) should be compatible with Think\Model::_before_insert(&$data, $options) /usr/share/nginx/www/newtpshop/tpshop/App/Home/Model/CommentModel.class.php 第 0 行.
+NOTIC: [2] Declaration of Home\Model\CommentModel::_after_insert($data) should be compatible with Think\Model::_after_insert($data, $options) /usr/share/nginx/www/newtpshop/tpshop/App/Home/Model/CommentModel.class.php 第 0 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_comment` WHERE `goods_id` = 61 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT c.*,u.username FROM jx_comment c left join jx_user as u on u.id=c.user_id  WHERE `goods_id` = 61 ORDER BY addtime desc LIMIT 0,6   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jx_impression` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_impression` WHERE `goods_id` = 61 ORDER BY count desc LIMIT 8   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: sigle /usr/share/nginx/www/newtpshop/tpshop/App/Home/Controller/GoodsController.class.php 第 79 行.
+NOTIC: [8] Undefined variable: unique /usr/share/nginx/www/newtpshop/tpshop/App/Home/Controller/GoodsController.class.php 第 80 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+NOTIC: [8] Undefined offset: 0 /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Home/87af2d4b492c651ae1e9a3042e753ad6.php 第 328 行.
+NOTIC: [8] Undefined offset: 0 /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Home/87af2d4b492c651ae1e9a3042e753ad6.php 第 329 行.
+NOTIC: [8] Undefined index: plcount /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Home/87af2d4b492c651ae1e9a3042e753ad6.php 第 357 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025413s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025450s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001505s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001598s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002133s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002214s ]
+
+[ 2017-11-01T15:30:45+08:00 ] 192.168.101.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_hot` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_new` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_rec` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 AND cx_price>0 AND start <1509521445 AND end > 1509521445 ) LIMIT 5   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_goods` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (8,9,12,7) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (13,10) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (11) ) LIMIT 8   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024514s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024558s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001774s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001828s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001551s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001629s ]
+
+[ 2017-11-01T15:30:45+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+
+[ 2017-11-01T15:30:45+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc5631bd88.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+
+[ 2017-11-01T15:30:45+08:00 ] 192.168.101.1 /Public/resources/Home/images/zoomloader.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+
+[ 2017-11-01T15:30:53+08:00 ] 192.168.101.1 /Goods/index/goods_id/61.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000767s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001297s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `id` = 61 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_goods_img` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `jx_goods_img` WHERE `goods_id` = 61  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jx_goods_attr` [ RunTime:0.0003s ]
+SQL: SELECT a.*,b.attr_name,b.attr_type FROM jx_goods_attr a left join jx_attribute b on a.attr_id=b.id  WHERE a.goods_id = 61  [ RunTime:0.0001s ]
+NOTIC: [2] Declaration of Home\Model\CommentModel::_before_insert(&$data) should be compatible with Think\Model::_before_insert(&$data, $options) /usr/share/nginx/www/newtpshop/tpshop/App/Home/Model/CommentModel.class.php 第 0 行.
+NOTIC: [2] Declaration of Home\Model\CommentModel::_after_insert($data) should be compatible with Think\Model::_after_insert($data, $options) /usr/share/nginx/www/newtpshop/tpshop/App/Home/Model/CommentModel.class.php 第 0 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_comment` WHERE `goods_id` = 61 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT c.*,u.username FROM jx_comment c left join jx_user as u on u.id=c.user_id  WHERE `goods_id` = 61 ORDER BY addtime desc LIMIT 0,6   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_impression` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_impression` WHERE `goods_id` = 61 ORDER BY count desc LIMIT 8   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: sigle /usr/share/nginx/www/newtpshop/tpshop/App/Home/Controller/GoodsController.class.php 第 79 行.
+NOTIC: [8] Undefined variable: unique /usr/share/nginx/www/newtpshop/tpshop/App/Home/Controller/GoodsController.class.php 第 80 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+NOTIC: [8] Undefined offset: 0 /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Home/87af2d4b492c651ae1e9a3042e753ad6.php 第 328 行.
+NOTIC: [8] Undefined offset: 0 /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Home/87af2d4b492c651ae1e9a3042e753ad6.php 第 329 行.
+NOTIC: [8] Undefined index: plcount /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Home/87af2d4b492c651ae1e9a3042e753ad6.php 第 357 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019193s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019230s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000929s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000943s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000964s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000993s ]
+
+[ 2017-11-01T15:30:53+08:00 ] 192.168.101.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000851s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_hot` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_new` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_rec` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 AND cx_price>0 AND start <1509521453 AND end > 1509521453 ) LIMIT 5   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jx_goods` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (8,9,12,7) ) LIMIT 8   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (13,10) ) LIMIT 8   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (11) ) LIMIT 8   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032880s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032934s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000746s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000794s ]
+
+[ 2017-11-01T15:30:53+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+
+[ 2017-11-01T15:30:53+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc5631bd88.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+
+[ 2017-11-01T15:31:09+08:00 ] 192.168.101.1 /Goods/index/goods_id/54.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000945s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000992s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `id` = 54 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jx_goods_img` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jx_goods_img` WHERE `goods_id` = 54  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jx_goods_attr` [ RunTime:0.0004s ]
+SQL: SELECT a.*,b.attr_name,b.attr_type FROM jx_goods_attr a left join jx_attribute b on a.attr_id=b.id  WHERE a.goods_id = 54  [ RunTime:0.0002s ]
+NOTIC: [2] Declaration of Home\Model\CommentModel::_before_insert(&$data) should be compatible with Think\Model::_before_insert(&$data, $options) /usr/share/nginx/www/newtpshop/tpshop/App/Home/Model/CommentModel.class.php 第 0 行.
+NOTIC: [2] Declaration of Home\Model\CommentModel::_after_insert($data) should be compatible with Think\Model::_after_insert($data, $options) /usr/share/nginx/www/newtpshop/tpshop/App/Home/Model/CommentModel.class.php 第 0 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_comment` WHERE `goods_id` = 54 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT c.*,u.username FROM jx_comment c left join jx_user as u on u.id=c.user_id  WHERE `goods_id` = 54 ORDER BY addtime desc LIMIT 0,6   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jx_impression` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_impression` WHERE `goods_id` = 54 ORDER BY count desc LIMIT 8   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000192s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000251s ]
+NOTIC: [8] Undefined index: plcount /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Home/87af2d4b492c651ae1e9a3042e753ad6.php 第 357 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033350s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033402s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001690s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001751s ]
+
+[ 2017-11-01T15:31:09+08:00 ] 192.168.101.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000626s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_hot` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_new` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_rec` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 AND cx_price>0 AND start <1509521469 AND end > 1509521469 ) LIMIT 5   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `jx_goods` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (8,9,12,7) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (13,10) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (11) ) LIMIT 8   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024138s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024189s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001321s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001364s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001697s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001743s ]
+
+[ 2017-11-01T15:31:09+08:00 ] 192.168.101.1 /Uploads/2017-07-23/597415faa039a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+
+[ 2017-11-01T15:31:09+08:00 ] 192.168.101.1 /Uploads/2017-07-23/597415fa9f50b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+
+[ 2017-11-01T15:31:09+08:00 ] 192.168.101.1 /Uploads/2017-07-23/597415faa11d1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+
+[ 2017-11-01T15:31:09+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_597415fa7dc78.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000139s ]
+
+[ 2017-11-01T15:31:09+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc5631bd88.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+
+[ 2017-11-01T15:31:09+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+
+[ 2017-11-01T15:31:22+08:00 ] 192.168.101.1 /Goods/index/goods_id/55.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000684s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `id` = 55 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jx_goods_img` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_goods_img` WHERE `goods_id` = 55  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jx_goods_attr` [ RunTime:0.0003s ]
+SQL: SELECT a.*,b.attr_name,b.attr_type FROM jx_goods_attr a left join jx_attribute b on a.attr_id=b.id  WHERE a.goods_id = 55  [ RunTime:0.0002s ]
+NOTIC: [2] Declaration of Home\Model\CommentModel::_before_insert(&$data) should be compatible with Think\Model::_before_insert(&$data, $options) /usr/share/nginx/www/newtpshop/tpshop/App/Home/Model/CommentModel.class.php 第 0 行.
+NOTIC: [2] Declaration of Home\Model\CommentModel::_after_insert($data) should be compatible with Think\Model::_after_insert($data, $options) /usr/share/nginx/www/newtpshop/tpshop/App/Home/Model/CommentModel.class.php 第 0 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_comment` WHERE `goods_id` = 55 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT c.*,u.username FROM jx_comment c left join jx_user as u on u.id=c.user_id  WHERE `goods_id` = 55 ORDER BY addtime desc LIMIT 0,6   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jx_impression` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_impression` WHERE `goods_id` = 55 ORDER BY count desc LIMIT 8   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000229s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000326s ]
+NOTIC: [8] Undefined index: plcount /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Home/87af2d4b492c651ae1e9a3042e753ad6.php 第 357 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021411s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021449s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000968s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000984s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000997s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001035s ]
+
+[ 2017-11-01T15:31:22+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc5631bd88.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+
+[ 2017-11-01T15:31:22+08:00 ] 192.168.101.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_hot` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_new` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_rec` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 AND cx_price>0 AND start <1509521482 AND end > 1509521482 ) LIMIT 5   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_goods` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (8,9,12,7) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (13,10) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (11) ) LIMIT 8   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000270s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042399s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042548s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001134s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001173s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002918s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002969s ]
+
+[ 2017-11-01T15:31:22+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_597415fa7dc78.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+
+[ 2017-11-01T15:31:22+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_5974163c73d2a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+
+[ 2017-11-01T15:31:22+08:00 ] 192.168.101.1 /Uploads/2017-07-23/5974163c8ed09.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+
+[ 2017-11-01T15:31:22+08:00 ] 192.168.101.1 /Uploads/2017-07-23/5974163c8dd1e.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+
+[ 2017-11-01T15:31:36+08:00 ] 192.168.101.1 /Goods/index/goods_id/555.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000723s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000970s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001024s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `id` = 555 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-11-01T15:31:36+08:00 ] 192.168.101.1 /Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_hot` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_new` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_rec` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 AND cx_price>0 AND start <1509521496 AND end > 1509521496 ) LIMIT 5   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_goods` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (8,9,12,7) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (13,10) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (11) ) LIMIT 8   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023558s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023593s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003210s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001895s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001926s ]
+
+[ 2017-11-01T15:31:36+08:00 ] 192.168.101.1 /Index/Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+
+[ 2017-11-01T15:31:36+08:00 ] 192.168.101.1 /Index/Uploads/2017-10-10/thumb_59dcc5631bd88.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+
+[ 2017-11-01T15:31:37+08:00 ] 192.168.101.1 /Index/Uploads/2017-10-08/thumb_59da01fe9a7e8.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+
+[ 2017-11-01T15:31:37+08:00 ] 192.168.101.1 /Index/Uploads/2017-07-23/thumb_5974169944be9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+
+[ 2017-11-01T15:31:37+08:00 ] 192.168.101.1 /Index/Uploads/2017-07-23/thumb_597415fa7dc78.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+
+[ 2017-11-01T15:31:37+08:00 ] 192.168.101.1 /Index/Uploads/2017-07-23/thumb_5974163c73d2a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+
+[ 2017-11-01T15:31:37+08:00 ] 192.168.101.1 /Index/Uploads/2017-07-23/thumb_5974166b57889.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+
+[ 2017-11-01T15:31:37+08:00 ] 192.168.101.1 /Index/Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+
+[ 2017-11-01T15:31:37+08:00 ] 192.168.101.1 /Index/Uploads/2017-10-10/thumb_59dcc5631bd88.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+
+[ 2017-11-01T15:31:42+08:00 ] 192.168.101.1 /Goods/index/goods_id/64.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001006s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002508s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `id` = 64 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jx_goods_img` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_goods_img` WHERE `goods_id` = 64  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_goods_attr` [ RunTime:0.0003s ]
+SQL: SELECT a.*,b.attr_name,b.attr_type FROM jx_goods_attr a left join jx_attribute b on a.attr_id=b.id  WHERE a.goods_id = 64  [ RunTime:0.0001s ]
+NOTIC: [2] Declaration of Home\Model\CommentModel::_before_insert(&$data) should be compatible with Think\Model::_before_insert(&$data, $options) /usr/share/nginx/www/newtpshop/tpshop/App/Home/Model/CommentModel.class.php 第 0 行.
+NOTIC: [2] Declaration of Home\Model\CommentModel::_after_insert($data) should be compatible with Think\Model::_after_insert($data, $options) /usr/share/nginx/www/newtpshop/tpshop/App/Home/Model/CommentModel.class.php 第 0 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_comment` WHERE `goods_id` = 64 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT c.*,u.username FROM jx_comment c left join jx_user as u on u.id=c.user_id  WHERE `goods_id` = 64 ORDER BY addtime desc LIMIT 0,6   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_impression` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jx_impression` WHERE `goods_id` = 64 ORDER BY count desc LIMIT 8   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+NOTIC: [8] Undefined offset: 0 /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Home/87af2d4b492c651ae1e9a3042e753ad6.php 第 328 行.
+NOTIC: [8] Undefined offset: 0 /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Home/87af2d4b492c651ae1e9a3042e753ad6.php 第 329 行.
+NOTIC: [8] Undefined index: plcount /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Home/87af2d4b492c651ae1e9a3042e753ad6.php 第 357 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027287s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027325s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001782s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001849s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001829s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001891s ]
+
+[ 2017-11-01T15:31:43+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc5631bd88.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+
+[ 2017-11-01T15:31:43+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+
+[ 2017-11-01T15:31:43+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_5974163c73d2a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+
+[ 2017-11-01T15:31:43+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_597415fa7dc78.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000138s ]
+
+[ 2017-11-01T15:31:43+08:00 ] 192.168.101.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001698s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_hot` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_new` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_rec` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 AND cx_price>0 AND start <1509521503 AND end > 1509521503 ) LIMIT 5   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_goods` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (8,9,12,7) ) LIMIT 8   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (13,10) ) LIMIT 8   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (11) ) LIMIT 8   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026235s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026354s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002054s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000990s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001023s ]
+
+[ 2017-11-01T15:32:03+08:00 ] 192.168.101.1 /Goods/index/goods_id/64.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `id` = 64 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jx_goods_img` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `jx_goods_img` WHERE `goods_id` = 64  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jx_goods_attr` [ RunTime:0.0004s ]
+SQL: SELECT a.*,b.attr_name,b.attr_type FROM jx_goods_attr a left join jx_attribute b on a.attr_id=b.id  WHERE a.goods_id = 64  [ RunTime:0.0001s ]
+NOTIC: [2] Declaration of Home\Model\CommentModel::_before_insert(&$data) should be compatible with Think\Model::_before_insert(&$data, $options) /usr/share/nginx/www/newtpshop/tpshop/App/Home/Model/CommentModel.class.php 第 0 行.
+NOTIC: [2] Declaration of Home\Model\CommentModel::_after_insert($data) should be compatible with Think\Model::_after_insert($data, $options) /usr/share/nginx/www/newtpshop/tpshop/App/Home/Model/CommentModel.class.php 第 0 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_comment` WHERE `goods_id` = 64 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT c.*,u.username FROM jx_comment c left join jx_user as u on u.id=c.user_id  WHERE `goods_id` = 64 ORDER BY addtime desc LIMIT 0,6   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_impression` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_impression` WHERE `goods_id` = 64 ORDER BY count desc LIMIT 8   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+NOTIC: [8] Undefined offset: 0 /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Home/87af2d4b492c651ae1e9a3042e753ad6.php 第 328 行.
+NOTIC: [8] Undefined offset: 0 /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Home/87af2d4b492c651ae1e9a3042e753ad6.php 第 329 行.
+NOTIC: [8] Undefined index: plcount /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Home/87af2d4b492c651ae1e9a3042e753ad6.php 第 357 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020644s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020673s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001020s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001035s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000867s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000934s ]
+
+[ 2017-11-01T15:32:03+08:00 ] 192.168.101.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_hot` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_new` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_rec` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 AND cx_price>0 AND start <1509521523 AND end > 1509521523 ) LIMIT 5   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_goods` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (8,9,12,7) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (13,10) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (11) ) LIMIT 8   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023211s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001075s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001105s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000896s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000928s ]
+
+[ 2017-11-01T15:32:03+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_597415fa7dc78.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+
+[ 2017-11-01T15:32:03+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+
+[ 2017-11-01T15:32:03+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_5974163c73d2a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+
+[ 2017-11-01T15:32:03+08:00 ] 192.168.101.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003622s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_hot` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_new` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_rec` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 AND cx_price>0 AND start <1509521523 AND end > 1509521523 ) LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jx_goods` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (8,9,12,7) ) LIMIT 8   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (13,10) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (11) ) LIMIT 8   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000161s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018592s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018658s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000726s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000701s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000793s ]
+
+[ 2017-11-01T15:40:01+08:00 ] 192.168.101.1 /Goods/index/goods_id/61.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000917s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000944s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `id` = 61 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jx_goods_img` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jx_goods_img` WHERE `goods_id` = 61  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_goods_attr` [ RunTime:0.0007s ]
+SQL: SELECT a.*,b.attr_name,b.attr_type FROM jx_goods_attr a left join jx_attribute b on a.attr_id=b.id  WHERE a.goods_id = 61  [ RunTime:0.0001s ]
+NOTIC: [2] Declaration of Home\Model\CommentModel::_before_insert(&$data) should be compatible with Think\Model::_before_insert(&$data, $options) /usr/share/nginx/www/newtpshop/tpshop/App/Home/Model/CommentModel.class.php 第 0 行.
+NOTIC: [2] Declaration of Home\Model\CommentModel::_after_insert($data) should be compatible with Think\Model::_after_insert($data, $options) /usr/share/nginx/www/newtpshop/tpshop/App/Home/Model/CommentModel.class.php 第 0 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_comment` WHERE `goods_id` = 61 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT c.*,u.username FROM jx_comment c left join jx_user as u on u.id=c.user_id  WHERE `goods_id` = 61 ORDER BY addtime desc LIMIT 0,6   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_impression` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_impression` WHERE `goods_id` = 61 ORDER BY count desc LIMIT 8   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: sigle /usr/share/nginx/www/newtpshop/tpshop/App/Home/Controller/GoodsController.class.php 第 79 行.
+NOTIC: [8] Undefined variable: unique /usr/share/nginx/www/newtpshop/tpshop/App/Home/Controller/GoodsController.class.php 第 80 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+NOTIC: [8] Undefined offset: 0 /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Home/87af2d4b492c651ae1e9a3042e753ad6.php 第 328 行.
+NOTIC: [8] Undefined offset: 0 /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Home/87af2d4b492c651ae1e9a3042e753ad6.php 第 329 行.
+NOTIC: [8] Undefined index: plcount /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Home/87af2d4b492c651ae1e9a3042e753ad6.php 第 357 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048316s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048342s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002039s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002062s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002162s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002204s ]
+
+[ 2017-11-01T15:40:01+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_597415fa7dc78.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+
+[ 2017-11-01T15:40:01+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_5974163c73d2a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+
+[ 2017-11-01T15:40:01+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+
+[ 2017-11-01T15:40:01+08:00 ] 192.168.101.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001507s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_hot` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_new` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_rec` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 AND cx_price>0 AND start <1509522001 AND end > 1509522001 ) LIMIT 5   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jx_goods` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (8,9,12,7) ) LIMIT 8   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (13,10) ) LIMIT 8   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (11) ) LIMIT 8   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000333s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049885s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049984s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002442s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002552s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001345s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001409s ]
+
+[ 2017-11-01T15:40:27+08:00 ] 192.168.101.1 /Goods/index/goods_id/62.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000570s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000876s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `id` = 62 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jx_goods_img` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_goods_img` WHERE `goods_id` = 62  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_goods_attr` [ RunTime:0.0003s ]
+SQL: SELECT a.*,b.attr_name,b.attr_type FROM jx_goods_attr a left join jx_attribute b on a.attr_id=b.id  WHERE a.goods_id = 62  [ RunTime:0.0001s ]
+NOTIC: [2] Declaration of Home\Model\CommentModel::_before_insert(&$data) should be compatible with Think\Model::_before_insert(&$data, $options) /usr/share/nginx/www/newtpshop/tpshop/App/Home/Model/CommentModel.class.php 第 0 行.
+NOTIC: [2] Declaration of Home\Model\CommentModel::_after_insert($data) should be compatible with Think\Model::_after_insert($data, $options) /usr/share/nginx/www/newtpshop/tpshop/App/Home/Model/CommentModel.class.php 第 0 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_comment` WHERE `goods_id` = 62 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT c.*,u.username FROM jx_comment c left join jx_user as u on u.id=c.user_id  WHERE `goods_id` = 62 ORDER BY addtime desc LIMIT 0,6   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_impression` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_impression` WHERE `goods_id` = 62 ORDER BY count desc LIMIT 8   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000180s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+NOTIC: [8] Undefined index: plcount /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Home/87af2d4b492c651ae1e9a3042e753ad6.php 第 357 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050781s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050816s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002610s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002633s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001672s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001717s ]
+
+[ 2017-11-01T15:40:27+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_597415fa7dc78.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+
+[ 2017-11-01T15:40:27+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_5974163c73d2a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+
+[ 2017-11-01T15:40:27+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+
+[ 2017-11-01T15:40:27+08:00 ] 192.168.101.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000769s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_hot` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_new` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_rec` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 AND cx_price>0 AND start <1509522027 AND end > 1509522027 ) LIMIT 5   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_goods` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (8,9,12,7) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (13,10) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (11) ) LIMIT 8   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036533s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036589s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000490s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000533s ]
+
+[ 2017-11-01T15:40:27+08:00 ] 192.168.101.1 /Public/resources/Home/images/zoomloader.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+
+[ 2017-11-01T15:40:55+08:00 ] 192.168.101.1 /Goods/index/goods_id/63.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000801s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `id` = 63 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_goods_img` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jx_goods_img` WHERE `goods_id` = 63  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_goods_attr` [ RunTime:0.0003s ]
+SQL: SELECT a.*,b.attr_name,b.attr_type FROM jx_goods_attr a left join jx_attribute b on a.attr_id=b.id  WHERE a.goods_id = 63  [ RunTime:0.0001s ]
+NOTIC: [2] Declaration of Home\Model\CommentModel::_before_insert(&$data) should be compatible with Think\Model::_before_insert(&$data, $options) /usr/share/nginx/www/newtpshop/tpshop/App/Home/Model/CommentModel.class.php 第 0 行.
+NOTIC: [2] Declaration of Home\Model\CommentModel::_after_insert($data) should be compatible with Think\Model::_after_insert($data, $options) /usr/share/nginx/www/newtpshop/tpshop/App/Home/Model/CommentModel.class.php 第 0 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_comment` WHERE `goods_id` = 63 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT c.*,u.username FROM jx_comment c left join jx_user as u on u.id=c.user_id  WHERE `goods_id` = 63 ORDER BY addtime desc LIMIT 0,6   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_impression` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_impression` WHERE `goods_id` = 63 ORDER BY count desc LIMIT 8   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000159s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+NOTIC: [8] Undefined index: plcount /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Home/87af2d4b492c651ae1e9a3042e753ad6.php 第 357 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028679s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028742s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002069s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002169s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001140s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001227s ]
+
+[ 2017-11-01T15:40:55+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_597415fa7dc78.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+
+[ 2017-11-01T15:40:55+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_5974163c73d2a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+
+[ 2017-11-01T15:40:55+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+
+[ 2017-11-01T15:40:55+08:00 ] 192.168.101.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001397s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_hot` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_new` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_rec` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 AND cx_price>0 AND start <1509522055 AND end > 1509522055 ) LIMIT 5   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_goods` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (8,9,12,7) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (13,10) ) LIMIT 8   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (11) ) LIMIT 8   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000308s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000529s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042788s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042859s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001842s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001890s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001702s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001758s ]
+
+[ 2017-11-01T15:40:55+08:00 ] 192.168.101.1 /Uploads/2017-10-10/59dcc5632f252.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+
+[ 2017-11-01T15:40:55+08:00 ] 192.168.101.1 /Uploads/2017-10-10/59dcc56330735.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+
+[ 2017-11-01T15:40:55+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc5631bd88.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+
+[ 2017-11-01T15:41:14+08:00 ] 192.168.101.1 /Goods/index/goods_id/65.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001022s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000943s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000973s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `id` = 65 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-11-01T15:41:14+08:00 ] 192.168.101.1 /Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_hot` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_new` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_rec` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 AND cx_price>0 AND start <1509522074 AND end > 1509522074 ) LIMIT 5   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_goods` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (8,9,12,7) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (13,10) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (11) ) LIMIT 8   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015624s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015658s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000602s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000645s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000675s ]
+
+[ 2017-11-01T15:41:14+08:00 ] 192.168.101.1 /Index/Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+
+[ 2017-11-01T15:41:14+08:00 ] 192.168.101.1 /Index/Uploads/2017-10-10/thumb_59dcc5631bd88.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+
+[ 2017-11-01T15:41:14+08:00 ] 192.168.101.1 /Index/Uploads/2017-10-08/thumb_59da01fe9a7e8.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+
+[ 2017-11-01T15:41:14+08:00 ] 192.168.101.1 /Index/Uploads/2017-07-23/thumb_5974169944be9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+
+[ 2017-11-01T15:41:14+08:00 ] 192.168.101.1 /Index/Uploads/2017-07-23/thumb_5974163c73d2a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000150s ]
+
+[ 2017-11-01T15:41:14+08:00 ] 192.168.101.1 /Index/Uploads/2017-07-23/thumb_597415fa7dc78.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+
+[ 2017-11-01T15:41:14+08:00 ] 192.168.101.1 /Index/Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+
+[ 2017-11-01T15:41:14+08:00 ] 192.168.101.1 /Index/Uploads/2017-10-10/thumb_59dcc5631bd88.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+
+[ 2017-11-01T15:41:14+08:00 ] 192.168.101.1 /Index/Uploads/2017-07-23/thumb_5974166b57889.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+
+[ 2017-11-01T15:41:27+08:00 ] 192.168.101.1 /Goods/index/goods_id/54.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000752s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `id` = 54 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jx_goods_img` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_goods_img` WHERE `goods_id` = 54  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_goods_attr` [ RunTime:0.0005s ]
+SQL: SELECT a.*,b.attr_name,b.attr_type FROM jx_goods_attr a left join jx_attribute b on a.attr_id=b.id  WHERE a.goods_id = 54  [ RunTime:0.0001s ]
+NOTIC: [2] Declaration of Home\Model\CommentModel::_before_insert(&$data) should be compatible with Think\Model::_before_insert(&$data, $options) /usr/share/nginx/www/newtpshop/tpshop/App/Home/Model/CommentModel.class.php 第 0 行.
+NOTIC: [2] Declaration of Home\Model\CommentModel::_after_insert($data) should be compatible with Think\Model::_after_insert($data, $options) /usr/share/nginx/www/newtpshop/tpshop/App/Home/Model/CommentModel.class.php 第 0 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_comment` WHERE `goods_id` = 54 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT c.*,u.username FROM jx_comment c left join jx_user as u on u.id=c.user_id  WHERE `goods_id` = 54 ORDER BY addtime desc LIMIT 0,6   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_impression` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `jx_impression` WHERE `goods_id` = 54 ORDER BY count desc LIMIT 8   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000159s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+NOTIC: [8] Undefined index: plcount /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Home/87af2d4b492c651ae1e9a3042e753ad6.php 第 357 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025650s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025687s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002030s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002097s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001576s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001615s ]
+
+[ 2017-11-01T15:41:27+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+
+[ 2017-11-01T15:41:27+08:00 ] 192.168.101.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_hot` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_new` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_rec` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 AND cx_price>0 AND start <1509522087 AND end > 1509522087 ) LIMIT 5   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_goods` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (8,9,12,7) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (13,10) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (11) ) LIMIT 8   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028492s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028552s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001436s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001478s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001005s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001056s ]
+
+[ 2017-11-01T15:41:28+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc5631bd88.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+
+[ 2017-11-01T15:41:28+08:00 ] 192.168.101.1 /Uploads/2017-07-23/597415faa11d1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+
+[ 2017-11-01T15:41:28+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_597415fa7dc78.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+
+[ 2017-11-01T15:41:28+08:00 ] 192.168.101.1 /Uploads/2017-07-23/597415faa039a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+
+[ 2017-11-01T15:41:28+08:00 ] 192.168.101.1 /Uploads/2017-07-23/597415fa9f50b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+
+[ 2017-11-01T16:05:26+08:00 ] 192.168.101.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001477s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_hot` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_new` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_rec` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 AND cx_price>0 AND start <1509523526 AND end > 1509523526 ) LIMIT 5   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_goods` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (8,9,12,7) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (13,10) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (11) ) LIMIT 8   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042690s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042731s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002357s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002394s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001683s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001727s ]
+
+[ 2017-11-01T16:05:26+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+
+[ 2017-11-01T16:05:26+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc5631bd88.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000189s ]
+
+[ 2017-11-01T16:05:26+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_5974169944be9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+
+[ 2017-11-01T16:05:26+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_5974163c73d2a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+
+[ 2017-11-01T16:05:27+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_597415fa7dc78.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+
+[ 2017-11-01T16:05:27+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+
+[ 2017-11-01T16:05:27+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_5974166b57889.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+
+[ 2017-11-01T16:05:27+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc5631bd88.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+
+[ 2017-11-01T16:05:27+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_5974169944be9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+
+[ 2017-11-01T16:05:35+08:00 ] 192.168.101.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000791s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_hot` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_new` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_rec` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 AND cx_price>0 AND start <1509523535 AND end > 1509523535 ) LIMIT 5   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `jx_goods` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (8,9,12,7) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (13,10) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (11) ) LIMIT 8   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000251s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015856s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015885s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000615s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000644s ]
+
+[ 2017-11-01T16:05:35+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000160s ]
+
+[ 2017-11-01T16:05:35+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc5631bd88.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+
+[ 2017-11-01T16:05:35+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_5974166b57889.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+
+[ 2017-11-01T16:05:35+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_5974169944be9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+
+[ 2017-11-01T16:05:35+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_5974163c73d2a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000139s ]
+
+[ 2017-11-01T16:05:35+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_597415fa7dc78.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+
+[ 2017-11-01T16:05:35+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+
+[ 2017-11-01T16:05:36+08:00 ] 192.168.101.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_hot` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_new` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_rec` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 AND cx_price>0 AND start <1509523536 AND end > 1509523536 ) LIMIT 5   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_goods` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (8,9,12,7) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (13,10) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (11) ) LIMIT 8   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022517s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022551s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000513s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000532s ]
+
+[ 2017-11-01T16:05:37+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+
+[ 2017-11-01T16:05:37+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_5974163c73d2a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+
+[ 2017-11-01T16:05:37+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_597415fa7dc78.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+
+[ 2017-11-01T16:05:37+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc5631bd88.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+
+[ 2017-11-01T16:05:37+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_5974169944be9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000153s ]
+
+[ 2017-11-01T16:05:37+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+
+[ 2017-11-01T16:05:37+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_5974166b57889.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000204s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+
+[ 2017-11-01T16:05:37+08:00 ] 192.168.101.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000701s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_hot` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_new` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_rec` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 AND cx_price>0 AND start <1509523537 AND end > 1509523537 ) LIMIT 5   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_goods` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (8,9,12,7) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (13,10) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (11) ) LIMIT 8   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000199s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018332s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018365s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000433s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000455s ]
+
+[ 2017-11-01T16:05:37+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+
+[ 2017-11-01T16:05:38+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_5974163c73d2a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003647s ]
+
+[ 2017-11-01T16:05:38+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_5974166b57889.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001524s ]
+
+[ 2017-11-01T16:05:38+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_597415fa7dc78.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000104s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+
+[ 2017-11-01T16:05:38+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_5974169944be9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+
+[ 2017-11-01T16:05:38+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc5631bd88.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+
+[ 2017-11-01T16:05:55+08:00 ] 192.168.101.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001186s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001202s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001244s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_hot` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_new` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_rec` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 AND cx_price>0 AND start <1509523555 AND end > 1509523555 ) LIMIT 5   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_goods` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (8,9,12,7) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (13,10) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (11) ) LIMIT 8   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029663s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029701s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002777s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002813s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001682s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001745s ]
+
+[ 2017-11-01T16:05:55+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+
+[ 2017-11-01T16:05:55+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc5631bd88.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+
+[ 2017-11-01T16:05:55+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_5974166b57889.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+
+[ 2017-11-01T16:05:55+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_597415fa7dc78.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+
+[ 2017-11-01T16:05:55+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_5974163c73d2a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+
+[ 2017-11-01T16:05:55+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_5974169944be9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+
+[ 2017-11-01T16:10:28+08:00 ] 192.168.101.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000685s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001227s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_hot` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_new` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_rec` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 AND cx_price>0 AND start <1509523828 AND end > 1509523828 ) LIMIT 5   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_goods` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (8,9,12,7) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (13,10) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (11) ) LIMIT 8   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022715s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022752s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001202s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001223s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001124s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001145s ]
+
+[ 2017-11-01T16:10:28+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+
+[ 2017-11-01T16:10:28+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc5631bd88.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+
+[ 2017-11-01T16:10:28+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_5974169944be9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+
+[ 2017-11-01T16:10:28+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_5974163c73d2a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+
+[ 2017-11-01T16:10:28+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_5974169944be9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+
+[ 2017-11-01T16:10:28+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_597415fa7dc78.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000171s ]
+
+[ 2017-11-01T16:10:28+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_5974166b57889.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+
+[ 2017-11-01T16:10:28+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc5631bd88.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+
+[ 2017-11-01T16:10:28+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+
+[ 2017-11-01T16:11:58+08:00 ] 192.168.101.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000792s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001758s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_hot` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_new` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_rec` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 AND cx_price>0 AND start <1509523918 AND end > 1509523918 ) LIMIT 5   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_goods` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (8,9,12,7) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (13,10) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (11) ) LIMIT 8   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035516s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035563s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001575s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001602s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001959s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001996s ]
+
+[ 2017-11-01T16:11:58+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+
+[ 2017-11-01T16:11:58+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc5631bd88.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+
+[ 2017-11-01T16:11:58+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_5974169944be9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+
+[ 2017-11-01T16:11:58+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_5974163c73d2a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+
+[ 2017-11-01T16:11:58+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+
+[ 2017-11-01T16:11:58+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_5974166b57889.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+
+[ 2017-11-01T16:11:58+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_597415fa7dc78.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+
+[ 2017-11-01T16:11:58+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_5974169944be9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000105s ]
+
+[ 2017-11-01T16:11:58+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc5631bd88.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000138s ]
+
+[ 2017-11-01T16:51:43+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+
+[ 2017-11-01T16:51:45+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+
+[ 2017-11-01T18:37:44+08:00 ] 192.168.101.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000771s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001128s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_hot` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_new` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_rec` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 AND cx_price>0 AND start <1509532664 AND end > 1509532664 ) LIMIT 5   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_goods` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (8,9,12,7) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (13,10) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (11) ) LIMIT 8   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026914s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027039s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001289s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001316s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000893s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000919s ]
+
+[ 2017-11-01T18:37:44+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+
+[ 2017-11-01T18:37:44+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc5631bd88.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+
+[ 2017-11-01T18:37:45+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_5974169944be9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-11-01T18:37:45+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_597415fa7dc78.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000140s ]
+
+[ 2017-11-01T18:37:45+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_5974163c73d2a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+
+[ 2017-11-01T18:37:45+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_5974166b57889.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+
+[ 2017-11-01T18:37:45+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+
+[ 2017-11-01T20:02:00+08:00 ] 192.168.101.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002013s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_hot` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_new` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_rec` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 AND cx_price>0 AND start <1509537720 AND end > 1509537720 ) LIMIT 5   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_goods` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (8,9,12,7) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (13,10) ) LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( is_sale=1 and cate_id in (11) ) LIMIT 8   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027909s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028017s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001418s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001452s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001439s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001482s ]
+
+[ 2017-11-01T20:02:00+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+
+[ 2017-11-01T20:02:00+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc5631bd88.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+
+[ 2017-11-01T20:02:00+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_5974169944be9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+
+[ 2017-11-01T20:02:00+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_5974163c73d2a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+
+[ 2017-11-01T20:02:00+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_597415fa7dc78.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+
+[ 2017-11-01T20:02:00+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_5974166b57889.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+
+[ 2017-11-01T20:02:00+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_5974169944be9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+
+[ 2017-11-01T20:02:00+08:00 ] 192.168.101.1 /Uploads/2017-07-23/thumb_5974163c73d2a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+
+[ 2017-11-01T20:02:00+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc5631bd88.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000155s ]
+
+[ 2017-11-01T20:02:00+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+
+[ 2017-11-01T21:32:14+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+
+[ 2017-11-01T21:37:01+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+
+[ 2017-11-01T21:37:18+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+
+[ 2017-11-01T21:37:40+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+
+[ 2017-11-01T21:53:31+08:00 ] 192.168.101.1 /Public/resources/datetime_js/dist/jquery-ui-timepicker-addon.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000697s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-11-01T21:53:33+08:00 ] 192.168.101.1 /Public/resources/datetime_js/dist/jquery-ui-timepicker-addon.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-11-01T21:53:33+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+
+[ 2017-11-01T21:59:28+08:00 ] 192.168.101.1 /Uploads/2017-10-10/thumb_59dcc641b9e43.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+

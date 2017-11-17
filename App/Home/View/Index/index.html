@@ -155,7 +155,7 @@
 				<span>热卖商品</span>
 				<span>推荐商品</span>
 				<span>新品上架</span>
-				<span class="last">猜您喜欢</span>
+				<span class="last">大牌秒杀</span>
 			</h2>
 			
 			<div class="guide_wrap">
@@ -210,44 +210,24 @@
                 
                 <!-- 新品上架 start-->
 				<div class="new none">
-					<ul>
-						<volist name="isNew" id="vo">
-						<li>
-							<dl>
-								<dt><a href="{:U('Goods/index','goods_id='.$vo['id'])}"><img src="{$vo.goods_thumb}" alt="" /></a></dt>
-								<dd><a href="{:U('Goods/index','goods_id='.$vo['id'])}">{$vo.goods_name}</a></dd>
-								<dd><span>售价：</span><strong> ￥{$vo.shop_price}</strong></dd>
-							</dl>
-						</li>
-						</volist>
-					</ul>
+
 				</div>
                 <!-- 新品上架 end-->
                 
-                <!-- 猜您喜欢 start -->
+                <!-- 打牌秒杀 start -->
 				<div class="guess none">
 					<ul>
-						<li>
-							<dl>
-								<dt><a href=""><img src="__PUBLIC_HOME__/images/guess1.jpg" alt="" /></a></dt>
-								<dd><a href="">Thinkpad USB光电鼠标</a></dd>
-								<dd><span>售价：</span><strong> ￥39.00</strong></dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt><a href=""><img src="__PUBLIC_HOME__/images/guess2.jpg" alt="" /></a></dt>
-								<dd><a href="">宜客莱（ECOLA）电脑散热器</a></dd>
-								<dd><span>售价：</span><strong> ￥89.00</strong></dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt><a href=""><img src="__PUBLIC_HOME__/images/guess3.jpg" alt="" /></a></dt>
-								<dd><a href="">巴黎欧莱雅男士洁面膏 100ml</a></dd>
-								<dd><span>售价：</span><strong> ￥30.00</strong></dd>
-							</dl>
-						</li>
+						<volist name="seckill" id="vo">
+							<li>
+								<dl>
+									<dt><a href="{:U('SeckillGoods/detail','seckill_id='.$vo['seckillid'])}"><img src="{$vo.goods_thumb}" alt="" /></a></dt>
+                                    <dd><strong> 今日 {$vo.btime|date='H:i:s',###} 准时开始</strong></dd>
+									<dd><a href="{:U('SeckillGoods/detail','seckill_id='.$vo['seckillid'])}">{$vo.goods_name}</a></dd>
+									<dd><span>售价：</span><strong> ￥{$vo.seckill_price}</strong></dd>
+									
+								</dl>
+							</li>
+						</volist>
 					</ul>
 				</div>
                 <!-- 猜您喜欢 end -->

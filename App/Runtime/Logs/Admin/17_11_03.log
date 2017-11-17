@@ -1,0 +1,1791 @@
+[ 2017-11-03T18:35:26+08:00 ] 192.168.101.1 /Admin/seckillGoods/add/goods_id/64.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001058s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000053s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011680s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011729s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001972s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002009s ]
+
+[ 2017-11-03T19:38:24+08:00 ] 192.168.101.1 /Admin/seckillGoods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000646s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+SQL: SHOW COLUMNS FROM `jx_seckill_goods` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_seckill_goods` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_seckill_goods` ORDER BY id desc LIMIT 0,6   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+NOTIC: [2] Illegal string offset 'seckill_key' /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 38 行.
+NOTIC: [2] Illegal string offset 'goods_name' /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 39 行.
+NOTIC: [2] Illegal string offset 'goods_sn' /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 40 行.
+NOTIC: [2] Illegal string offset 'shop_price' /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 41 行.
+NOTIC: [2] Illegal string offset 'is_sale' /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 42 行.
+NOTIC: [2] Illegal string offset 'is_rec' /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 43 行.
+NOTIC: [2] Illegal string offset 'is_new' /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 44 行.
+NOTIC: [2] Illegal string offset 'is_hot' /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 45 行.
+NOTIC: [2] Illegal string offset 'id' /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 49 行.
+NOTIC: [2] Illegal string offset 'id' /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 50 行.
+NOTIC: [2] Illegal string offset 'id' /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 51 行.
+NOTIC: [2] Illegal string offset 'id' /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 52 行.
+NOTIC: [8] Undefined index: seckill_key /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 38 行.
+NOTIC: [8] Undefined index: goods_name /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 39 行.
+NOTIC: [8] Undefined index: goods_sn /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 40 行.
+NOTIC: [8] Undefined index: shop_price /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 41 行.
+NOTIC: [8] Undefined index: is_sale /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 42 行.
+NOTIC: [8] Undefined index: is_rec /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 43 行.
+NOTIC: [8] Undefined index: is_new /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 44 行.
+NOTIC: [8] Undefined index: is_hot /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 45 行.
+NOTIC: [8] Undefined index: id /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 49 行.
+NOTIC: [8] Undefined index: id /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 50 行.
+NOTIC: [8] Undefined index: id /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 51 行.
+NOTIC: [8] Undefined index: id /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 52 行.
+NOTIC: [8] Undefined variable: listInfo /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011835s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011855s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000907s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000922s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000881s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000894s ]
+
+[ 2017-11-03T19:39:06+08:00 ] 192.168.101.1 /Admin/seckillGoods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000844s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001181s ]
+SQL: SHOW COLUMNS FROM `jx_seckill_goods` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_seckill_goods` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_seckill_goods` ORDER BY id desc LIMIT 0,6   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+NOTIC: [8] Undefined index: goods_name /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 39 行.
+NOTIC: [8] Undefined index: goods_sn /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 40 行.
+NOTIC: [8] Undefined index: shop_price /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 41 行.
+NOTIC: [8] Undefined index: is_sale /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 42 行.
+NOTIC: [8] Undefined index: is_rec /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 43 行.
+NOTIC: [8] Undefined index: is_new /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 44 行.
+NOTIC: [8] Undefined index: is_hot /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 45 行.
+NOTIC: [8] Undefined index: goods_name /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 39 行.
+NOTIC: [8] Undefined index: goods_sn /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 40 行.
+NOTIC: [8] Undefined index: shop_price /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 41 行.
+NOTIC: [8] Undefined index: is_sale /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 42 行.
+NOTIC: [8] Undefined index: is_rec /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 43 行.
+NOTIC: [8] Undefined index: is_new /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 44 行.
+NOTIC: [8] Undefined index: is_hot /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 45 行.
+NOTIC: [8] Undefined index: goods_name /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 39 行.
+NOTIC: [8] Undefined index: goods_sn /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 40 行.
+NOTIC: [8] Undefined index: shop_price /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 41 行.
+NOTIC: [8] Undefined index: is_sale /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 42 行.
+NOTIC: [8] Undefined index: is_rec /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 43 行.
+NOTIC: [8] Undefined index: is_new /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 44 行.
+NOTIC: [8] Undefined index: is_hot /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 45 行.
+NOTIC: [8] Undefined index: goods_name /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 39 行.
+NOTIC: [8] Undefined index: goods_sn /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 40 行.
+NOTIC: [8] Undefined index: shop_price /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 41 行.
+NOTIC: [8] Undefined index: is_sale /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 42 行.
+NOTIC: [8] Undefined index: is_rec /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 43 行.
+NOTIC: [8] Undefined index: is_new /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 44 行.
+NOTIC: [8] Undefined index: is_hot /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 45 行.
+NOTIC: [8] Undefined index: goods_name /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 39 行.
+NOTIC: [8] Undefined index: goods_sn /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 40 行.
+NOTIC: [8] Undefined index: shop_price /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 41 行.
+NOTIC: [8] Undefined index: is_sale /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 42 行.
+NOTIC: [8] Undefined index: is_rec /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 43 行.
+NOTIC: [8] Undefined index: is_new /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 44 行.
+NOTIC: [8] Undefined index: is_hot /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 45 行.
+NOTIC: [8] Undefined index: goods_name /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 39 行.
+NOTIC: [8] Undefined index: goods_sn /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 40 行.
+NOTIC: [8] Undefined index: shop_price /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 41 行.
+NOTIC: [8] Undefined index: is_sale /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 42 行.
+NOTIC: [8] Undefined index: is_rec /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 43 行.
+NOTIC: [8] Undefined index: is_new /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 44 行.
+NOTIC: [8] Undefined index: is_hot /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 45 行.
+NOTIC: [8] Undefined variable: listInfo /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014088s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014110s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001165s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001348s ]
+
+[ 2017-11-03T19:39:35+08:00 ] 192.168.101.1 /Admin/seckillGoods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000617s ]
+SQL: SHOW COLUMNS FROM `jx_seckill_goods` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_seckill_goods` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_seckill_goods` ORDER BY id desc LIMIT 0,6   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+NOTIC: [8] Undefined index: shop_price /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 41 行.
+NOTIC: [8] Undefined index: is_sale /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 42 行.
+NOTIC: [8] Undefined index: is_rec /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 43 行.
+NOTIC: [8] Undefined index: is_new /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 44 行.
+NOTIC: [8] Undefined index: is_hot /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 45 行.
+NOTIC: [8] Undefined index: shop_price /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 41 行.
+NOTIC: [8] Undefined index: is_sale /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 42 行.
+NOTIC: [8] Undefined index: is_rec /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 43 行.
+NOTIC: [8] Undefined index: is_new /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 44 行.
+NOTIC: [8] Undefined index: is_hot /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 45 行.
+NOTIC: [8] Undefined index: shop_price /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 41 行.
+NOTIC: [8] Undefined index: is_sale /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 42 行.
+NOTIC: [8] Undefined index: is_rec /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 43 行.
+NOTIC: [8] Undefined index: is_new /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 44 行.
+NOTIC: [8] Undefined index: is_hot /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 45 行.
+NOTIC: [8] Undefined index: shop_price /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 41 行.
+NOTIC: [8] Undefined index: is_sale /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 42 行.
+NOTIC: [8] Undefined index: is_rec /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 43 行.
+NOTIC: [8] Undefined index: is_new /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 44 行.
+NOTIC: [8] Undefined index: is_hot /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 45 行.
+NOTIC: [8] Undefined index: shop_price /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 41 行.
+NOTIC: [8] Undefined index: is_sale /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 42 行.
+NOTIC: [8] Undefined index: is_rec /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 43 行.
+NOTIC: [8] Undefined index: is_new /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 44 行.
+NOTIC: [8] Undefined index: is_hot /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 45 行.
+NOTIC: [8] Undefined index: shop_price /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 41 行.
+NOTIC: [8] Undefined index: is_sale /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 42 行.
+NOTIC: [8] Undefined index: is_rec /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 43 行.
+NOTIC: [8] Undefined index: is_new /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 44 行.
+NOTIC: [8] Undefined index: is_hot /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 45 行.
+NOTIC: [8] Undefined variable: listInfo /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008227s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000814s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000829s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001237s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001270s ]
+
+[ 2017-11-03T19:41:49+08:00 ] 192.168.101.1 /Admin/seckillGoods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000617s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000885s ]
+SQL: SHOW COLUMNS FROM `jx_seckill_goods` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_seckill_goods` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_seckill_goods` ORDER BY id desc LIMIT 0,6   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+NOTIC: [2] date() expects parameter 2 to be integer, string given /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 41 行.
+NOTIC: [2] date() expects parameter 2 to be integer, string given /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 42 行.
+NOTIC: [8] Undefined index: falg /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 43 行.
+NOTIC: [2] date() expects parameter 2 to be integer, string given /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 41 行.
+NOTIC: [2] date() expects parameter 2 to be integer, string given /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 42 行.
+NOTIC: [8] Undefined index: falg /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 43 行.
+NOTIC: [2] date() expects parameter 2 to be integer, string given /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 41 行.
+NOTIC: [2] date() expects parameter 2 to be integer, string given /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 42 行.
+NOTIC: [8] Undefined index: falg /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 43 行.
+NOTIC: [2] date() expects parameter 2 to be integer, string given /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 41 行.
+NOTIC: [2] date() expects parameter 2 to be integer, string given /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 42 行.
+NOTIC: [8] Undefined index: falg /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 43 行.
+NOTIC: [2] date() expects parameter 2 to be integer, string given /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 41 行.
+NOTIC: [2] date() expects parameter 2 to be integer, string given /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 42 行.
+NOTIC: [8] Undefined index: falg /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 43 行.
+NOTIC: [2] date() expects parameter 2 to be integer, string given /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 41 行.
+NOTIC: [2] date() expects parameter 2 to be integer, string given /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 42 行.
+NOTIC: [8] Undefined index: falg /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 43 行.
+NOTIC: [8] Undefined variable: listInfo /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012688s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012710s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000824s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000838s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000811s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000831s ]
+
+[ 2017-11-03T19:43:51+08:00 ] 192.168.101.1 /Admin/seckillGoods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000786s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000818s ]
+SQL: SHOW COLUMNS FROM `jx_seckill_goods` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_seckill_goods` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_seckill_goods` ORDER BY id desc LIMIT 0,6   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+NOTIC: [8] Undefined index: falg /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 43 行.
+NOTIC: [8] Undefined index: falg /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 43 行.
+NOTIC: [8] Undefined index: falg /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 43 行.
+NOTIC: [8] Undefined index: falg /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 43 行.
+NOTIC: [8] Undefined index: falg /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 43 行.
+NOTIC: [8] Undefined index: falg /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 43 行.
+NOTIC: [8] Undefined variable: listInfo /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011653s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000913s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000928s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000890s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000910s ]
+
+[ 2017-11-03T19:45:27+08:00 ] 192.168.101.1 /Admin/seckillGoods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000881s ]
+SQL: SHOW COLUMNS FROM `jx_seckill_goods` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_seckill_goods` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_seckill_goods` ORDER BY id desc LIMIT 0,6   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+NOTIC: [8] Undefined variable: listInfo /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015068s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015091s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000843s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000858s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000870s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000890s ]
+
+[ 2017-11-03T19:45:46+08:00 ] 192.168.101.1 /Admin/seckillGoods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000898s ]
+SQL: SHOW COLUMNS FROM `jx_seckill_goods` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_seckill_goods` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_seckill_goods` ORDER BY id desc LIMIT 0,6   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+NOTIC: [8] Undefined variable: listInfo /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012180s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012201s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000819s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000833s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000861s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000879s ]
+
+[ 2017-11-03T19:45:52+08:00 ] 192.168.101.1 /Admin/seckillGoods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001049s ]
+SQL: SHOW COLUMNS FROM `jx_seckill_goods` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_seckill_goods` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_seckill_goods` ORDER BY id desc LIMIT 0,6   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+NOTIC: [8] Undefined variable: listInfo /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012479s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001078s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001075s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001086s ]
+
+[ 2017-11-03T19:47:47+08:00 ] 192.168.101.1 /Admin/seckillGoods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000731s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001009s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001032s ]
+SQL: SHOW COLUMNS FROM `jx_seckill_goods` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_seckill_goods` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_seckill_goods` ORDER BY id desc LIMIT 0,6   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+NOTIC: [8] Undefined variable: listInfo /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012210s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012233s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000915s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000929s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000891s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000910s ]
+
+[ 2017-11-03T19:48:02+08:00 ] 192.168.101.1 /Admin/seckillGoods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000772s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000815s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000842s ]
+SQL: SHOW COLUMNS FROM `jx_seckill_goods` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_seckill_goods` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_seckill_goods` ORDER BY id desc LIMIT 0,6   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+NOTIC: [8] Undefined variable: listInfo /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011758s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011780s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000822s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000838s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000795s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000814s ]
+
+[ 2017-11-03T19:49:49+08:00 ] 192.168.101.1 /Admin/seckillGoods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000727s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001168s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001239s ]
+SQL: SHOW COLUMNS FROM `jx_seckill_goods` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_seckill_goods` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_seckill_goods` ORDER BY id desc LIMIT 0,6   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+NOTIC: [8] Undefined index: show /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012445s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012453s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001025s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001036s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000890s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000908s ]
+
+[ 2017-11-03T19:50:31+08:00 ] 192.168.101.1 /Admin/seckillGoods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000740s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001095s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001123s ]
+SQL: SHOW COLUMNS FROM `jx_seckill_goods` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_seckill_goods` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_seckill_goods` ORDER BY id desc LIMIT 0,5   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+NOTIC: [8] Undefined index: show /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/d06ebaa7a7a2e458a23b73c3c65eb2b1.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011602s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011623s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001170s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001025s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001040s ]
+
+[ 2017-11-03T19:51:08+08:00 ] 192.168.101.1 /Admin/seckillGoods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000727s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000817s ]
+SQL: SHOW COLUMNS FROM `jx_seckill_goods` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_seckill_goods` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_seckill_goods` ORDER BY id desc LIMIT 0,5   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013613s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013642s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001171s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001065s ]
+
+[ 2017-11-03T19:51:10+08:00 ] 192.168.101.1 /Admin/SeckillGoods/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000742s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000784s ]
+SQL: SHOW COLUMNS FROM `jx_seckill_goods` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_seckill_goods` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_seckill_goods` ORDER BY id desc LIMIT 5,5   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006894s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006926s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000360s ]
+
+[ 2017-11-03T19:51:12+08:00 ] 192.168.101.1 /Admin/SeckillGoods/index/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+SQL: SHOW COLUMNS FROM `jx_seckill_goods` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_seckill_goods` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_seckill_goods` ORDER BY id desc LIMIT 10,5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007822s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007850s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000605s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000556s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000570s ]
+
+[ 2017-11-03T19:51:20+08:00 ] 192.168.101.1 /Admin/SeckillGoods/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000548s ]
+SQL: SHOW COLUMNS FROM `jx_seckill_goods` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_seckill_goods` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_seckill_goods` ORDER BY id desc LIMIT 5,5   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009210s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009243s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000800s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000822s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000756s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000772s ]
+
+[ 2017-11-03T19:51:21+08:00 ] 192.168.101.1 /Admin/SeckillGoods/index/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+SQL: SHOW COLUMNS FROM `jx_seckill_goods` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_seckill_goods` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_seckill_goods` ORDER BY id desc LIMIT 0,5   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008091s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008119s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000372s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000390s ]
+
+[ 2017-11-03T19:51:22+08:00 ] 192.168.101.1 /Admin/SeckillGoods/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+SQL: SHOW COLUMNS FROM `jx_seckill_goods` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_seckill_goods` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_seckill_goods` ORDER BY id desc LIMIT 5,5   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006148s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006180s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000567s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000594s ]
+
+[ 2017-11-03T19:51:55+08:00 ] 192.168.101.1 /Admin/SeckillGoods/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000785s ]
+SQL: SHOW COLUMNS FROM `jx_seckill_goods` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_seckill_goods` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_seckill_goods` ORDER BY id desc LIMIT 5,5   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006908s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006935s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000755s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000770s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001106s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001138s ]
+
+[ 2017-11-03T19:51:57+08:00 ] 192.168.101.1 /Admin/SeckillGoods/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+SQL: SHOW COLUMNS FROM `jx_seckill_goods` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_seckill_goods` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_seckill_goods` ORDER BY id desc LIMIT 5,5   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011703s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011734s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000324s ]
+
+[ 2017-11-03T19:57:35+08:00 ] 192.168.101.1 /Admin/SeckillGoods/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001200s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001239s ]
+SQL: SHOW COLUMNS FROM `jx_seckill_goods` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_seckill_goods` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_seckill_goods` ORDER BY id desc LIMIT 5,5   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012253s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012282s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000885s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000902s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001337s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001365s ]
+
+[ 2017-11-03T19:57:39+08:00 ] 192.168.101.1 /Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000760s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001212s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000017s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000042s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010054s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010089s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000829s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000872s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000819s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000832s ]
+
+[ 2017-11-03T19:57:39+08:00 ] 192.168.101.1 /Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026718s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026775s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001354s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001447s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001630s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001671s ]
+
+[ 2017-11-03T19:57:39+08:00 ] 192.168.101.1 /Admin/Index/menu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000852s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015791s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015854s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000403s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000426s ]
+
+[ 2017-11-03T19:57:39+08:00 ] 192.168.101.1 /Admin/Index/top.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001698s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028051s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028105s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000461s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000489s ]
+
+[ 2017-11-03T19:57:42+08:00 ] 192.168.101.1 /admin/goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+NOTIC: [8] Undefined index: cate_id /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: intro_type /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/8fff98f1c85a99ba893b50f23831a1d9.php 第 35 行.
+NOTIC: [8] Undefined index: intro_type /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/8fff98f1c85a99ba893b50f23831a1d9.php 第 36 行.
+NOTIC: [8] Undefined index: intro_type /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/8fff98f1c85a99ba893b50f23831a1d9.php 第 37 行.
+NOTIC: [8] Undefined index: is_sale /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/8fff98f1c85a99ba893b50f23831a1d9.php 第 42 行.
+NOTIC: [8] Undefined index: is_sale /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/8fff98f1c85a99ba893b50f23831a1d9.php 第 43 行.
+NOTIC: [8] Undefined index: keyword /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/8fff98f1c85a99ba893b50f23831a1d9.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012244s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012265s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000758s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000810s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000831s ]
+
+[ 2017-11-03T19:57:44+08:00 ] 192.168.101.1 /Admin/seckillGoods/add/goods_id/64.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+SQL: SHOW COLUMNS FROM `jx_seckill_goods` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_seckill_goods` WHERE `goods_id` = 64 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000051s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005991s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006029s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000364s ]
+
+[ 2017-11-03T19:57:47+08:00 ] 192.168.101.1 /Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+NOTIC: [8] Undefined index: cate_id /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: intro_type /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/8fff98f1c85a99ba893b50f23831a1d9.php 第 35 行.
+NOTIC: [8] Undefined index: intro_type /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/8fff98f1c85a99ba893b50f23831a1d9.php 第 36 行.
+NOTIC: [8] Undefined index: intro_type /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/8fff98f1c85a99ba893b50f23831a1d9.php 第 37 行.
+NOTIC: [8] Undefined index: is_sale /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/8fff98f1c85a99ba893b50f23831a1d9.php 第 42 行.
+NOTIC: [8] Undefined index: is_sale /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/8fff98f1c85a99ba893b50f23831a1d9.php 第 43 行.
+NOTIC: [8] Undefined index: keyword /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/8fff98f1c85a99ba893b50f23831a1d9.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013547s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013569s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000855s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000869s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000799s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000817s ]
+
+[ 2017-11-03T19:57:49+08:00 ] 192.168.101.1 /Admin/seckillGoods/add/goods_id/64.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+SQL: SHOW COLUMNS FROM `jx_seckill_goods` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_seckill_goods` WHERE `goods_id` = 64 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000040s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005594s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005641s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000505s ]
+
+[ 2017-11-03T19:57:52+08:00 ] 192.168.101.1 /Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000586s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+NOTIC: [8] Undefined index: cate_id /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/8fff98f1c85a99ba893b50f23831a1d9.php 第 29 行.
+NOTIC: [8] Undefined index: intro_type /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/8fff98f1c85a99ba893b50f23831a1d9.php 第 35 行.
+NOTIC: [8] Undefined index: intro_type /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/8fff98f1c85a99ba893b50f23831a1d9.php 第 36 行.
+NOTIC: [8] Undefined index: intro_type /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/8fff98f1c85a99ba893b50f23831a1d9.php 第 37 行.
+NOTIC: [8] Undefined index: is_sale /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/8fff98f1c85a99ba893b50f23831a1d9.php 第 42 行.
+NOTIC: [8] Undefined index: is_sale /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/8fff98f1c85a99ba893b50f23831a1d9.php 第 43 行.
+NOTIC: [8] Undefined index: keyword /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/8fff98f1c85a99ba893b50f23831a1d9.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011403s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011428s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000553s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000572s ]
+
+[ 2017-11-03T19:58:00+08:00 ] 192.168.101.1 /admin/rule/ruleAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000557s ]
+SQL: SHOW COLUMNS FROM `jx_rule` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_rule`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009067s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009103s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000545s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000559s ]
+
+[ 2017-11-03T19:58:47+08:00 ] 192.168.101.1 /admin/rule/ruleAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000771s ]
+SQL: SHOW COLUMNS FROM `jx_rule` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: validate /usr/share/nginx/www/newtpshop/tpshop/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /usr/share/nginx/www/newtpshop/tpshop/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `jx_rule` (`rule_name`,`module_name`,`controller_name`,`action_name`,`parent_id`,`is_show`) VALUES ('秒杀列表','admin','SekillGoods','index','1','1') [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000056s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005712s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005744s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000618s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000631s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000644s ]
+
+[ 2017-11-03T19:58:50+08:00 ] 192.168.101.1 /Admin/Rule/ruleList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000753s ]
+SQL: SHOW COLUMNS FROM `jx_rule` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_rule`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000056s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009832s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009861s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000751s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000949s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001024s ]
+
+[ 2017-11-03T19:58:50+08:00 ] 192.168.101.1 /Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000292s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000017s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000044s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006100s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006136s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000469s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000498s ]
+
+[ 2017-11-03T19:58:51+08:00 ] 192.168.101.1 /Admin/Index/menu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015066s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015104s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000799s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000827s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000709s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000739s ]
+
+[ 2017-11-03T19:58:51+08:00 ] 192.168.101.1 /Admin/Index/top.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000979s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001061s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009548s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009601s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000693s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000735s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000425s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000447s ]
+
+[ 2017-11-03T19:58:51+08:00 ] 192.168.101.1 /Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010391s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010448s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000486s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000519s ]
+
+[ 2017-11-03T20:26:53+08:00 ] 192.168.101.1 /Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000892s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000919s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000051s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011403s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011439s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000907s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000922s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000875s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000888s ]
+
+[ 2017-11-03T20:26:53+08:00 ] 192.168.101.1 /Admin/Index/menu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000665s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000249s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021035s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021083s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000769s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000626s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000664s ]
+
+[ 2017-11-03T20:26:53+08:00 ] 192.168.101.1 /Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000922s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015859s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000455s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000482s ]
+
+[ 2017-11-03T20:26:53+08:00 ] 192.168.101.1 /Admin/Index/top.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002128s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002193s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036074s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036133s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001619s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001671s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001115s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001164s ]
+
+[ 2017-11-03T20:26:54+08:00 ] 192.168.101.1 /admin/goods/trash.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=0 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=0 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+NOTIC: [8] Undefined index: cate_id /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/f4fa95d614e809c53e2b2e76a497661d.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/f4fa95d614e809c53e2b2e76a497661d.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/f4fa95d614e809c53e2b2e76a497661d.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/f4fa95d614e809c53e2b2e76a497661d.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/f4fa95d614e809c53e2b2e76a497661d.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/f4fa95d614e809c53e2b2e76a497661d.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/f4fa95d614e809c53e2b2e76a497661d.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/f4fa95d614e809c53e2b2e76a497661d.php 第 29 行.
+NOTIC: [8] Undefined index: cate_id /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/f4fa95d614e809c53e2b2e76a497661d.php 第 29 行.
+NOTIC: [8] Undefined index: intro_type /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/f4fa95d614e809c53e2b2e76a497661d.php 第 35 行.
+NOTIC: [8] Undefined index: intro_type /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/f4fa95d614e809c53e2b2e76a497661d.php 第 36 行.
+NOTIC: [8] Undefined index: intro_type /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/f4fa95d614e809c53e2b2e76a497661d.php 第 37 行.
+NOTIC: [8] Undefined index: is_sale /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/f4fa95d614e809c53e2b2e76a497661d.php 第 42 行.
+NOTIC: [8] Undefined index: is_sale /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/f4fa95d614e809c53e2b2e76a497661d.php 第 43 行.
+NOTIC: [8] Undefined index: keyword /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/f4fa95d614e809c53e2b2e76a497661d.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012774s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000718s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000746s ]
+
+[ 2017-11-03T20:26:57+08:00 ] 192.168.101.1 /admin/MemberLevel/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000633s ]
+SQL: SHOW COLUMNS FROM `jx_member_level` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_member_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010085s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010117s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000767s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000782s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000784s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000804s ]
+
+[ 2017-11-03T20:26:58+08:00 ] 192.168.101.1 /admin/MemberLevel/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000039s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+SQL: SHOW COLUMNS FROM `jx_member_level` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_member_level`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000053s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009561s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009631s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000573s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000369s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000385s ]
+
+[ 2017-11-03T20:26:58+08:00 ] 192.168.101.1 /admin/MemberLevel/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000039s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000054s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008294s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008323s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000272s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000284s ]
+
+[ 2017-11-03T20:27:01+08:00 ] 192.168.101.1 /admin/rule/ruleList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000927s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000962s ]
+SQL: SHOW COLUMNS FROM `jx_rule` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_rule`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012419s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012451s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001009s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001047s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000747s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000827s ]
+
+[ 2017-11-03T20:31:03+08:00 ] 192.168.101.1 /admin/goods/goodsAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000925s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001056s ]
+SQL: SHOW COLUMNS FROM `jx_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_type`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_member_level` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_member_level` ORDER BY id  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+NOTIC: [8] Undefined index: level /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/2d581302f585c48a2c4e59b4371bb019.php 第 132 行.
+NOTIC: [8] Undefined index: level /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/2d581302f585c48a2c4e59b4371bb019.php 第 132 行.
+NOTIC: [8] Undefined index: level /usr/share/nginx/www/newtpshop/tpshop/App/Runtime/Cache/Admin/2d581302f585c48a2c4e59b4371bb019.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017939s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017961s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001356s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001375s ]
+
+[ 2017-11-03T20:31:05+08:00 ] 192.168.101.1 /admin/goods/trash.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000453s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_goods` WHERE ( isdel=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_goods` WHERE ( isdel=0 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+NOTIC: [2] file_put_contents(../App/Runtime/Cache/Admin/f4fa95d614e809c53e2b2e76a497661d.php): failed to open stream: Permission denied /usr/share/nginx/www/newtpshop/tpshop/ThinkPHP/Library/Think/Storage/Driver/File.class.php 第 47 行.
+ERR: _STORAGE_WRITE_ERROR_:../App/Runtime/Cache/Admin/f4fa95d614e809c53e2b2e76a497661d.php
+
+[ 2017-11-03T20:31:07+08:00 ] 192.168.101.1 /Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000824s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006931s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006961s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001325s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001359s ]
+
+[ 2017-11-03T20:31:07+08:00 ] 192.168.101.1 /Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016462s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016514s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000995s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001023s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000945s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000975s ]
+
+[ 2017-11-03T20:31:07+08:00 ] 192.168.101.1 /Admin/Index/top.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000775s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015415s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015463s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000632s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000456s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000485s ]
+
+[ 2017-11-03T20:31:07+08:00 ] 192.168.101.1 /Admin/Index/menu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001800s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027786s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027945s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001219s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001181s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001236s ]
+
+[ 2017-11-03T20:31:30+08:00 ] 192.168.101.1 /Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001144s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001187s ]
+NOTIC: [8] Use of undefined constant AdminRole - assumed 'AdminRole' /usr/share/nginx/www/newtpshop/tpshop/App/Admin/Controller/CommonController.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `jx_admin_role` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_admin_role` WHERE `admin_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jx_rule` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_rule`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000018s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000046s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008406s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008440s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000530s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000543s ]
+
+[ 2017-11-03T20:31:31+08:00 ] 192.168.101.1 /Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000851s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013469s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013514s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001035s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001066s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001071s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001101s ]
+
+[ 2017-11-03T20:31:31+08:00 ] 192.168.101.1 /Admin/Index/top.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000973s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001064s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007643s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007682s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000390s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000409s ]
+
+[ 2017-11-03T20:31:31+08:00 ] 192.168.101.1 /Admin/Index/menu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001172s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001257s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010782s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010826s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000488s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000519s ]
+
+[ 2017-11-03T20:31:32+08:00 ] 192.168.101.1 /admin/SekillGoods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+ERR: 无法加载控制器:SekillGoods
+
+[ 2017-11-03T20:31:38+08:00 ] 192.168.101.1 /admin/rule/ruleList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001077s ]
+SQL: SHOW COLUMNS FROM `jx_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jx_rule`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013105s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013136s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001116s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001144s ]
+
+[ 2017-11-03T20:31:39+08:00 ] 192.168.101.1 /admin/rule/ruleAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000039s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000295s ]
+SQL: SHOW COLUMNS FROM `jx_rule` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_rule`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009489s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009517s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000276s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000288s ]
+
+[ 2017-11-03T20:31:40+08:00 ] 192.168.101.1 /admin/rule/ruleList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000040s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000879s ]
+SQL: SHOW COLUMNS FROM `jx_rule` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_rule`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000056s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006512s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006547s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000438s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000465s ]
+
+[ 2017-11-03T20:31:45+08:00 ] 192.168.101.1 /Admin/Rule/ruleEdit/id/36.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000727s ]
+SQL: SHOW COLUMNS FROM `jx_rule` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_rule` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_rule`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011428s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011457s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000940s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000958s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000790s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000810s ]
+
+[ 2017-11-03T20:31:53+08:00 ] 192.168.101.1 /Admin/Rule/ruleEdit/id/36.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001144s ]
+SQL: SHOW COLUMNS FROM `jx_rule` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate /usr/share/nginx/www/newtpshop/tpshop/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /usr/share/nginx/www/newtpshop/tpshop/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+SQL: SELECT * FROM `jx_rule`  [ RunTime:0.0006s ]
+NOTIC: [2] Illegal string offset 'id' /usr/share/nginx/www/newtpshop/tpshop/App/Admin/Model/RuleModel.class.php 第 94 行.
+NOTIC: [2] Illegal string offset 'id' /usr/share/nginx/www/newtpshop/tpshop/App/Admin/Model/RuleModel.class.php 第 94 行.
+NOTIC: [2] Illegal string offset 'id' /usr/share/nginx/www/newtpshop/tpshop/App/Admin/Model/RuleModel.class.php 第 94 行.
+NOTIC: [2] Illegal string offset 'id' /usr/share/nginx/www/newtpshop/tpshop/App/Admin/Model/RuleModel.class.php 第 94 行.
+NOTIC: [2] Illegal string offset 'id' /usr/share/nginx/www/newtpshop/tpshop/App/Admin/Model/RuleModel.class.php 第 94 行.
+NOTIC: [2] Illegal string offset 'id' /usr/share/nginx/www/newtpshop/tpshop/App/Admin/Model/RuleModel.class.php 第 94 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011564s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011605s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000896s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000923s ]
+
+[ 2017-11-03T20:31:56+08:00 ] 192.168.101.1 /Admin/Rule/ruleEdit/id/36.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001105s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001139s ]
+SQL: SHOW COLUMNS FROM `jx_rule` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_rule` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_rule`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+NOTIC: [2] file_put_contents(../App/Runtime/Cache/Admin/4159f988e0326dc8b58d20656c7e6ac8.php): failed to open stream: Permission denied /usr/share/nginx/www/newtpshop/tpshop/ThinkPHP/Library/Think/Storage/Driver/File.class.php 第 47 行.
+ERR: _STORAGE_WRITE_ERROR_:../App/Runtime/Cache/Admin/4159f988e0326dc8b58d20656c7e6ac8.php
+
+[ 2017-11-03T20:32:20+08:00 ] 192.168.101.1 /admin/SekillGoods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000933s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+ERR: 无法加载控制器:SekillGoods
+
+[ 2017-11-03T20:32:33+08:00 ] 192.168.101.1 /Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000814s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000843s ]
+NOTIC: [8] Use of undefined constant AdminRole - assumed 'AdminRole' /usr/share/nginx/www/newtpshop/tpshop/App/Admin/Controller/CommonController.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `jx_admin_role` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_admin_role` WHERE `admin_id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_rule` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_rule`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000019s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000051s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007672s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007715s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000992s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001023s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001025s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001052s ]
+
+[ 2017-11-03T20:32:33+08:00 ] 192.168.101.1 /Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000744s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010363s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010415s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000928s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000958s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000452s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000474s ]
+
+[ 2017-11-03T20:32:33+08:00 ] 192.168.101.1 /Admin/Index/top.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001085s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008833s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008872s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000376s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000392s ]
+
+[ 2017-11-03T20:32:33+08:00 ] 192.168.101.1 /Admin/Index/menu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000894s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000956s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012871s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012913s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000418s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000444s ]
+
+[ 2017-11-03T20:32:34+08:00 ] 192.168.101.1 /admin/SekillGoods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000039s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000626s ]
+ERR: 无法加载控制器:SekillGoods
+
+[ 2017-11-03T20:33:00+08:00 ] 192.168.101.1 /admin/SekillGoods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000580s ]
+ERR: 无法加载控制器:SekillGoods
+
+[ 2017-11-03T20:33:02+08:00 ] 192.168.101.1 /Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000442s ]
+NOTIC: [8] Use of undefined constant AdminRole - assumed 'AdminRole' /usr/share/nginx/www/newtpshop/tpshop/App/Admin/Controller/CommonController.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `jx_admin_role` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_admin_role` WHERE `admin_id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jx_rule` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_rule`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000015s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000040s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006289s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006328s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001202s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000914s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000931s ]
+
+[ 2017-11-03T20:33:02+08:00 ] 192.168.101.1 /Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000880s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013565s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013613s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001218s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001252s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000969s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-11-03T20:33:02+08:00 ] 192.168.101.1 /Admin/Index/top.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000971s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001066s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009890s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009935s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000594s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000625s ]
+
+[ 2017-11-03T20:33:02+08:00 ] 192.168.101.1 /Admin/Index/menu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000139s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000771s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010479s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010530s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000821s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000855s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000811s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000859s ]
+
+[ 2017-11-03T20:33:04+08:00 ] 192.168.101.1 /admin/SeckillGoods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000661s ]
+SQL: SHOW COLUMNS FROM `jx_seckill_goods` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_seckill_goods` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jx_seckill_goods` ORDER BY id desc LIMIT 0,5   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009127s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009157s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000604s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000633s ]
+

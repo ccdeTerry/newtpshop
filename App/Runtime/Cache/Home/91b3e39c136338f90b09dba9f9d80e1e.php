@@ -313,7 +313,7 @@
 				<span>热卖商品</span>
 				<span>推荐商品</span>
 				<span>新品上架</span>
-				<span class="last">猜您喜欢</span>
+				<span class="last">大牌秒杀</span>
 			</h2>
 			
 			<div class="guide_wrap">
@@ -362,42 +362,22 @@
                 
                 <!-- 新品上架 start-->
 				<div class="new none">
-					<ul>
-						<?php if(is_array($isNew)): $i = 0; $__LIST__ = $isNew;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li>
-							<dl>
-								<dt><a href="<?php echo U('Goods/index','goods_id='.$vo['id']);?>"><img src="<?php echo ($vo["goods_thumb"]); ?>" alt="" /></a></dt>
-								<dd><a href="<?php echo U('Goods/index','goods_id='.$vo['id']);?>"><?php echo ($vo["goods_name"]); ?></a></dd>
-								<dd><span>售价：</span><strong> ￥<?php echo ($vo["shop_price"]); ?></strong></dd>
-							</dl>
-						</li><?php endforeach; endif; else: echo "" ;endif; ?>
-					</ul>
+
 				</div>
                 <!-- 新品上架 end-->
                 
-                <!-- 猜您喜欢 start -->
+                <!-- 打牌秒杀 start -->
 				<div class="guess none">
 					<ul>
-						<li>
-							<dl>
-								<dt><a href=""><img src="/Public/resources/Home//images/guess1.jpg" alt="" /></a></dt>
-								<dd><a href="">Thinkpad USB光电鼠标</a></dd>
-								<dd><span>售价：</span><strong> ￥39.00</strong></dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt><a href=""><img src="/Public/resources/Home//images/guess2.jpg" alt="" /></a></dt>
-								<dd><a href="">宜客莱（ECOLA）电脑散热器</a></dd>
-								<dd><span>售价：</span><strong> ￥89.00</strong></dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt><a href=""><img src="/Public/resources/Home//images/guess3.jpg" alt="" /></a></dt>
-								<dd><a href="">巴黎欧莱雅男士洁面膏 100ml</a></dd>
-								<dd><span>售价：</span><strong> ￥30.00</strong></dd>
-							</dl>
-						</li>
+						<?php if(is_array($seckill)): $i = 0; $__LIST__ = $seckill;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li>
+								<dl>
+									<dt><a href="<?php echo U('SeckillGoods/detail','seckill_id='.$vo['seckillid']);?>"><img src="<?php echo ($vo["goods_thumb"]); ?>" alt="" /></a></dt>
+                                    <dd><strong> 今日 <?php echo (date('H:i:s',$vo["btime"])); ?> 准时开始</strong></dd>
+									<dd><a href="<?php echo U('SeckillGoods/detail','seckill_id='.$vo['seckillid']);?>"><?php echo ($vo["goods_name"]); ?></a></dd>
+									<dd><span>售价：</span><strong> ￥<?php echo ($vo["seckill_price"]); ?></strong></dd>
+									
+								</dl>
+							</li><?php endforeach; endif; else: echo "" ;endif; ?>
 					</ul>
 				</div>
                 <!-- 猜您喜欢 end -->

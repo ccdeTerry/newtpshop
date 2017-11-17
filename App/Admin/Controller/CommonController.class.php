@@ -27,7 +27,6 @@ class CommonController extends Controller{
 //        myU();
 //        session(null);
         $admin =session('admin');
-
         if (!$admin){
             $this->error('没有登录,请先登录!',U('Login/login'));
         }

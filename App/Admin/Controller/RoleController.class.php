@@ -126,18 +126,6 @@ class RoleController extends CommonController{
         }
     }
 
-    /**
-     * @flushAdmin 清除超级管理员缓存
-     * @author : Terry
-     * @return
-     */
-    public function flushAdmin(){
-       $AdminInfo =  M('AdminRole')->where(['role_id'=>1])->select();
-        foreach($AdminInfo as $val){
-            S('user_'.$val['admin_id'],null);
-        }
-        $this->success('缓存清除成功');
-    }
 
 
 

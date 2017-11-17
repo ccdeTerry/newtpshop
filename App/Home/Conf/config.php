@@ -10,7 +10,7 @@ return array(
 		'notify_url' => "http://localhost.test.com/notify_url.php",
 
 		//同步跳转
-		'return_url' =>"http://web.newtpshop.com/order/returnUrl.html",
+		'return_url' =>"http://newshop.com/order/returnUrl.html",
 
 		//编码格式
 		'charset' => "UTF-8",

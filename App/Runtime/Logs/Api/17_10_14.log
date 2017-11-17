@@ -1,0 +1,10 @@
+[ 2017-10-14T22:36:45+08:00 ] 192.168.101.1 /api/api/apiLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000830s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001484s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0300s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0266s ]
+

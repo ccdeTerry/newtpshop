@@ -146,15 +146,13 @@
 			<div class="viewd leftbar mt10">
 				<h2><a href="">清空</a><strong>最近浏览过的商品</strong></h2>
 				<div class="leftbar_wrap">
+					<volist name="seenGoods" id="vo">
 					<dl>
-						<dt><a href=""><img src="__PUBLIC_HOME__images/hpG4.jpg" alt="" /></a></dt>
-						<dd><a href="">惠普G4-1332TX 14英寸笔记...</a></dd>
+						<dt><a href="{:U('Goods/index','goods_id='.$vo[0])}"><img src="/{$vo.2}" alt="" /></a></dt>
+						<dd><a href="{:U('Goods/index','goods_id='.$vo[0])}">{$vo.1}</a></dd>
 					</dl>
-
-					<dl class="last">
-						<dt><a href=""><img src="__PUBLIC_HOME__images/crazy4.jpg" alt="" /></a></dt>
-						<dd><a href="">直降200元！TCL正1.5匹空调</a></dd>
-					</dl>
+                    </volist>
+					
 				</div>
 			</div>
 			<!-- 最近浏览 end -->

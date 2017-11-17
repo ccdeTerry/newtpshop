@@ -1,0 +1,9 @@
+[ 2017-10-21T09:30:36+08:00 ] 192.168.101.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001713s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002286s ]
+ERR: SQLSTATE[HY000] [2002] Connection timed out
+

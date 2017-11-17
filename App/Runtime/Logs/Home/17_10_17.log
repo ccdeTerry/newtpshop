@@ -1,0 +1,17 @@
+[ 2017-10-17T12:08:27+08:00 ] 192.168.101.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002905s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003449s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_hot` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_new` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_goods` WHERE `isdel` = 1 AND `is_rec` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0003s ]
+ERR: 1054:Unknown column 'cx_price' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `jx_goods` WHERE ( is_sale=1 AND cx_price>0 AND start <1508213307 AND end > 1508213307 ) LIMIT 5  
+ERR: 1054:Unknown column 'cx_price' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `jx_goods` WHERE ( is_sale=1 AND cx_price>0 AND start <1508213307 AND end > 1508213307 ) LIMIT 5  
+

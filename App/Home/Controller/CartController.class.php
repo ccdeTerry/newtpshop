@@ -38,6 +38,9 @@ class CartController extends  CommonController{
     public function  index(){
         $cart = D('cart');
         $cartInfo = $cart->getListData();
+        if ($cartInfo ==false) {
+            $this->error($cart->getError(),U('index/index'));
+        }
         $goodsPrice = $cart->getPrice($cartInfo);
         $this->assign('cartInfo',$cartInfo);
         $this->assign('goodsPrice',$goodsPrice);

@@ -29,14 +29,10 @@ class AttributeModel extends CommonModel{
      */
     public function listData(){
     $attrInfo =  parent::CommonListData(intval(I('get.p')));
-
-
     $typeInfo = D('Type')->select();
     foreach ($typeInfo as $key =>$value){
         $type[$value['id']] = $value;
     }
-
-
     foreach ($attrInfo['list'] as $key =>$value){
         $attrInfo['list'][$key]['type_id'] =$type[$value['type_id']]['type_name'];
     }

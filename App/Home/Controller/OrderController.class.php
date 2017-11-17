@@ -63,7 +63,6 @@ class OrderController extends CommonController{
     $alipayReturn=$_GET;
     $alipaySevice = new \AlipayTradeService(C('ALIPAY'));
     $result = $alipaySevice->check($alipayReturn);
-//dump($arr);exit;
     if($result) {//验证成功
         //商户订单号
         $out_trade_no = htmlspecialchars($_GET['out_trade_no']);
@@ -71,7 +70,10 @@ class OrderController extends CommonController{
         $trade_no = htmlspecialchars($_GET['trade_no']);
         $data =  D('order')->where(['id'=>$out_trade_no])->setField(['pay_status'=>1,'alipay_num'=>$trade_no]);
            if ($data){
+               //增加用户积分
                D('User')->addJiFen(intval($alipayReturn['total_amount']));
+               //清空购物车中的数据
+               D('Cart')->dealCart($out_trade_no);
                $this->success('付款成功',U('Member/myOrder'));
            }
     }
@@ -114,19 +116,6 @@ class OrderController extends CommonController{
         if (!$order || $order['order_status']!=2){
             $this->error('参数错误');
         }
-
-        //取出快递类型
-//        preg_match_all('/[\x{4e00}-\x{9fa5}a-zA-Z]/u' , $order['com'], $result);
-        //        var_dump($result);
-        //        array([0]=>汉字,[1]=>运单号)
-        //
-        /* array(0 =>
-                    array(
-                    0 => string '圆' (length=3)
-                    1 => string '通' (length=3)
-        ))*/
-
-//        $packageType =implode('', $result[0]);
         //引入汉字转拼音类
         import("ORG.Util.Pinyin");
         $pinyin = new \PinYin();

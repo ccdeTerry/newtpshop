@@ -1,0 +1,61 @@
+<extend name="Public:base"/>
+<block name="title">ECSHOP 管理中心 - 添加商品 </block>
+<block name="header">
+    <span class="action-span"><a href="{:U('cateList')}">商品</a></span>
+    <span class="action-span1"><a href="#">ECSHOP 管理中心</a></span>
+    <span id="search_id" class="action-span1"> - 添加分类 </span>
+    <div style="clear:both"></div>
+</block>
+    
+<block name="body">
+
+<!-- 商品列表 -->
+
+    <div class="list-div" id="listDiv">
+        <table cellpadding="3" cellspacing="1">
+            <tr>
+                <th>秒杀编号</th>
+                <th>商品ID</th>
+                <th>秒杀价格</th>
+                <th>秒杀数量</th>
+                <th>开始时间</th>
+                <th>结束时间</th>
+                <th>状态</th>
+                <th>创建时间</th>
+                <th>操作</th>
+            </tr>
+        <volist name="data['list']" id="vo">
+            <tr>
+                <td align="center">{$vo.seckill_key}</td>
+                <td align="center"><span>{$vo.goods_id}</span></td>
+                <td align="center"><span>￥{$vo.seckill_price}</span></td>
+                <td align="center"><span>{$vo.goods_num}</span></td>
+                <td align="center"><span>{$vo.btime|date='Y-m-d H:i:s',###}</span></td>
+                <td align="center"><span>{$vo.etime|date='Y-m-d H:i:s',###}</span></td>
+                <td align="center"><span><eq name="vo['flag']" value="0">进行中<else/>已结束</eq></span></td>
+                <td align="center"><span>{$vo.create_time}</span></td>
+
+                <td align="center">
+                <a href="" target="_blank" title="查看"><img src="__PUBLIC_ADMIN__Images/icon_view.gif" width="16" height="16" border="0" />查看</a>|
+                    <a href="{:U('edit','goods_id='.$vo['id'])}" title="编辑"><img src="__PUBLIC_ADMIN__Images/icon_edit.gif" width="16" height="16" border="0" />编辑</a>|
+                    <eq name="vo.flag" value="0">
+                <a href="{:U('endSeckill','seckillKey='.$vo['seckill_key'])}" onclick="" title="结束"><img src="__PUBLIC_ADMIN__Images/icon_trash.gif" width="16" height="16" border="0" />立刻结束</a>
+                        <else />
+                        秒杀结束
+                    </eq>
+            </tr>
+</volist>
+        </table>
+
+        <!-- 分页开始 -->
+        <table id="page-table" cellspacing="0">
+            <tr>
+                <td width="80%">&nbsp;</td>
+                <td align="center" nowrap="true">
+                    {$data.page}
+                </td>
+            </tr>
+        </table>
+    <!-- 分页结束 -->
+    </div>
+</block>

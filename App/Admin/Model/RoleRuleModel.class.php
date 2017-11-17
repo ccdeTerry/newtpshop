@@ -42,7 +42,10 @@ class RoleRuleModel extends CommonModel{
      */
     public function getRules($role_id){
       $ruleIds =  $this->where(['role_id'=>$role_id])->select();
-      return array_column($ruleIds,'rule_id');
+
+//     array_map(function($param){return $param['rule_id'];},$ruleIds);
+
+     return array_column($ruleIds,'rule_id');
 
 
     }

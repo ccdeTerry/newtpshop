@@ -87,7 +87,7 @@ class CategoryModel extends CommonModel {
 
         $tree  =$this->getCateTree($data['id']);
         $tree[] = ['id'=>$data['id']];
-        foreach ($data as $key =>$val){
+        foreach ($tree as $key =>$val){
             if ($data['parent_id'] == $val['id']){
                 $this->error='不能设置子分类为父分类';
                 return false;
@@ -127,7 +127,6 @@ class CategoryModel extends CommonModel {
             $data[$key]['son'] =$this->where(['parent_id'=>$value['id']])->select();
             $data[$key]['recson'] =$this->where(['isrec'=>1,'parent_id'=>$value['id']])->select();
         }*/
-
         //优化
         $data =$this->select();
         //循环处理数组,最后生成两个数组 父类数组和子类数组 两个数组key值相同
@@ -146,16 +145,14 @@ class CategoryModel extends CommonModel {
                     //判断是否是推荐
                     $info[$value['parent_id']]['recson'][]=$value;
                 }
-
             }
         }
-
         //循环子类数组 将子类数组追加到父类数组中
         foreach($info as $key =>$value){
             if (in_array($key,$parentIds)){
                 $dataInfo[$key]['son']=$value['son'];
                 $dataInfo[$key]['recson']=$value['recson'];
-                //将商品追加到recson中recson
+//                将商品追加到recson中recson
                 foreach ($dataInfo[$key]['recson'] as $k =>$v){
                     $dataInfo[$key]['recson'][$k]['goods']=$this->getGoodsByCateId($v['id']);
                 }

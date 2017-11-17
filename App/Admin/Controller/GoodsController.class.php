@@ -111,6 +111,7 @@ class GoodsController extends CommonController{
             $this->assign('goodsImg',$goodImgPic);
             //会员价格
             $member = $goods->getMemberPrice($goodsId);
+//            dump($member);
             $this->assign('member',$member);
             $this->display();
         }else{
@@ -227,6 +228,7 @@ class GoodsController extends CommonController{
        if (IS_GET){
            $goodsId =intval(I('get.goods_id'));
            $goodsAttrInfo = D('GoodsAttr')->getSigleAttr($goodsId);
+//           dump($goodsAttrInfo);exit;
            //该商品没有单选属性
            if (!$goodsAttrInfo){
                //没有单选属性
@@ -279,9 +281,8 @@ class GoodsController extends CommonController{
         }
            //更新商品库存
           $addGoodsNumber = M('Goods')->where(['id'=>$goodsId])->setField('goods_number',$goodsNumber);
-        if ($addGoodsNumber){
+//           dump($addGoodsNumber);
             $this->success('库存写入成功',U('goodsList'));
-        }
        }
    }
 

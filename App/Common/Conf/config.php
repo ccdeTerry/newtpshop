@@ -10,14 +10,13 @@ return array(
     ],
     /* 数据库设置 */
     'DB_TYPE'               =>  'mysql',     // 数据库类型
-    'DB_HOST'               =>  '101.200.160.169', // 服务器地址
-//    'DB_HOST'               =>  '127.0.0.1', // 服务器地址
+    'DB_HOST'               =>  '127.0.0.1', // 服务器地址
     'DB_NAME'               =>  'newshop',          // 数据库名
-    'DB_USER'               =>  'study',      // 用户名
-    'DB_PWD'                =>  'zhangxiaorui',          // 密码
+    'DB_USER'               =>  '',      // 用户名
+    'DB_PWD'                =>  '',          // 密码
     'DB_PORT'               =>  '',        // 端口
     'DB_PREFIX'             =>  'jx_',    // 数据库表前缀
-    'OFFSET'=>6 ,   //分页偏移量
+    'OFFSET'=>5 ,   //分页偏移量
     'SELF_SITE'=> "http://api.newshop.com/",//./home/user/login
     //短信验证码
     'SHORTMES_NEM' => [
@@ -32,8 +31,8 @@ return array(
     //在开发调试的时候，可以使用官网自动为您分配的测试Demo的APP ID
     'APP_ID'=>'8aaf070857acf7a70157cb0a1c791b64',
     //redis
-    //    'REDIS_HOST'=>'192.168.91.132',
-    'REDIS_HOST'=>'101.200.160.169',
+//    'REDIS_HOST'=>'192.168.101.101',
+    'REDIS_HOST'=>'',
     'REDIS_PORT'=>6379,
     //微博appkey
     'WB_AKEY'=>'819555918',
@@ -46,7 +45,8 @@ return array(
     //允许某ip下指定用户访问格式  数组形式[192.168.1.1,192.168.1,2]
 //     'IPS'=>['192.168.33.1-7','192.168.33.48-60']
 //     'IPS'=>['192.168.33.1','192.168.33.2'],
-     'IPS'=>['127.0.0.1'],
+//     'IPS'=>['127.0.0.1'],
 
+//'SHOW_PAGE_TRACE'=>TRUE,
 
 );

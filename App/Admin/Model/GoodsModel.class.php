@@ -8,6 +8,7 @@
  * description:
  */
 namespace Admin\Model;
+use Think\Cache\Driver\Redis;
 use Think\Upload;
 
 class GoodsModel  extends CommonModel{
@@ -353,6 +354,7 @@ protected $_validate=[
      * @return
      */
     public function getMemberPrice($goods_id){
+//        dump($goods_id);
         $member =    M('MemberLevel');
         $memberData = $member->alias('ml')->join('left join __MEMBER_PRICE__ as mp on ml.id=mp.level_id')
             ->where('mp.goods_id='.$goods_id)->select();
@@ -420,6 +422,37 @@ protected $_validate=[
         $data = $this->where($where)->page($p,$offset)-> order($sort.' desc')->select();
         return  ['show'=>$show,'data'=>$data,'price'=>$price];
 
+    }
+
+    /**
+     * @seenGodos 最近浏览过的商品
+     *
+     * @param $id
+     *
+     * @author : Terry
+     * @return
+     */
+    public  function  seenGoods($goodsInfo)
+    {
+        if ($goodsInfo) {
+            //判断用户是否登录 若没有登录获取ip转为整形组建key值,若登录使用用户id组建key值
+            if (session('user_id')) {
+                $seenGoodsKey = 'seenGoods_' . session('user_id');
+            } else {
+                $seenGoodsKey = 'seenGoods_' . ip2long(getIP());
+            }
+            $seenGoodsInfo = $goodsInfo['id'] . ',' . $goodsInfo['goods_name'] . ',' . $goodsInfo['goods_thumb'];
+            $reids = new \Redis();
+            $reids->connect(C('REDIS_HOST'),C('REDIS_PORT'));
+            $goodsCount = $reids->ZCARD($seenGoodsKey);
+
+            if ($goodsCount > 5) {
+                $reids->ZREMRANGEBYRANK($seenGoodsKey, 0, 1);
+            }
+            $reids->ZADD($seenGoodsKey, time(), $seenGoodsInfo);
+            return $seenGoodsKey;
+
+        }
     }
 
 }

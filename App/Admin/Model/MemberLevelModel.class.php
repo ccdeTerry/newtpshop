@@ -38,8 +38,7 @@ class MemberLevelModel extends Model
 		}else{
 			$where['mp.goods_id']=$goods_id;
 		}
-//        $memberData = M('MemberLevel')->field('mp.price')->alias('ml')->join('left join jx_member_price as mp on ml.id=mp.level_id')
-//            ->where("ml.jifen_bottom < {$userInfo['jifen']} and ml.jifen_top >{$userInfo['jifen']} and mp.goods_id={$goods_id}" )->find();
+        //查出会员则扣率
         $memberData = M('MemberLevel')->alias('ml')->join('left join jx_member_price as mp on ml.id=mp.level_id')
             ->where($where)->select();
         //商品中可能会存在无会员价格商品
@@ -49,10 +48,9 @@ class MemberLevelModel extends Model
                 $goodsPrice =  D('Goods')->field('shop_price')->find($goods_id);
                 $memberData[$key]['price'] = ($value['level_rate']/100)*$goodsPrice['shop_price'];
             }
-
         }
+//        dump($memberData);
 		//转换会员价格 若小于等于0 说明没有填写会员价格 使用默认折扣率
-
         return $memberData;
     }
 

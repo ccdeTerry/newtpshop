@@ -1,0 +1,30 @@
+[ 2017-11-11T15:28:24+08:00 ] 127.0.0.1 /Admin/Goods/showAttr.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001366s ]
+SQL: SELECT * FROM `jx_attribute` WHERE `type_id` = 3  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005847s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005886s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000621s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000670s ]
+
+[ 2017-11-11T21:31:53+08:00 ] 127.0.0.1 /admin/attribute/add.html
+ERR: 非法操作:add
+
+[ 2017-11-11T21:32:17+08:00 ] 127.0.0.1 /Admin/Rule/cateList.html
+ERR: 非法操作:cateList
+
+[ 2017-11-11T21:32:24+08:00 ] 127.0.0.1 /admin/attribute/add.html
+ERR: 非法操作:add
+
+[ 2017-11-11T21:32:28+08:00 ] 127.0.0.1 /admin/attribute/add.html
+ERR: 非法操作:add
+

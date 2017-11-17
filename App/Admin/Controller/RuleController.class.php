@@ -11,7 +11,7 @@ namespace Admin\Controller;
 class RuleController extends CommonController{
 
     /**
-     * @categoryAdd 添加分类
+     * @categoryAdd 添加权限
      * @author : Terry
      * @return
      */
@@ -35,7 +35,7 @@ class RuleController extends CommonController{
     }
 
     /**
-     * @cateList 分类列表
+     * @cateList 权限列表
      * @author : Terry
      * @return
      */
@@ -47,7 +47,7 @@ class RuleController extends CommonController{
     }
 
     /**
-     * @delCate 删除分类
+     * @delCate 删除权限
      * @author : Terry
      * @return
      */
@@ -65,7 +65,7 @@ class RuleController extends CommonController{
     }
 
     /**
-     * @cateEdit  编辑分类
+     * @cateEdit  编辑权限
      * @author : Terry
      * @return
      */

@@ -90,7 +90,7 @@ class RuleModel extends CommonModel {
 
         $tree  =$this->getCateTree($data['id']);
         $tree[] = ['id'=>$data['id']];
-        foreach ($data as $key =>$val){
+        foreach ($tree as $key =>$val){
             if ($data['parent_id'] == $val['id']){
                 $this->error='不能设置子分类为父分类';
                 return false;
@@ -116,6 +116,34 @@ class RuleModel extends CommonModel {
         $list = $this->getTree($data,$id,1,false);
         $tree = array_column($list, 'id');
         return $tree;
+    }
+
+    public  function _after_insert($data, $options)
+    {
+        $this->flushAdmin();
+    }
+
+    public  function _after_delete($data, $options)
+    {   //清除admin权限缓存
+        $this->flushAdmin();
+        //删除所有管理员权限
+        $userInfo =   M('Admin')->field('id')->select();
+        //多个管理员可能拥有同一个角色
+        foreach($userInfo as $val){
+            S('user_'.$val['id'],null);
+        }
+    }
+
+    /**
+     * @flushAdmin 清除超级管理员缓存
+     * @author : Terry
+     * @return
+     */
+    private function flushAdmin(){
+        $AdminInfo =  M('AdminRole')->where(['role_id'=>1])->select();
+        foreach($AdminInfo as $val){
+            S('user_'.$val['admin_id'],null);
+        }
     }
 
 

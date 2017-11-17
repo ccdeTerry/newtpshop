@@ -304,15 +304,11 @@
 			<div class="viewd leftbar mt10">
 				<h2><a href="">清空</a><strong>最近浏览过的商品</strong></h2>
 				<div class="leftbar_wrap">
-					<dl>
-						<dt><a href=""><img src="/Public/resources/Home/images/hpG4.jpg" alt="" /></a></dt>
-						<dd><a href="">惠普G4-1332TX 14英寸笔记...</a></dd>
-					</dl>
-
-					<dl class="last">
-						<dt><a href=""><img src="/Public/resources/Home/images/crazy4.jpg" alt="" /></a></dt>
-						<dd><a href="">直降200元！TCL正1.5匹空调</a></dd>
-					</dl>
+					<?php if(is_array($seenGoods)): $i = 0; $__LIST__ = $seenGoods;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><dl>
+						<dt><a href="<?php echo U('Goods/index','goods_id='.$vo[0]);?>"><img src="/<?php echo ($vo["2"]); ?>" alt="" /></a></dt>
+						<dd><a href="<?php echo U('Goods/index','goods_id='.$vo[0]);?>"><?php echo ($vo["1"]); ?></a></dd>
+					</dl><?php endforeach; endif; else: echo "" ;endif; ?>
+					
 				</div>
 			</div>
 			<!-- 最近浏览 end -->

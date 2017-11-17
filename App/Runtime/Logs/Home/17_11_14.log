@@ -1,0 +1,374 @@
+[ 2017-11-14T09:53:38+08:00 ] 127.0.0.1 /
+ERR: Redis server went away
+
+[ 2017-11-14T10:59:03+08:00 ] 127.0.0.1 /User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001393s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0187s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0155s ]
+SQL: SELECT * FROM `jx_user` WHERE `username` = 'zhangxiaorui' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `jx_member_level` [ RunTime:0.0234s ]
+SQL: SELECT `level_name` FROM `jx_member_level` WHERE `jifen_top` > 15935 AND `jifen_bottom` < 15935 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_cart` WHERE `user_id` = '2' AND `goods_id` = '64' AND `goods_attr_ids` = '194,196' LIMIT 1   [ RunTime:0.0021s ]
+SQL: UPDATE `jx_cart` SET `goods_count`='5' WHERE `user_id` = '2' AND `goods_id` = '64' AND `goods_attr_ids` = '194,196' [ RunTime:0.0096s ]
+SQL: SELECT * FROM `jx_cart` WHERE `user_id` = '2' AND `goods_id` = '64' AND `goods_attr_ids` = '195,197' LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `jx_cart` (`user_id`,`goods_id`,`goods_attr_ids`,`goods_count`) VALUES ('2','64','195,197','1') [ RunTime:0.0081s ]
+SQL: SELECT * FROM `jx_cart` WHERE `user_id` = '2' AND `goods_id` = '63' AND `goods_attr_ids` = '188,190' LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `jx_cart` (`user_id`,`goods_id`,`goods_attr_ids`,`goods_count`) VALUES ('2','63','188,190','1') [ RunTime:0.0040s ]
+SQL: SELECT * FROM `jx_cart` WHERE `user_id` = '2' AND `goods_id` = '63' AND `goods_attr_ids` = '189,191' LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `jx_cart` (`user_id`,`goods_id`,`goods_attr_ids`,`goods_count`) VALUES ('2','63','189,191','1') [ RunTime:0.0045s ]
+
+[ 2017-11-14T10:59:33+08:00 ] 127.0.0.1 /User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000917s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `jx_user` WHERE `username` = 'zhangxiaorui' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jx_member_level` [ RunTime:0.0051s ]
+SQL: SELECT `level_name` FROM `jx_member_level` WHERE `jifen_top` > 15935 AND `jifen_bottom` < 15935 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-11-14T11:00:19+08:00 ] 127.0.0.1 /User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001285s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `jx_user` WHERE `username` = 'zhangxiaorui' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jx_member_level` [ RunTime:0.0112s ]
+SQL: SELECT `level_name` FROM `jx_member_level` WHERE `jifen_top` > 15935 AND `jifen_bottom` < 15935 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_cart` WHERE `user_id` = '2' AND `goods_id` = '64' AND `goods_attr_ids` = '194,196' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `jx_cart` SET `goods_count`='6' WHERE `user_id` = '2' AND `goods_id` = '64' AND `goods_attr_ids` = '194,196' [ RunTime:0.0039s ]
+SQL: SELECT * FROM `jx_cart` WHERE `user_id` = '2' AND `goods_id` = '64' AND `goods_attr_ids` = '195,197' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `jx_cart` SET `goods_count`='2' WHERE `user_id` = '2' AND `goods_id` = '64' AND `goods_attr_ids` = '195,197' [ RunTime:0.0039s ]
+
+[ 2017-11-14T11:34:38+08:00 ] 127.0.0.1 /Cart/index.html
+ERR: syntax error, unexpected '}'
+
+[ 2017-11-14T11:40:35+08:00 ] 127.0.0.1 /Cart/index.html
+ERR: syntax error, unexpected '}'
+
+[ 2017-11-14T14:16:09+08:00 ] 127.0.0.1 /User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000903s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `jx_user` WHERE `username` = 'zhangxiaorui' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `jx_member_level` [ RunTime:0.0135s ]
+SQL: SELECT `level_name` FROM `jx_member_level` WHERE `jifen_top` > 15935 AND `jifen_bottom` < 15935 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_cart` WHERE `user_id` = '2' AND `goods_id` = '64' AND `goods_attr_ids` = '194,196' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `jx_cart` SET `goods_count`='7' WHERE `user_id` = '2' AND `goods_id` = '64' AND `goods_attr_ids` = '194,196' [ RunTime:0.0042s ]
+SQL: SELECT * FROM `jx_cart` WHERE `user_id` = '2' AND `goods_id` = '64' AND `goods_attr_ids` = '195,197' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `jx_cart` SET `goods_count`='3' WHERE `user_id` = '2' AND `goods_id` = '64' AND `goods_attr_ids` = '195,197' [ RunTime:0.0039s ]
+SQL: SELECT * FROM `jx_cart` WHERE `user_id` = '2' AND `goods_id` = '63' AND `goods_attr_ids` = '188,190' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `jx_cart` SET `goods_count`='4' WHERE `user_id` = '2' AND `goods_id` = '63' AND `goods_attr_ids` = '188,190' [ RunTime:0.0040s ]
+SQL: SELECT * FROM `jx_cart` WHERE `user_id` = '2' AND `goods_id` = '63' AND `goods_attr_ids` = '189,191' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `jx_cart` SET `goods_count`='2' WHERE `user_id` = '2' AND `goods_id` = '63' AND `goods_attr_ids` = '189,191' [ RunTime:0.0039s ]
+
+[ 2017-11-14T14:20:31+08:00 ] 127.0.0.1 /Cart/index.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+ [ SQL语句 ] : SELECT * FROM `jx_goods` WHERE ( id in () ) 
+
+[ 2017-11-14T14:21:10+08:00 ] 127.0.0.1 /Cart/index.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+ [ SQL语句 ] : SELECT * FROM `jx_goods` WHERE ( id in () ) 
+
+[ 2017-11-14T17:13:09+08:00 ] 127.0.0.1 /User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001085s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `jx_user` WHERE `username` = 'zhangxiaorui' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jx_member_level` [ RunTime:0.0107s ]
+SQL: SELECT `level_name` FROM `jx_member_level` WHERE `jifen_top` > 15935 AND `jifen_bottom` < 15935 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-11-14T18:44:44+08:00 ] 127.0.0.1 /Cart/index.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+ [ SQL语句 ] : SELECT * FROM `jx_goods` WHERE ( id in () ) 
+
+[ 2017-11-14T18:45:03+08:00 ] 127.0.0.1 /User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000727s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `jx_user` WHERE `username` = 'zhangxiaorui' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jx_member_level` [ RunTime:0.0099s ]
+SQL: SELECT `level_name` FROM `jx_member_level` WHERE `jifen_top` > 15935 AND `jifen_bottom` < 15935 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-11-14T19:07:23+08:00 ] 127.0.0.1 /User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000903s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0138s ]
+SQL: SELECT * FROM `jx_user` WHERE `username` = 'zhangxiaorui' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jx_member_level` [ RunTime:0.0094s ]
+SQL: SELECT `level_name` FROM `jx_member_level` WHERE `jifen_top` > 15935 AND `jifen_bottom` < 15935 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_cart` WHERE `user_id` = '2' AND `goods_id` = '68' AND `goods_attr_ids` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `jx_cart` SET `goods_count`='4' WHERE `user_id` = '2' AND `goods_id` = '68' AND `goods_attr_ids` = '' [ RunTime:0.0040s ]
+
+[ 2017-11-14T19:12:29+08:00 ] 127.0.0.1 /User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000881s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `jx_user` WHERE `username` = 'zhangxiaorui' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant fale - assumed 'fale' D:\web\new_tpshop\App\Home\Model\UserModel.class.php 第 54 行.
+
+[ 2017-11-14T19:12:49+08:00 ] 127.0.0.1 /User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001099s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `jx_user` WHERE `username` = 'zhangxiaorui' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jx_member_level` [ RunTime:0.0143s ]
+SQL: SELECT `level_name` FROM `jx_member_level` WHERE `jifen_top` > 15935 AND `jifen_bottom` < 15935 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-11-14T19:13:26+08:00 ] 127.0.0.1 /User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000746s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0003s ]
+
+[ 2017-11-14T19:13:34+08:00 ] 127.0.0.1 /User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000798s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0085s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `jx_user` WHERE `username` = 'zhangxiaorui' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jx_member_level` [ RunTime:0.0095s ]
+SQL: SELECT `level_name` FROM `jx_member_level` WHERE `jifen_top` > 15935 AND `jifen_bottom` < 15935 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_cart` WHERE `user_id` = '2' AND `goods_id` = '68' AND `goods_attr_ids` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `jx_cart` SET `goods_count`='8' WHERE `user_id` = '2' AND `goods_id` = '68' AND `goods_attr_ids` = '' [ RunTime:0.0039s ]
+
+[ 2017-11-14T19:17:57+08:00 ] 127.0.0.1 /User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000831s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001382s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `jx_user` WHERE `username` = 'zhangxiaorui' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jx_member_level` [ RunTime:0.0090s ]
+SQL: SELECT `level_name` FROM `jx_member_level` WHERE `jifen_top` > 111935 AND `jifen_bottom` < 111935 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-11-14T19:18:30+08:00 ] 127.0.0.1 /Cart/index.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+ [ SQL语句 ] : SELECT * FROM `jx_goods` WHERE ( id in () ) 
+
+[ 2017-11-14T19:33:49+08:00 ] 127.0.0.1 /Cart/updateCount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001100s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001637s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0003s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''194,196'' )' at line 1
+ [ SQL语句 ] : UPDATE `jx_cart` SET `goods_count`='2' WHERE ( user_id=2 and goods_id=64 and goods_attr_ids ='194,196'' )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''194,196'' )' at line 1
+ [ SQL语句 ] : UPDATE `jx_cart` SET `goods_count`='2' WHERE ( user_id=2 and goods_id=64 and goods_attr_ids ='194,196'' )
+
+[ 2017-11-14T19:33:52+08:00 ] 127.0.0.1 /Cart/updateCount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000857s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0003s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''195,197'' )' at line 1
+ [ SQL语句 ] : UPDATE `jx_cart` SET `goods_count`='2' WHERE ( user_id=2 and goods_id=64 and goods_attr_ids ='195,197'' )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''195,197'' )' at line 1
+ [ SQL语句 ] : UPDATE `jx_cart` SET `goods_count`='2' WHERE ( user_id=2 and goods_id=64 and goods_attr_ids ='195,197'' )
+
+[ 2017-11-14T19:33:53+08:00 ] 127.0.0.1 /Cart/updateCount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001097s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0003s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''195,197'' )' at line 1
+ [ SQL语句 ] : UPDATE `jx_cart` SET `goods_count`='3' WHERE ( user_id=2 and goods_id=64 and goods_attr_ids ='195,197'' )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''195,197'' )' at line 1
+ [ SQL语句 ] : UPDATE `jx_cart` SET `goods_count`='3' WHERE ( user_id=2 and goods_id=64 and goods_attr_ids ='195,197'' )
+
+[ 2017-11-14T19:34:01+08:00 ] 127.0.0.1 /Cart/updateCount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001108s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001722s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0003s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''194,196'' )' at line 1
+ [ SQL语句 ] : UPDATE `jx_cart` SET `goods_count`='3' WHERE ( user_id=2 and goods_id=64 and goods_attr_ids ='194,196'' )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''194,196'' )' at line 1
+ [ SQL语句 ] : UPDATE `jx_cart` SET `goods_count`='3' WHERE ( user_id=2 and goods_id=64 and goods_attr_ids ='194,196'' )
+
+[ 2017-11-14T19:34:02+08:00 ] 127.0.0.1 /Cart/updateCount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0093s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0004s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''194,196'' )' at line 1
+ [ SQL语句 ] : UPDATE `jx_cart` SET `goods_count`='4' WHERE ( user_id=2 and goods_id=64 and goods_attr_ids ='194,196'' )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''194,196'' )' at line 1
+ [ SQL语句 ] : UPDATE `jx_cart` SET `goods_count`='4' WHERE ( user_id=2 and goods_id=64 and goods_attr_ids ='194,196'' )
+
+[ 2017-11-14T19:34:03+08:00 ] 127.0.0.1 /Cart/updateCount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000677s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0005s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''195,197'' )' at line 1
+ [ SQL语句 ] : UPDATE `jx_cart` SET `goods_count`='4' WHERE ( user_id=2 and goods_id=64 and goods_attr_ids ='195,197'' )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''195,197'' )' at line 1
+ [ SQL语句 ] : UPDATE `jx_cart` SET `goods_count`='4' WHERE ( user_id=2 and goods_id=64 and goods_attr_ids ='195,197'' )
+
+[ 2017-11-14T19:34:03+08:00 ] 127.0.0.1 /Cart/updateCount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000923s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0004s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''195,197'' )' at line 1
+ [ SQL语句 ] : UPDATE `jx_cart` SET `goods_count`='5' WHERE ( user_id=2 and goods_id=64 and goods_attr_ids ='195,197'' )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''195,197'' )' at line 1
+ [ SQL语句 ] : UPDATE `jx_cart` SET `goods_count`='5' WHERE ( user_id=2 and goods_id=64 and goods_attr_ids ='195,197'' )
+
+[ 2017-11-14T19:34:03+08:00 ] 127.0.0.1 /Cart/updateCount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0003s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''195,197'' )' at line 1
+ [ SQL语句 ] : UPDATE `jx_cart` SET `goods_count`='6' WHERE ( user_id=2 and goods_id=64 and goods_attr_ids ='195,197'' )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''195,197'' )' at line 1
+ [ SQL语句 ] : UPDATE `jx_cart` SET `goods_count`='6' WHERE ( user_id=2 and goods_id=64 and goods_attr_ids ='195,197'' )
+
+[ 2017-11-14T19:34:27+08:00 ] 127.0.0.1 /Cart/updateCount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000926s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0091s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0003s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''195,197'' )' at line 1
+ [ SQL语句 ] : UPDATE `jx_cart` SET `goods_count`='7' WHERE ( user_id=2 and goods_id=64 and goods_attr_ids ='195,197'' )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''195,197'' )' at line 1
+ [ SQL语句 ] : UPDATE `jx_cart` SET `goods_count`='7' WHERE ( user_id=2 and goods_id=64 and goods_attr_ids ='195,197'' )
+
+[ 2017-11-14T19:34:28+08:00 ] 127.0.0.1 /Cart/updateCount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000995s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0004s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''195,197'' )' at line 1
+ [ SQL语句 ] : UPDATE `jx_cart` SET `goods_count`='8' WHERE ( user_id=2 and goods_id=64 and goods_attr_ids ='195,197'' )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''195,197'' )' at line 1
+ [ SQL语句 ] : UPDATE `jx_cart` SET `goods_count`='8' WHERE ( user_id=2 and goods_id=64 and goods_attr_ids ='195,197'' )
+
+[ 2017-11-14T19:34:28+08:00 ] 127.0.0.1 /Cart/updateCount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000991s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001554s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0091s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0003s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''194,196'' )' at line 1
+ [ SQL语句 ] : UPDATE `jx_cart` SET `goods_count`='5' WHERE ( user_id=2 and goods_id=64 and goods_attr_ids ='194,196'' )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''194,196'' )' at line 1
+ [ SQL语句 ] : UPDATE `jx_cart` SET `goods_count`='5' WHERE ( user_id=2 and goods_id=64 and goods_attr_ids ='194,196'' )
+
+[ 2017-11-14T19:34:29+08:00 ] 127.0.0.1 /Cart/updateCount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001177s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0003s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''194,196'' )' at line 1
+ [ SQL语句 ] : UPDATE `jx_cart` SET `goods_count`='6' WHERE ( user_id=2 and goods_id=64 and goods_attr_ids ='194,196'' )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''194,196'' )' at line 1
+ [ SQL语句 ] : UPDATE `jx_cart` SET `goods_count`='6' WHERE ( user_id=2 and goods_id=64 and goods_attr_ids ='194,196'' )
+
+[ 2017-11-14T19:34:31+08:00 ] 127.0.0.1 /Cart/updateCount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000912s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0005s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '''' )' at line 1
+ [ SQL语句 ] : UPDATE `jx_cart` SET `goods_count`='9' WHERE ( user_id=2 and goods_id=68 and goods_attr_ids =''' )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '''' )' at line 1
+ [ SQL语句 ] : UPDATE `jx_cart` SET `goods_count`='9' WHERE ( user_id=2 and goods_id=68 and goods_attr_ids =''' )
+
+[ 2017-11-14T19:34:32+08:00 ] 127.0.0.1 /Cart/updateCount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001051s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0003s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '''' )' at line 1
+ [ SQL语句 ] : UPDATE `jx_cart` SET `goods_count`='8' WHERE ( user_id=2 and goods_id=68 and goods_attr_ids =''' )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '''' )' at line 1
+ [ SQL语句 ] : UPDATE `jx_cart` SET `goods_count`='8' WHERE ( user_id=2 and goods_id=68 and goods_attr_ids =''' )
+
+[ 2017-11-14T19:34:32+08:00 ] 127.0.0.1 /Cart/updateCount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000924s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0005s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '''' )' at line 1
+ [ SQL语句 ] : UPDATE `jx_cart` SET `goods_count`='7' WHERE ( user_id=2 and goods_id=68 and goods_attr_ids =''' )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '''' )' at line 1
+ [ SQL语句 ] : UPDATE `jx_cart` SET `goods_count`='7' WHERE ( user_id=2 and goods_id=68 and goods_attr_ids =''' )
+
+[ 2017-11-14T19:34:32+08:00 ] 127.0.0.1 /Cart/updateCount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001140s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0004s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '''' )' at line 1
+ [ SQL语句 ] : UPDATE `jx_cart` SET `goods_count`='6' WHERE ( user_id=2 and goods_id=68 and goods_attr_ids =''' )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '''' )' at line 1
+ [ SQL语句 ] : UPDATE `jx_cart` SET `goods_count`='6' WHERE ( user_id=2 and goods_id=68 and goods_attr_ids =''' )
+
+[ 2017-11-14T19:34:32+08:00 ] 127.0.0.1 /Cart/updateCount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000704s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0006s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '''' )' at line 1
+ [ SQL语句 ] : UPDATE `jx_cart` SET `goods_count`='5' WHERE ( user_id=2 and goods_id=68 and goods_attr_ids =''' )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '''' )' at line 1
+ [ SQL语句 ] : UPDATE `jx_cart` SET `goods_count`='5' WHERE ( user_id=2 and goods_id=68 and goods_attr_ids =''' )
+
+[ 2017-11-14T19:34:33+08:00 ] 127.0.0.1 /Cart/updateCount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001390s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `jx_category`  [ RunTime:0.0003s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '''' )' at line 1
+ [ SQL语句 ] : UPDATE `jx_cart` SET `goods_count`='4' WHERE ( user_id=2 and goods_id=68 and goods_attr_ids =''' )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '''' )' at line 1
+ [ SQL语句 ] : UPDATE `jx_cart` SET `goods_count`='4' WHERE ( user_id=2 and goods_id=68 and goods_attr_ids =''' )
+

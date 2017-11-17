@@ -74,10 +74,11 @@
                 <td align="center"><img src="/Public/resources/Admin/Images/<?php if(($vo["is_hot"]) == "1"): ?>yes.gif <?php else: ?>no.gif<?php endif; ?>"/></td>
                
                 <td align="center">
-                <a href="" target="_blank" title="查看"><img src="/Public/resources/Admin/Images/icon_view.gif" width="16" height="16" border="0" /></a>
-                <a href="<?php echo U('setNumber','goods_id='.$vo['id']);?>" title="商品库存"><img src="/Public/resources/Admin/Images/icon_edit.gif" width="16" height="16" border="0" />商品库存</a>
-                    <a href="<?php echo U('goodsEdit','goods_id='.$vo['id']);?>" title="编辑"><img src="/Public/resources/Admin/Images/icon_edit.gif" width="16" height="16" border="0" />编辑</a>
-                <a href="<?php echo U('goodsDels','goods_id='.$vo['id']);?>" onclick="" title="回收站"><img src="/Public/resources/Admin/Images/icon_trash.gif" width="16" height="16" border="0" />回收站</a></td>
+                <a href="" target="_blank" title="查看"><img src="/Public/resources/Admin/Images/icon_view.gif" width="16" height="16" border="0" /></a>|
+                <a href="<?php echo U('setNumber','goods_id='.$vo['id']);?>" title="商品库存"><img src="/Public/resources/Admin/Images/icon_edit.gif" width="16" height="16" border="0" />商品库存</a>|
+                    <a href="<?php echo U('goodsEdit','goods_id='.$vo['id']);?>" title="编辑"><img src="/Public/resources/Admin/Images/icon_edit.gif" width="16" height="16" border="0" />编辑</a>|
+                <a href="<?php echo U('goodsDels','goods_id='.$vo['id']);?>" onclick="" title="回收站"><img src="/Public/resources/Admin/Images/icon_trash.gif" width="16" height="16" border="0" />回收站</a>|
+                    <a href="<?php echo U('seckillGoods/add','goods_id='.$vo['id']);?>" onclick="" title="秒杀">加入秒杀</a></td>
             </tr><?php endforeach; endif; else: echo "" ;endif; ?>
         </table>
 

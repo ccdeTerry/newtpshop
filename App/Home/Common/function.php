@@ -31,7 +31,6 @@ function  postAlipay($order_id,$order_name,$order_price,$order_body=''){
     //商品描述，可空
     $body = trim($order_body);
     //构造参数
-//            dump(C('ALIPAY'));exit;
     $payRequestBuilder = new \AlipayTradePagePayContentBuilder();
     $payRequestBuilder->setBody($body);
     $payRequestBuilder->setSubject($subject);

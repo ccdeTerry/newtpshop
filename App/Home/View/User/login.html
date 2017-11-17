@@ -161,11 +161,12 @@
                   type:'post',//表示具体的请求类型 post/get
                   dataType:'json',//指定数据交互格式
                   success:function(msg){
+//                      console.log(1234567);
                       if(msg.status==200){
                           //表示提交注册成功
                           layer.msg(msg.msg);
 //                          console.log(msg.uri);
-                          setTimeout(function () {
+                          setTimeout(function () { //setInterval()
                               location.href=msg.uri;
                           },3000);
                       }else{
@@ -203,25 +204,7 @@
       })
   })*/
 //  })
-//$('#loginwithbaidu').click(function () {
-//    $.ajax({
-//        url:"{:U('bdLogin')}",
-//        type:'get',
-//        success:function (msg) {
-        document.id('loginwithbaidu').addEvent('click',function() {
-            //获得窗口的垂直位置
-            var iTop = (window.screen.availHeight-30-320)/2;
-            //获得窗口的水平位置
-            var iLeft = (window.screen.availWidth-10-500)/2;
-            window.open({$bdLogin}, 'newwindow',
-                'height=320, width=500, top=' + iTop + ', left=' + iLeft +
-                ', toolbar=no, menubar=no, ' +
-                'scrollbars=no, resizable=no, location=no, status=no');
-        });
-//        }
-//    })
-//
-//})
+
 
 
     </script>

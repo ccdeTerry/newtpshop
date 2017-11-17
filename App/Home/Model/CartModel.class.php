@@ -150,42 +150,42 @@ class CartModel extends Model{
             }
 
         }
-//        //获取商品信息
-//       $goodsModel = D('Admin/Goods');
-//        $goodsIds =implode(',',array_unique(array_column($cartData,'goods_id')));
-//        $goodsData =  $goodsModel->where("id in ($goodsIds)")->select();
-//        foreach ($goodsData as $key =>$value){
-//            if($value['cx_price']>0 &&$value['start']<time() && $value['end']>time() ){
-//            $data[$key]['goods']['shop_price'] = $value['cx_price'];
-//            }
-//            $data[$key]['goods']=$value;
-//
-//        }
-//        foreach ($cartData as $key=>$value){
-//            if ($value['goods_attr_ids']){
-//                $data[$key]['attr'] =  M('GoodsAttr')->alias('ga')->join('left join jx_attribute as attr on ga.attr_id=attr.id')->field('ga
-//                .attr_values,attr.attr_name')->where("ga.id in({$value['goods_attr_ids']})")->select();
-//            }
-//        }
-//        dump($data);
         $goodsModel= D('Admin/Goods');
-        foreach ($data as $key => $value) {
-            //获取具体的商品信息
-            $goods = $goodsModel->where('id='.$value['goods_id'])->find();
-            //获取会员价格
-            $memberPrice =  D('Admin/MemberLevel')->getMemberLevel($value['goods_id'],session('user'));
 
-//            dump($memberPrice);exit;
-            //根据商品是否处于促销状态设置价格
-            if($goods['cx_price']>0 && $goods['start']<time() && $goods['end']>time()){
-                /*处于促销状态因此设置对于的shop_price为促销价格 */
-                //获取会员价格 获取促销加个 三元判断 取最小价格
-                $goods['shop_price']=$memberPrice[0]['price'] >$goods['cx_price'] ?$goods['cx_price']:$memberPrice[0]['price'];
-            //若会员登录必有会员价格 显示会员加个
-            }elseif($memberPrice){
-                $goods['shop_price']=$memberPrice[0]['price'];
+        $goodsIds = implode(',',array_unique(array_column($data,'goods_id')));
+        if (!$goodsIds) {
+            $this->error='您的购物车空空如也,请先选购商品!';
+            return false;
+        }
+        //获取具体的商品信息
+        $goodsData = $goodsModel->where("id in ($goodsIds)")->select();
+        foreach ($goodsData as $val) {
+            $goods[$val['id']] = $val;
+        }
+        foreach ($data as$k =>$val) {
+            $data[$k]['goods']=$goods[$val['goods_id']];
+        }
+        foreach ($data as $key => $value) {
+            //判断购物车商品状态是否为1,若为1则为秒杀商品,显示秒杀价格
+            if (intval($value['flag']) ===1 ) {
+                $seckillPrice =  M('seckillGoods')->field('seckill_price')->where(['goods_id'=>$value['goods_id']])->find();
+                $data[$key]['goods']['shop_price'] =$seckillPrice['seckill_price'];
+            }else{
+                //获取会员价格
+                $memberPrice =  D('Admin/MemberLevel')->getMemberLevel($value['goods_id'],session('user'));
+                // dump($memberPrice);exit;
+                //根据商品是否处于促销状态设置价格
+                if($value['goods']['cx_price']>0 && $value['goods']['start']<time() && $value['goods']['end']>time()){
+                    /*处于促销状态因此设置对于的shop_price为促销价格 */
+                    //获取会员价格 获取促销加个 三元判断 取最小价格
+                    $data[$key]['goods']['shop_price']=$memberPrice[0]['price'] >$value['goods']['cx_price'] ?$value['goods']['cx_price']:$memberPrice[0]['price'];
+                //若会员登录必有会员价格 显示会员加个
+                }elseif($memberPrice){
+                    $data[$key]['goods']['shop_price']=$memberPrice[0]['price'];
+                }
             }
-            $data[$key]['goods']=$goods;
+//            dump($value);
+//            $data[$key]['goods']=$goods;
             //3、根据商品对应的属性值的组合获取对应的属性名称跟属性值
             if($value['goods_attr_ids']){
                 //获取商品的属性信息
@@ -193,6 +193,7 @@ class CartModel extends Model{
                 $data[$key]['attr']=$attr;
             }
         }
+//        dump($data);exit;
         return $data;
     }
 
@@ -205,102 +206,12 @@ class CartModel extends Model{
      * @return array
      */
     public function getPrice($data){
-       /*
-           array(5) {
-            [0] => array(7) {
-                ["id"] => string(2) "34"
-                ["user_id"] => string(1) "2"
-                ["goods_id"] => string(2) "64"
-                ["goods_attr_ids"] => string(7) "194,196"
-                ["goods_count"] => string(1) "2"
-                ["goods"] => array(22) {
-                    ["id"] => string(2) "64"
-                    ["goods_name"] => string(21) "会员价格测试二"
-                    ["goods_sn"] => string(19) "tpshop59dcc641b712e"
-                    ["cate_id"] => string(1) "5"
-                    ["market_price"] => string(7) "2345.00"
-                    ["shop_price"] => string(7) "2343.00"
-                    ["goods_img"] => string(36) "Uploads/2017-10-10/59dcc641b9e43.jpg"
-                    ["goods_thumb"] => string(42) "Uploads/2017-10-10/thumb_59dcc641b9e43.jpg"
-                    ["goods_body"] => NULL
-
-                }
-                ["attr"] => array(2) {
-                                [0] => array(2) {
-                                    ["attr_values"] => string(2) "2G"
-                                    ["attr_name"] => string(6) "内存"
-                  }
-                  [1] => array(2) {
-                                    ["attr_values"] => string(6) "联通"
-                                    ["attr_name"] => string(12) "网络制式"
-                  }
-                }
-              }
-
-        */
-        /*foreach ($data as $key=>$value){
-
-               $count +=$value['goods_count'];
-               $price +=$value['goods_count'] *$value['goods']['shop_price'];
-       }*/
         $count=$price=0;
         //判断用户是否登录 若登陆计算会员价格 若没登陆使用本店价格
-        if (session('user')){
-            $goodsIds = array_unique(array_column(array_column($data, 'goods'),'id' ));
-/*//dump($goodsIds);
-            array(2) {
-                [0] => string(2) "66"
-                [3] => string(2) "67"
-}*/
-            //根据商品id 用户信息获取会员价格
-            $memberGoodsPrice =   D('Admin/MemberLevel')->getMemberLevel($goodsIds,session('user'));
-
-            /*dump($memberGoodsPrice);
-            array(2) {
-                [0] => array(9) {
-                    ["id"] => string(2) "17"
-                    ["level_name"] => string(12) "白银会员"
-                    ["level_rate"] => string(2) "98"
-                    ["jifen_bottom"] => string(3) "501"
-                    ["jifen_top"] => string(4) "5000"
-                    ["flag"] => string(1) "1"
-                    ["goods_id"] => string(2) "66"
-                    ["level_id"] => string(2) "17"
-                    ["price"] => string(7) "6663.00"
-  }
-  [1] => array(9) {
-                    ["id"] => string(2) "17"
-                    ["level_name"] => string(12) "白银会员"
-                    ["level_rate"] => string(2) "98"
-                    ["jifen_bottom"] => string(3) "501"
-                    ["jifen_top"] => string(4) "5000"
-                    ["flag"] => string(1) "1"
-                    ["goods_id"] => string(2) "67"
-                    ["level_id"] => string(2) "17"
-                    ["price"] => float(783.02)
-  }*/
-            if ($memberGoodsPrice){
-                foreach ($memberGoodsPrice as $value){
-                    $memberPrice[$value['goods_id']]=$value['price'];
-                }
-            }
-//               dump($memberPrice);
-////           array(2) {
-//            [66] => string(7) "6663.00"
-//            [67] => float(783.02)
-//}
-            foreach ($data as $key=>$value){
-                $count +=$value['goods_count'];
-                $price +=$value['goods_count'] *$memberPrice[$value['goods_id']];
-            }
-        }else{
-            foreach ($data as $key=>$value){
-
-                $count +=$value['goods_count'];
-                $price +=$value['goods_count'] *$value['goods']['shop_price'];
-            }
+        foreach ($data as $key=>$value){
+            $count +=$value['goods_count'];
+            $price +=$value['goods_count'] *$value['goods']['shop_price'];
         }
-
         return ['count'=>$count,'price'=>$price];
     }
 
@@ -341,7 +252,7 @@ class CartModel extends Model{
         $goods_attr_ids = $goods_attr_ids ? $goods_attr_ids :'';
         $userId = session('user_id');
         if ($userId){
-            $where="user_id=$userId and goods_id=$goods_id and goods_attr_ids ='$goods_attr_ids''";
+            $where="user_id=$userId and goods_id=$goods_id and goods_attr_ids ='$goods_attr_ids' and flag = 0 ";
             $this->where($where)->setField('goods_count',$goods_count);
         }else{
             $cart =unserialize(cookie('cart'));
@@ -350,4 +261,26 @@ class CartModel extends Model{
             cookie('cart',serialize($cart));
         }
     }
+
+    /**
+     * dealCart 处理购物车
+     *
+     * author :Terry
+     * return :
+     */
+    public function dealCart($order_id)
+    {
+        $user_id = session('user_id');
+        //判断是否存在秒杀
+        $checkSeckill =  $this->where(['user_id'=>$user_id,'flag'=>1])->find();
+        if($checkSeckill){
+            $orderInfo =  M('OrderGoods')->where(['order_id'=>$order_id])->select();
+            $goods_ids = array_column($orderInfo, 'goods_id');
+            D('Admin/SeckillGoods')->postPaymentUser($goods_ids,$user_id);
+        }
+        //清除购物车
+        M('Cart')->where('user_id='.$user_id)->delete();
+    }
+
+
 }

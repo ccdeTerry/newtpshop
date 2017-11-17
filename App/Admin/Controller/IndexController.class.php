@@ -12,6 +12,7 @@ class IndexController extends CommonController {
         $this->display();
     }
     public function menu(){
+//        dump($this->user['menus']);
         $this->assign('menus',$this->user['menus']);
         $this->display();
     }

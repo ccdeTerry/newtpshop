@@ -29,12 +29,15 @@ class OrderModel extends Model{
         }
         //根据每一个商品做一个库存检查
         foreach ($data as $key => $value) {
-            //具体针对每一个商品检查库存
-            $status = $cateModel->checkGoodsNumber($value['goods_id'],$value['goods_count'],$value['goods_attr_ids']);
-            if(!$status){
-                $this->error='库存量不够';
-                return false;
+            if($value['flag'] != 1){
+                //具体针对每一个商品检查库存
+                $status = $cateModel->checkGoodsNumber($value['goods_id'],$value['goods_count'],$value['goods_attr_ids']);
+                if(!$status){
+                    $this->error='库存量不够';
+                    return false;
+                }
             }
+
         }
         //向订单总表写入数据
         //计算购物车中商品的总价格
@@ -47,6 +50,7 @@ class OrderModel extends Model{
             'address'=>I('post.address'),
             'tel'=>I('post.tel'),
         );
+//        dump($order);exit;
         $order_id = $this->add($order);
 
         //向商品订单详情表写入具体的信息
@@ -71,9 +75,6 @@ class OrderModel extends Model{
                 M('GoodsNumber')->where($where)->setDec('goods_number',$value['goods_count']);
             }
         }
-        //清空购物车中的数据
-        $user_id = session('user_id');
-        $cateModel->where('user_id='.$user_id)->delete();
         $order['id']=$order_id;
         return $order;
     }

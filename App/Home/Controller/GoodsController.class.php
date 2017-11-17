@@ -9,6 +9,8 @@
 
 namespace Home\Controller;
 
+use Think\Cache\Driver\Redis;
+
 class GoodsController extends CommonController{
     /**
      * index 商品首页
@@ -22,11 +24,11 @@ class GoodsController extends CommonController{
         if ($goodsId<=0){
             $this->redirect('Index/index');
         }
-
-
         $goods= D('Admin/Goods');
         //基本信息
         $goodsInfo = $goods->where(['isdel'=>1,'id'=>$goodsId])->find();
+        //最近浏览商品
+        $seenGoodsKey =$goods->seenGoods($goodsInfo);
         if (!$goodsInfo){
             $this->redirect('Index/index');
         }
@@ -65,8 +67,13 @@ class GoodsController extends CommonController{
         $comment = D('Comment')->getCommentList($goodsId);
         //获取印象值
         $buyer = D('Impression')->where(['goods_id'=>$goodsId])->order('count desc')->limit(8)->select();
-        
-//        var_dump($sigle,$unique);
+        //获取最近浏览商品
+        $redis = new \Redis();
+        $redis->connect(C('REDIS_HOST'),C('REDIS_PORT'));
+        $seenGoods = $redis->ZRANGE($seenGoodsKey,0,-1);
+        $seenGoods =  array_map(function ($val){return explode(',',$val);},$seenGoods);
+//        dump($seenGoods);
+        $this->assign('seenGoods',$seenGoods);
         $this->assign('buyer',$buyer);
         $this->assign('comment',$comment);
         $this->assign('sigle',$sigle);

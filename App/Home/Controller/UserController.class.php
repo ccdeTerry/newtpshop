@@ -62,6 +62,8 @@ class UserController extends CommonController{
                 $reUri =  str_replace('-','/' ,$reUri) ;
                 session('checkLogin','/'.$reUri);
             }
+            $bdLogin = $this->bdLogin();
+            $this->assign('bdLogin',$bdLogin);
             $this->display();
 
         }else{
@@ -86,7 +88,7 @@ class UserController extends CommonController{
             }
             $this->ajaxReturn(['status'=>200,'msg'=>'登录成功','uri'=>$redirect]);
         }
-
+          
 
     }
 
