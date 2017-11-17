@@ -29,8 +29,8 @@ class SeckillGoodsModel extends CommonModel{
     public function __construct(){
         parent::__construct();
         $this->seckill_key_px= date('Y-m-d');
-        if (function_exists('Redis')){
-            $this->error('Redis扩展未开启,请开启redis扩展');
+        if (!function_exists('Redis')){
+            exit('Redis扩展未开启,请开启redis扩展');
         }
         $this->redisObj= new \Redis();
         $this->redisObj->connect(C('REDIS_HOST'),C('REDIS_PORT'));
